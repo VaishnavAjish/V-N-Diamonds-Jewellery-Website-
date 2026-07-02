@@ -1,0 +1,849 @@
+</path></g></svg>					</a>
+				</span>
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon- elementor-repeater-item-738da45" href="https://www.instagram.com/vndiamonds/?hl=en" target="_blank">
+						<span class="elementor-screen-only"></span>
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" x="0px" y="0px" viewBox="0 0 551.034 551.034" style="enable-background:new 0 0 551.034 551.034;" xml:space="preserve"><g>			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.57" x2="275.517" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)">		<stop offset="0" style="stop-color:#E09B3D"></stop>		<stop offset="0.3" style="stop-color:#C74C4D"></stop>		<stop offset="0.6" style="stop-color:#C21975"></stop>		<stop offset="1" style="stop-color:#7024C4"></stop>	</linearGradient>	<path style="fill:url(#SVGID_1_);" d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722  c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156  C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156  c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722  c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z"></path>			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.57" x2="275.517" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)">		<stop offset="0" style="stop-color:#E09B3D"></stop>		<stop offset="0.3" style="stop-color:#C74C4D"></stop>		<stop offset="0.6" style="stop-color:#C21975"></stop>		<stop offset="1" style="stop-color:#7024C4"></stop>	</linearGradient>	<path style="fill:url(#SVGID_2_);" d="M275.517,133C196.933,133,133,196.933,133,275.516s63.933,142.517,142.517,142.517  S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6c-48.095,0-87.083-38.988-87.083-87.083  s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083C362.6,323.611,323.611,362.6,275.517,362.6z"></path>			<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="418.31" y1="4.57" x2="418.31" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)">		<stop offset="0" style="stop-color:#E09B3D"></stop>		<stop offset="0.3" style="stop-color:#C74C4D"></stop>		<stop offset="0.6" style="stop-color:#C21975"></stop>		<stop offset="1" style="stop-color:#7024C4"></stop>	</linearGradient>	<circle style="fill:url(#SVGID_3_);" cx="418.31" cy="134.07" r="34.15"></circle></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>					</a>
+				</span>
+					</div>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		</div>
+</div>
+<div class="whb-column whb-col-mobile whb-hidden-lg">
+	<div class="wd-header-html">			<link rel="stylesheet" id="elementor-post-3692-css" href="https://vipulmaheshwari.sites2.digju.in/wp-content/uploads/elementor/css/post-3692.css?ver=1766472446" type="text/css" media="all">
+					<div data-elementor-type="wp-post" data-elementor-id="3692" class="elementor elementor-3692" data-elementor-post-type="cms_block">
+				<div class="elementor-element elementor-element-428ffd6 wd-section-stretch e-flex e-con-boxed e-con e-parent" data-id="428ffd6" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[],&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-d0df710 elementor-shape-circle e-grid-align-right elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="d0df710" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-social-icons-wrapper elementor-grid" role="list">
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon- elementor-repeater-item-fd8c637" href="https://www.facebook.com/vndiamonds/?locale=zh_HK" target="_blank">
+						<span class="elementor-screen-only"></span>
+						<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" height="512" viewBox="0 0 100 100" width="512"><g id="_x30_1._Facebook"><path id="Icon_11_" d="m40.437 55.166c-.314 0-6.901.002-9.939-.001-1.564-.001-2.122-.563-2.122-2.137-.002-4.043-.003-8.086 0-12.129.001-1.554.591-2.147 2.135-2.148 3.038-.002 9.589-.001 9.926-.001 0-.277-.001-6.114 0-8.802.002-3.974.711-7.778 2.73-11.261 2.067-3.565 5.075-6.007 8.93-7.419 2.469-.905 5.032-1.266 7.652-1.268 3.278-.002 6.556.001 9.835.007 1.409.002 2.034.625 2.037 2.044.006 3.803.006 7.606 0 11.408-.002 1.434-.601 2.01-2.042 2.026-2.687.029-5.376.011-8.06.119-2.711 0-4.137 1.324-4.137 4.13-.065 2.968-.027 5.939-.027 9.015.254 0 7.969-.001 11.575 0 1.638 0 2.198.563 2.198 2.21 0 4.021-.001 8.043-.004 12.064-.001 1.623-.527 2.141-2.175 2.142-3.606.002-11.291.001-11.627.001v32.545c0 1.735-.546 2.288-2.258 2.288-4.174 0-8.349.001-12.523 0-1.513 0-2.103-.588-2.103-2.101-.001-10.599-.001-32.36-.001-32.732z" fill="#3d6ad6"></path></g></svg>					</a>
+				</span>
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon- elementor-repeater-item-738da45" href="https://www.instagram.com/vndiamonds/?hl=en" target="_blank">
+						<span class="elementor-screen-only"></span>
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" x="0px" y="0px" viewBox="0 0 551.034 551.034" style="enable-background:new 0 0 551.034 551.034;" xml:space="preserve"><g>			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.57" x2="275.517" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)">		<stop offset="0" style="stop-color:#E09B3D"></stop>		<stop offset="0.3" style="stop-color:#C74C4D"></stop>		<stop offset="0.6" style="stop-color:#C21975"></stop>		<stop offset="1" style="stop-color:#7024C4"></stop>	</linearGradient>	<path style="fill:url(#SVGID_1_);" d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722  c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156  C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156  c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722  c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z"></path>			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.57" x2="275.517" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)">		<stop offset="0" style="stop-color:#E09B3D"></stop>		<stop offset="0.3" style="stop-color:#C74C4D"></stop>		<stop offset="0.6" style="stop-color:#C21975"></stop>		<stop offset="1" style="stop-color:#7024C4"></stop>	</linearGradient>	<path style="fill:url(#SVGID_2_);" d="M275.517,133C196.933,133,133,196.933,133,275.516s63.933,142.517,142.517,142.517  S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6c-48.095,0-87.083-38.988-87.083-87.083  s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083C362.6,323.611,323.611,362.6,275.517,362.6z"></path>			<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="418.31" y1="4.57" x2="418.31" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)">		<stop offset="0" style="stop-color:#E09B3D"></stop>		<stop offset="0.3" style="stop-color:#C74C4D"></stop>		<stop offset="0.6" style="stop-color:#C21975"></stop>		<stop offset="1" style="stop-color:#7024C4"></stop>	</linearGradient>	<circle style="fill:url(#SVGID_3_);" cx="418.31" cy="134.07" r="34.15"></circle></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>					</a>
+				</span>
+					</div>
+						</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		</div>
+</div>
+		</div>
+	</div>
+</div>
+
+<div class="whb-row whb-general-header whb-not-sticky-row whb-without-bg whb-border-fullwidth whb-color-dark whb-flex-flex-middle">
+	<div class="container">
+		<div class="whb-flex-row whb-general-header-inner">
+			<div class="whb-column whb-col-left whb-visible-lg">
+	<div class="site-logo">
+	<a href="https://vipulmaheshwari.sites2.digju.in/" class="wd-logo wd-main-logo" rel="home" aria-label="Site logo">
+		<img src="https://vipulmaheshwari.sites2.digju.in/wp-content/uploads/2025/09/Group-124.png" alt="HARENEs" style="max-width: 290px;" />	</a>
+	</div>
+</div>
+<div class="whb-column whb-col-center whb-visible-lg">
+	<div class="wd-header-nav wd-header-main-nav text-center wd-design-1" role="navigation" aria-label="Main navigation">
+	<ul id="menu-main-menu" class="menu wd-nav wd-nav-main wd-style-default wd-gap-s"><li id="menu-item-3292" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-3292 item-level-0 menu-simple-dropdown wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/diamonds/" class="woodmart-nav-link"><span class="nav-link-text">Diamonds</span></a><div class="color-scheme-dark wd-design-default wd-dropdown-menu wd-dropdown"><div class="container">
+<ul class="wd-sub-menu color-scheme-dark">
+	<li id="menu-item-3294" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3294 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/diamonds/gia-certified-diamonds/" class="woodmart-nav-link">GIA Certified Diamonds</a></li>
+	<li id="menu-item-3296" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3296 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/diamonds/rosecut-diamonds/" class="woodmart-nav-link">Rosecut Diamonds</a></li>
+	<li id="menu-item-3297" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3297 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/diamonds/side-stones/" class="woodmart-nav-link">Side Stones</a></li>
+	<li id="menu-item-3295" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3295 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/diamonds/pie-cut-diamonds/" class="woodmart-nav-link">Pie Cut Diamonds</a></li>
+	<li id="menu-item-3293" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3293 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/diamonds/custom-make-shapes-sizes/" class="woodmart-nav-link">Custom Make Shapes &amp; Sizes</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li id="menu-item-3306" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-3306 item-level-0 menu-simple-dropdown wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/precious-gemstones/" class="woodmart-nav-link"><span class="nav-link-text">Precious Gemstones</span></a><div class="color-scheme-dark wd-design-default wd-dropdown-menu wd-dropdown"><div class="container">
+<ul class="wd-sub-menu color-scheme-dark">
+	<li id="menu-item-3308" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3308 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/precious-gemstones/rubies/" class="woodmart-nav-link">Rubies</a></li>
+	<li id="menu-item-3307" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3307 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/precious-gemstones/emeralds/" class="woodmart-nav-link">Emeralds</a></li>
+	<li id="menu-item-3309" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3309 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/precious-gemstones/sapphires/" class="woodmart-nav-link">Sapphires</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li id="menu-item-3310" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-3310 item-level-0 menu-simple-dropdown wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/rare-collectorsgemstones/" class="woodmart-nav-link"><span class="nav-link-text">Rare (Collector’s)Gemstones</span></a><div class="color-scheme-dark wd-design-default wd-dropdown-menu wd-dropdown"><div class="container">
+<ul class="wd-sub-menu color-scheme-dark">
+	<li id="menu-item-3313" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3313 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/rare-collectorsgemstones/bixbites-red-beryl/" class="woodmart-nav-link">Bixbites (Red Beryl)</a></li>
+	<li id="menu-item-3314" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3314 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/rare-collectorsgemstones/grandidierites/" class="woodmart-nav-link">Grandidierites</a></li>
+	<li id="menu-item-3312" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3312 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/rare-collectorsgemstones/benitoite/" class="woodmart-nav-link">Benitoite</a></li>
+	<li id="menu-item-3311" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3311 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/rare-collectorsgemstones/alexandrites/" class="woodmart-nav-link">Alexandrites</a></li>
+	<li id="menu-item-3316" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3316 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/rare-collectorsgemstones/tanzanites-rare-collectorsgemstones/" class="woodmart-nav-link">Tanzanites</a></li>
+	<li id="menu-item-3315" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3315 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/rare-collectorsgemstones/others/" class="woodmart-nav-link">Others</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li id="menu-item-3317" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-3317 item-level-0 menu-simple-dropdown wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/semi-precious-gemstones/" class="woodmart-nav-link"><span class="nav-link-text">Semi-Precious Gemstones</span></a><div class="color-scheme-dark wd-design-default wd-dropdown-menu wd-dropdown"><div class="container">
+<ul class="wd-sub-menu color-scheme-dark">
+	<li id="menu-item-3322" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3322 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/semi-precious-gemstones/tourmalines/" class="woodmart-nav-link">Tourmalines</a></li>
+	<li id="menu-item-3321" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3321 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/semi-precious-gemstones/tanzanites/" class="woodmart-nav-link">Tanzanites</a></li>
+	<li id="menu-item-3318" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3318 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/semi-precious-gemstones/aquamarines/" class="woodmart-nav-link">Aquamarines</a></li>
+	<li id="menu-item-3319" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3319 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/semi-precious-gemstones/garnets/" class="woodmart-nav-link">Garnets</a></li>
+	<li id="menu-item-3320" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3320 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/semi-precious-gemstones/rodolites/" class="woodmart-nav-link">Rodolites</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li id="menu-item-3298" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-3298 item-level-0 menu-simple-dropdown wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/fine-jewellery/" class="woodmart-nav-link"><span class="nav-link-text">Fine Jewellery</span></a><div class="color-scheme-dark wd-design-default wd-dropdown-menu wd-dropdown"><div class="container">
+<ul class="wd-sub-menu color-scheme-dark">
+	<li id="menu-item-3305" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3305 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/fine-jewellery/rings/" class="woodmart-nav-link">Rings</a></li>
+	<li id="menu-item-3302" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3302 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/fine-jewellery/earrings/" class="woodmart-nav-link">Earrings</a></li>
+	<li id="menu-item-3304" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3304 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/fine-jewellery/pendants/" class="woodmart-nav-link">Pendants</a></li>
+	<li id="menu-item-3299" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3299 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/fine-jewellery/bracelets/" class="woodmart-nav-link">Bracelets</a></li>
+	<li id="menu-item-3303" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3303 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/fine-jewellery/necklaces/" class="woodmart-nav-link">Necklaces</a></li>
+	<li id="menu-item-3300" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3300 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/fine-jewellery/brooches/" class="woodmart-nav-link">Brooches</a></li>
+	<li id="menu-item-3301" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3301 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/fine-jewellery/cufflinks/" class="woodmart-nav-link">Cufflinks</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li id="menu-item-833" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-833 item-level-0 menu-simple-dropdown wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/about-us/" class="woodmart-nav-link"><span class="nav-link-text">About Us</span></a><div class="color-scheme-dark wd-design-default wd-dropdown-menu wd-dropdown"><div class="container">
+<ul class="wd-sub-menu color-scheme-dark">
+	<li id="menu-item-1695" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1695 item-level-1 wd-event-hover" ><a href="/about-us/#1" class="woodmart-nav-link">Our Story</a></li>
+	<li id="menu-item-1696" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1696 item-level-1 wd-event-hover" ><a href="/about-us/#2" class="woodmart-nav-link">Our Values</a></li>
+	<li id="menu-item-1697" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1697 item-level-1 wd-event-hover" ><a href="/about-us/#3" class="woodmart-nav-link">Our Team</a></li>
+</ul>
+</div>
+</div>
+</li>
+</ul></div><!--END MAIN-NAV-->
+</div>
+<div class="whb-column whb-col-right whb-visible-lg">
+				<link rel="stylesheet" id="wd-woo-mod-login-form-css" href="https://vipulmaheshwari.sites2.digju.in/wp-content/themes/woodmart/css/parts/woo-mod-login-form.min.css?ver=7.5.1" type="text/css" media="all" /> 			<div class="wd-header-my-account wd-tools-element wd-event-hover wd-design-1 wd-account-style-icon login-side-opener whb-vssfpylqqax9pvkfnxoz">
+			<a href="https://vipulmaheshwari.sites2.digju.in/my-account/" title="My account">
+			
+				<span class="wd-tools-icon">
+									</span>
+				<span class="wd-tools-text">
+				Login / Register			</span>
+
+					</a>
+
+			</div>
+<div class="wd-header-search wd-tools-element wd-event-hover wd-design-1 wd-style-icon wd-display-dropdown whb-9x1ytaxq7aphtb3npidp" title="Search">
+	<a href="#" rel="nofollow" aria-label="Search">
+		
+			<span class="wd-tools-icon">
+							</span>
+
+			<span class="wd-tools-text">
+				Search			</span>
+
+			</a>
+						<div class="wd-search-dropdown wd-dropdown">
+				
+				
+				<form role="search" method="get" class="searchform  wd-cat-style-bordered woodmart-ajax-search" action="https://vipulmaheshwari.sites2.digju.in/"  data-thumbnail="1" data-price="1" data-post_type="product" data-count="20" data-sku="1" data-symbols_count="3">
+					<input type="text" class="s" placeholder="Search for products" value="" name="s" aria-label="Search" title="Search for products" required/>
+					<input type="hidden" name="post_type" value="product">
+										<button type="submit" class="searchsubmit">
+						<span>
+							Search						</span>
+											</button>
+				</form>
+
+				
+				
+									<div class="search-results-wrapper">
+						<div class="wd-dropdown-results wd-scroll wd-dropdown">
+							<div class="wd-scroll-content"></div>
+						</div>
+					</div>
+				
+				
+							</div>
+			</div>
+
+<div class="wd-header-wishlist wd-tools-element wd-style-icon wd-with-count wd-design-2 whb-a22wdkiy3r40yw2paskq" title="My Wishlist">
+	<a href="https://vipulmaheshwari.sites2.digju.in/wishlist-2/">
+		
+			<span class="wd-tools-icon">
+				
+									<span class="wd-tools-count">
+						0					</span>
+							</span>
+
+			<span class="wd-tools-text">
+				Wishlist			</span>
+
+			</a>
+</div>
+
+<div class="wd-header-cart wd-tools-element wd-design-5 cart-widget-opener wd-style-icon whb-nedhm962r512y1xz9j06">
+	<a href="https://vipulmaheshwari.sites2.digju.in/cart/" title="Shopping cart">
+		
+			<span class="wd-tools-icon wd-icon-alt">
+															<span class="wd-cart-number wd-tools-count">0 <span>items</span></span>
+									</span>
+			<span class="wd-tools-text">
+				
+										<span class="wd-cart-subtotal"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>0.00</bdi></span></span>
+					</span>
+
+			</a>
+	</div>
+</div>
+<div class="whb-column whb-mobile-left whb-hidden-lg">
+	<div class="wd-tools-element wd-header-mobile-nav wd-style-text wd-design-1 whb-g1k0m1tib7raxrwkm1t3">
+	<a href="#" rel="nofollow" aria-label="Open mobile menu">
+		
+		<span class="wd-tools-icon">
+					</span>
+
+		<span class="wd-tools-text">Menu</span>
+
+			</a>
+</div><!--END wd-header-mobile-nav--></div>
+<div class="whb-column whb-mobile-center whb-hidden-lg">
+	<div class="site-logo">
+	<a href="https://vipulmaheshwari.sites2.digju.in/" class="wd-logo wd-main-logo" rel="home" aria-label="Site logo">
+		<img src="https://vipulmaheshwari.sites2.digju.in/wp-content/uploads/2021/08/98ddd55021-vn-diamond-logo-for-light-background.png" alt="HARENEs" style="max-width: 179px;" />	</a>
+	</div>
+</div>
+<div class="whb-column whb-mobile-right whb-hidden-lg">
+	
+<div class="wd-header-cart wd-tools-element wd-design-5 cart-widget-opener whb-trk5sfmvib0ch1s1qbtc">
+	<a href="https://vipulmaheshwari.sites2.digju.in/cart/" title="Shopping cart">
+		
+			<span class="wd-tools-icon wd-icon-alt">
+															<span class="wd-cart-number wd-tools-count">0 <span>items</span></span>
+									</span>
+			<span class="wd-tools-text">
+				
+										<span class="wd-cart-subtotal"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>0.00</bdi></span></span>
+					</span>
+
+			</a>
+	</div>
+</div>
+		</div>
+	</div>
+</div>
+
+<div class="whb-row whb-header-bottom whb-not-sticky-row whb-without-bg whb-border-fullwidth whb-color-dark whb-hidden-desktop whb-hidden-mobile whb-flex-flex-middle">
+	<div class="container">
+		<div class="whb-flex-row whb-header-bottom-inner">
+			<div class="whb-column whb-col-left whb-visible-lg">
+	
+<div class="wd-header-cats wd-style-1 wd-event-hover whb-wjlcubfdmlq3d7jvmt23" role="navigation" aria-label="Header categories navigation">
+	<span class="menu-opener color-scheme-light">
+					<span class="menu-opener-icon"></span>
+		
+		<span class="menu-open-label">
+			Browse Categories		</span>
+	</span>
+	<div class="wd-dropdown wd-dropdown-cats">
+		<ul id="menu-categories" class="menu wd-nav wd-nav-vertical wd-design-default"><li id="menu-item-850" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-850 item-level-0 menu-simple-dropdown wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/diamonds/" class="woodmart-nav-link"><span class="nav-link-text">Diamonds</span></a><div class="color-scheme-dark wd-design-default wd-dropdown-menu wd-dropdown"><div class="container">
+<ul class="wd-sub-menu color-scheme-dark">
+	<li id="menu-item-851" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-851 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/diamonds/custom-make-shapes-sizes/" class="woodmart-nav-link">Custom Make Shapes &amp; Sizes</a></li>
+	<li id="menu-item-852" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-852 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/diamonds/gia-certified-diamonds/" class="woodmart-nav-link">GIA Certified Diamonds</a></li>
+	<li id="menu-item-853" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-853 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/diamonds/pie-cut-diamonds/" class="woodmart-nav-link">Pie Cut Diamonds</a></li>
+	<li id="menu-item-854" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-854 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/diamonds/rosecut-diamonds/" class="woodmart-nav-link">Rosecut Diamonds</a></li>
+	<li id="menu-item-855" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-855 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/diamonds/side-stones/" class="woodmart-nav-link">Side Stones</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li id="menu-item-856" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-856 item-level-0 menu-simple-dropdown wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/fine-jewellery/" class="woodmart-nav-link"><span class="nav-link-text">Fine Jewellery</span></a><div class="color-scheme-dark wd-design-default wd-dropdown-menu wd-dropdown"><div class="container">
+<ul class="wd-sub-menu color-scheme-dark">
+	<li id="menu-item-863" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-863 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/fine-jewellery/rings/" class="woodmart-nav-link">Rings</a></li>
+	<li id="menu-item-860" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-860 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/fine-jewellery/earrings/" class="woodmart-nav-link">Earrings</a></li>
+	<li id="menu-item-862" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-862 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/fine-jewellery/pendants/" class="woodmart-nav-link">Pendants</a></li>
+	<li id="menu-item-861" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-861 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/fine-jewellery/necklaces/" class="woodmart-nav-link">Necklaces</a></li>
+	<li id="menu-item-857" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-857 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/fine-jewellery/bracelets/" class="woodmart-nav-link">Bracelets</a></li>
+	<li id="menu-item-858" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-858 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/fine-jewellery/brooches/" class="woodmart-nav-link">Brooches</a></li>
+	<li id="menu-item-859" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-859 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/fine-jewellery/cufflinks/" class="woodmart-nav-link">Cufflinks</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li id="menu-item-864" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-864 item-level-0 menu-simple-dropdown wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/precious-gemstones/" class="woodmart-nav-link"><span class="nav-link-text">Precious Gemstones</span></a><div class="color-scheme-dark wd-design-default wd-dropdown-menu wd-dropdown"><div class="container">
+<ul class="wd-sub-menu color-scheme-dark">
+	<li id="menu-item-865" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-865 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/precious-gemstones/emeralds/" class="woodmart-nav-link">Emeralds</a></li>
+	<li id="menu-item-866" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-866 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/precious-gemstones/rubies/" class="woodmart-nav-link">Rubies</a></li>
+	<li id="menu-item-867" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-867 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/precious-gemstones/sapphires/" class="woodmart-nav-link">Sapphires</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li id="menu-item-868" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-868 item-level-0 menu-simple-dropdown wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/rare-collectorsgemstones/" class="woodmart-nav-link"><span class="nav-link-text">Rare (Collector’s)Gemstones</span></a><div class="color-scheme-dark wd-design-default wd-dropdown-menu wd-dropdown"><div class="container">
+<ul class="wd-sub-menu color-scheme-dark">
+	<li id="menu-item-869" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-869 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/rare-collectorsgemstones/alexandrites/" class="woodmart-nav-link">Alexandrites</a></li>
+	<li id="menu-item-870" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-870 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/rare-collectorsgemstones/benitoite/" class="woodmart-nav-link">Benitoite</a></li>
+	<li id="menu-item-871" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-871 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/rare-collectorsgemstones/bixbites-red-beryl/" class="woodmart-nav-link">Bixbites (Red Beryl)</a></li>
+	<li id="menu-item-872" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-872 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/rare-collectorsgemstones/grandidierites/" class="woodmart-nav-link">Grandidierites</a></li>
+	<li id="menu-item-874" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-874 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/rare-collectorsgemstones/tanzanites-rare-collectorsgemstones/" class="woodmart-nav-link">Tanzanites</a></li>
+	<li id="menu-item-873" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-873 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/rare-collectorsgemstones/others/" class="woodmart-nav-link">Others</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li id="menu-item-875" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-875 item-level-0 menu-simple-dropdown wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/semi-precious-gemstones/" class="woodmart-nav-link"><span class="nav-link-text">Semi-Precious Gemstones</span></a><div class="color-scheme-dark wd-design-default wd-dropdown-menu wd-dropdown"><div class="container">
+<ul class="wd-sub-menu color-scheme-dark">
+	<li id="menu-item-876" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-876 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/semi-precious-gemstones/aquamarines/" class="woodmart-nav-link">Aquamarines</a></li>
+	<li id="menu-item-877" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-877 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/semi-precious-gemstones/garnets/" class="woodmart-nav-link">Garnets</a></li>
+	<li id="menu-item-879" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-879 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/semi-precious-gemstones/rodolites/" class="woodmart-nav-link">Rodolites</a></li>
+	<li id="menu-item-880" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-880 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/semi-precious-gemstones/tanzanites/" class="woodmart-nav-link">Tanzanites</a></li>
+	<li id="menu-item-881" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-881 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/semi-precious-gemstones/tourmalines/" class="woodmart-nav-link">Tourmalines</a></li>
+</ul>
+</div>
+</div>
+</li>
+</ul>	</div>
+</div>
+</div>
+<div class="whb-column whb-col-center whb-visible-lg">
+	<div class="wd-header-nav wd-header-main-nav text-left wd-design-1" role="navigation" aria-label="Main navigation">
+	<ul id="menu-main-menu-1" class="menu wd-nav wd-nav-main wd-style-default wd-gap-s"><li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-3292 item-level-0 menu-simple-dropdown wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/diamonds/" class="woodmart-nav-link"><span class="nav-link-text">Diamonds</span></a><div class="color-scheme-dark wd-design-default wd-dropdown-menu wd-dropdown"><div class="container">
+<ul class="wd-sub-menu color-scheme-dark">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3294 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/diamonds/gia-certified-diamonds/" class="woodmart-nav-link">GIA Certified Diamonds</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3296 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/diamonds/rosecut-diamonds/" class="woodmart-nav-link">Rosecut Diamonds</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3297 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/diamonds/side-stones/" class="woodmart-nav-link">Side Stones</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3295 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/diamonds/pie-cut-diamonds/" class="woodmart-nav-link">Pie Cut Diamonds</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3293 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/diamonds/custom-make-shapes-sizes/" class="woodmart-nav-link">Custom Make Shapes &amp; Sizes</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-3306 item-level-0 menu-simple-dropdown wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/precious-gemstones/" class="woodmart-nav-link"><span class="nav-link-text">Precious Gemstones</span></a><div class="color-scheme-dark wd-design-default wd-dropdown-menu wd-dropdown"><div class="container">
+<ul class="wd-sub-menu color-scheme-dark">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3308 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/precious-gemstones/rubies/" class="woodmart-nav-link">Rubies</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3307 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/precious-gemstones/emeralds/" class="woodmart-nav-link">Emeralds</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3309 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/precious-gemstones/sapphires/" class="woodmart-nav-link">Sapphires</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-3310 item-level-0 menu-simple-dropdown wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/rare-collectorsgemstones/" class="woodmart-nav-link"><span class="nav-link-text">Rare (Collector’s)Gemstones</span></a><div class="color-scheme-dark wd-design-default wd-dropdown-menu wd-dropdown"><div class="container">
+<ul class="wd-sub-menu color-scheme-dark">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3313 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/rare-collectorsgemstones/bixbites-red-beryl/" class="woodmart-nav-link">Bixbites (Red Beryl)</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3314 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/rare-collectorsgemstones/grandidierites/" class="woodmart-nav-link">Grandidierites</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3312 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/rare-collectorsgemstones/benitoite/" class="woodmart-nav-link">Benitoite</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3311 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/rare-collectorsgemstones/alexandrites/" class="woodmart-nav-link">Alexandrites</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3316 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/rare-collectorsgemstones/tanzanites-rare-collectorsgemstones/" class="woodmart-nav-link">Tanzanites</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3315 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/rare-collectorsgemstones/others/" class="woodmart-nav-link">Others</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-3317 item-level-0 menu-simple-dropdown wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/semi-precious-gemstones/" class="woodmart-nav-link"><span class="nav-link-text">Semi-Precious Gemstones</span></a><div class="color-scheme-dark wd-design-default wd-dropdown-menu wd-dropdown"><div class="container">
+<ul class="wd-sub-menu color-scheme-dark">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3322 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/semi-precious-gemstones/tourmalines/" class="woodmart-nav-link">Tourmalines</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3321 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/semi-precious-gemstones/tanzanites/" class="woodmart-nav-link">Tanzanites</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3318 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/semi-precious-gemstones/aquamarines/" class="woodmart-nav-link">Aquamarines</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3319 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/semi-precious-gemstones/garnets/" class="woodmart-nav-link">Garnets</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3320 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/semi-precious-gemstones/rodolites/" class="woodmart-nav-link">Rodolites</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-3298 item-level-0 menu-simple-dropdown wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/fine-jewellery/" class="woodmart-nav-link"><span class="nav-link-text">Fine Jewellery</span></a><div class="color-scheme-dark wd-design-default wd-dropdown-menu wd-dropdown"><div class="container">
+<ul class="wd-sub-menu color-scheme-dark">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3305 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/fine-jewellery/rings/" class="woodmart-nav-link">Rings</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3302 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/fine-jewellery/earrings/" class="woodmart-nav-link">Earrings</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3304 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/fine-jewellery/pendants/" class="woodmart-nav-link">Pendants</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3299 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/fine-jewellery/bracelets/" class="woodmart-nav-link">Bracelets</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3303 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/fine-jewellery/necklaces/" class="woodmart-nav-link">Necklaces</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3300 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/fine-jewellery/brooches/" class="woodmart-nav-link">Brooches</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3301 item-level-1 wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/product-category/fine-jewellery/cufflinks/" class="woodmart-nav-link">Cufflinks</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-833 item-level-0 menu-simple-dropdown wd-event-hover" ><a href="https://vipulmaheshwari.sites2.digju.in/about-us/" class="woodmart-nav-link"><span class="nav-link-text">About Us</span></a><div class="color-scheme-dark wd-design-default wd-dropdown-menu wd-dropdown"><div class="container">
+<ul class="wd-sub-menu color-scheme-dark">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1695 item-level-1 wd-event-hover" ><a href="/about-us/#1" class="woodmart-nav-link">Our Story</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1696 item-level-1 wd-event-hover" ><a href="/about-us/#2" class="woodmart-nav-link">Our Values</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1697 item-level-1 wd-event-hover" ><a href="/about-us/#3" class="woodmart-nav-link">Our Team</a></li>
+</ul>
+</div>
+</div>
+</li>
+</ul></div><!--END MAIN-NAV-->
+</div>
+<div class="whb-column whb-col-right whb-visible-lg">
+	
+<div class="wd-header-text set-cont-mb-s reset-last-child "><ul class="inline-list inline-list-with-border main-nav-style"><li><a class="color-primary" href="https://woodmart.xtemos.com/shop/">SPECIAL OFFER</a></li><li><a href="https://themeforest.net/item/woodmart-woocommerce-wordpress-theme/20264492?ref=xtemos" target="_blank" rel="noopener">PURCHASE THEME</a></li></ul></div>
+</div>
+<div class="whb-column whb-col-mobile whb-hidden-lg whb-empty-column">
+	</div>
+		</div>
+	</div>
+</div>
+</div>
+				</header>
+			
+								<div class="main-page-wrapper">
+		
+						<div class="page-title  page-title-default title-size-large title-design-centered color-scheme-light" style="">
+					<div class="container">
+																					<h1 class="entry-title title">
+									Expertise								</h1>
+
+															
+																		</div>
+				</div>
+			
+		<!-- MAIN CONTENT AREA -->
+				<div class="container">
+			<div class="row content-layout-wrapper align-items-start">
+						<div data-elementor-type="wp-page" data-elementor-id="839" class="elementor elementor-839" data-elementor-post-type="page">
+				<div class="elementor-element elementor-element-64fac57 wd-section-stretch-content e-flex e-con-boxed e-con e-parent" data-id="64fac57" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-b62a98d elementor-headline--style-rotate elementor-widget elementor-widget-animated-headline" data-id="b62a98d" data-element_type="widget" data-settings="{&quot;headline_style&quot;:&quot;rotate&quot;,&quot;animation_type&quot;:&quot;swirl&quot;,&quot;rotating_text&quot;:&quot;Our Expertise\nOur Expertise&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;rotate_iteration_delay&quot;:2500}" data-widget_type="animated-headline.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-headline elementor-headline-animation-type-swirl elementor-headline-letters">
+				<span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
+					<span class="elementor-headline-dynamic-text elementor-headline-text-active">
+				Our&nbsp;Expertise			</span>
+					<span class="elementor-headline-dynamic-text">
+				Our&nbsp;Expertise			</span>
+						</span>
+				</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-02ae27a elementor-widget__width-inherit elementor-invisible elementor-widget elementor-widget-heading" data-id="02ae27a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Expertise You Can Treasure</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-8022646 elementor-widget__width-inherit color-scheme-inherit text-left elementor-invisible elementor-widget elementor-widget-text-editor" data-id="8022646" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>At HARENEs, expertise is more than a word — it’s a legacy of trust, precision, and craftsmanship.
+Global Sourcing
+We source the world’s most exquisite diamonds and gemstones directly from their origins, ensuring authenticity and unmatched quality.
+Diamonds
+</path><path d="m18.75 27.64h-14.63a5.05788 5.05788 0 0 0 1.03 2.17l22.61 28-.11-.37z"></path><path d="m36.35 57.43c-.98264 1.86308 22.70053-28.06874 22.50014-27.61978a5.20013 5.20013 0 0 0 1.03986-2.17022h-14.64z"></path><path d="m52.2 14.58a5.20668 5.20668 0 0 0 -4.11-2.03h-6.54a1.45661 1.45661 0 0 1 .07.19l3.64 12.9h14.65a5.10194 5.10194 0 0 0 -.97-2.2z"></path><path d="m20.84 27.64 8.73 29.22.71 2.36c.22251.75585 1.06663.76723 1.72.78.65308-.01268 1.4978-.02375 1.71995-.78l.71-2.36 8.73-29.22z"></path><path d="m43.17 25.64c-.20577-.74322-3.36719-11.96569-3.48-12.36a.99613.99613 0 0 0 -.96-.73h-13.46c-1.00933-.03975-1.08361 1.3142-1.32 2l-3.12 11.09z"></path><path d="m17.2 52.02a6.64716 6.64716 0 0 1 -5.22-5.22 1.00023 1.00023 0 0 0 -1.96 0 6.64716 6.64716 0 0 1 -5.22 5.22 1.00395 1.00395 0 0 0 0 1.96 6.64731 6.64731 0 0 1 5.22 5.22 1.00023 1.00023 0 0 0 1.96 0 6.64731 6.64731 0 0 1 5.22-5.22 1.004 1.004 0 0 0 0-1.96z"></path><path d="m50.8 9.98a4.10461 4.10461 0 0 1 3.22 3.22 1.00023 1.00023 0 0 0 1.96 0 4.10461 4.10461 0 0 1 3.22-3.22 1.00392 1.00392 0 0 0 0-1.96 4.10447 4.10447 0 0 1 -3.22-3.22 1.00023 1.00023 0 0 0 -1.96 0 4.10447 4.10447 0 0 1 -3.22 3.22 1.00393 1.00393 0 0 0 0 1.96z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Mumbai</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" id="Glyph" height="512" viewBox="0 0 64 64" width="512"><path d="m22.39 12.73c.02-.06.03-.12.05-.18h-6.53a5.20668 5.20668 0 0 0 -4.11 2.03l-6.74 8.86a5.10194 5.10194 0 0 0 -.97 2.2h14.65z"></path><path d="m18.75 27.64h-14.63a5.05788 5.05788 0 0 0 1.03 2.17l22.61 28-.11-.37z"></path><path d="m36.35 57.43c-.98264 1.86308 22.70053-28.06874 22.50014-27.61978a5.20013 5.20013 0 0 0 1.03986-2.17022h-14.64z"></path><path d="m52.2 14.58a5.20668 5.20668 0 0 0 -4.11-2.03h-6.54a1.45661 1.45661 0 0 1 .07.19l3.64 12.9h14.65a5.10194 5.10194 0 0 0 -.97-2.2z"></path><path d="m20.84 27.64 8.73 29.22.71 2.36c.22251.75585 1.06663.76723 1.72.78.65308-.01268 1.4978-.02375 1.71995-.78l.71-2.36 8.73-29.22z"></path><path d="m43.17 25.64c-.20577-.74322-3.36719-11.96569-3.48-12.36a.99613.99613 0 0 0 -.96-.73h-13.46c-1.00933-.03975-1.08361 1.3142-1.32 2l-3.12 11.09z"></path><path d="m17.2 52.02a6.64716 6.64716 0 0 1 -5.22-5.22 1.00023 1.00023 0 0 0 -1.96 0 6.64716 6.64716 0 0 1 -5.22 5.22 1.00395 1.00395 0 0 0 0 1.96 6.64731 6.64731 0 0 1 5.22 5.22 1.00023 1.00023 0 0 0 1.96 0 6.64731 6.64731 0 0 1 5.22-5.22 1.004 1.004 0 0 0 0-1.96z"></path><path d="m50.8 9.98a4.10461 4.10461 0 0 1 3.22 3.22 1.00023 1.00023 0 0 0 1.96 0 4.10461 4.10461 0 0 1 3.22-3.22 1.00392 1.00392 0 0 0 0-1.96 4.10447 4.10447 0 0 1 -3.22-3.22 1.00023 1.00023 0 0 0 -1.96 0 4.10447 4.10447 0 0 1 -3.22 3.22 1.00393 1.00393 0 0 0 0 1.96z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Surat</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" id="Glyph" height="512" viewBox="0 0 64 64" width="512"><path d="m22.39 12.73c.02-.06.03-.12.05-.18h-6.53a5.20668 5.20668 0 0 0 -4.11 2.03l-6.74 8.86a5.10194 5.10194 0 0 0 -.97 2.2h14.65z"></path><path d="m18.75 27.64h-14.63a5.05788 5.05788 0 0 0 1.03 2.17l22.61 28-.11-.37z"></path><path d="m36.35 57.43c-.98264 1.86308 22.70053-28.06874 22.50014-27.61978a5.20013 5.20013 0 0 0 1.03986-2.17022h-14.64z"></path><path d="m52.2 14.58a5.20668 5.20668 0 0 0 -4.11-2.03h-6.54a1.45661 1.45661 0 0 1 .07.19l3.64 12.9h14.65a5.10194 5.10194 0 0 0 -.97-2.2z"></path><path d="m20.84 27.64 8.73 29.22.71 2.36c.22251.75585 1.06663.76723 1.72.78.65308-.01268 1.4978-.02375 1.71995-.78l.71-2.36 8.73-29.22z"></path><path d="m43.17 25.64c-.20577-.74322-3.36719-11.96569-3.48-12.36a.99613.99613 0 0 0 -.96-.73h-13.46c-1.00933-.03975-1.08361 1.3142-1.32 2l-3.12 11.09z"></path><path d="m17.2 52.02a6.64716 6.64716 0 0 1 -5.22-5.22 1.00023 1.00023 0 0 0 -1.96 0 6.64716 6.64716 0 0 1 -5.22 5.22 1.00395 1.00395 0 0 0 0 1.96 6.64731 6.64731 0 0 1 5.22 5.22 1.00023 1.00023 0 0 0 1.96 0 6.64731 6.64731 0 0 1 5.22-5.22 1.004 1.004 0 0 0 0-1.96z"></path><path d="m50.8 9.98a4.10461 4.10461 0 0 1 3.22 3.22 1.00023 1.00023 0 0 0 1.96 0 4.10461 4.10461 0 0 1 3.22-3.22 1.00392 1.00392 0 0 0 0-1.96 4.10447 4.10447 0 0 1 -3.22-3.22 1.00023 1.00023 0 0 0 -1.96 0 4.10447 4.10447 0 0 1 -3.22 3.22 1.00393 1.00393 0 0 0 0 1.96z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Hong Kong</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" id="Glyph" height="512" viewBox="0 0 64 64" width="512"><path d="m22.39 12.73c.02-.06.03-.12.05-.18h-6.53a5.20668 5.20668 0 0 0 -4.11 2.03l-6.74 8.86a5.10194 5.10194 0 0 0 -.97 2.2h14.65z"></path><path d="m18.75 27.64h-14.63a5.05788 5.05788 0 0 0 1.03 2.17l22.61 28-.11-.37z"></path><path d="m36.35 57.43c-.98264 1.86308 22.70053-28.06874 22.50014-27.61978a5.20013 5.20013 0 0 0 1.03986-2.17022h-14.64z"></path><path d="m52.2 14.58a5.20668 5.20668 0 0 0 -4.11-2.03h-6.54a1.45661 1.45661 0 0 1 .07.19l3.64 12.9h14.65a5.10194 5.10194 0 0 0 -.97-2.2z"></path><path d="m20.84 27.64 8.73 29.22.71 2.36c.22251.75585 1.06663.76723 1.72.78.65308-.01268 1.4978-.02375 1.71995-.78l.71-2.36 8.73-29.22z"></path><path d="m43.17 25.64c-.20577-.74322-3.36719-11.96569-3.48-12.36a.99613.99613 0 0 0 -.96-.73h-13.46c-1.00933-.03975-1.08361 1.3142-1.32 2l-3.12 11.09z"></path><path d="m17.2 52.02a6.64716 6.64716 0 0 1 -5.22-5.22 1.00023 1.00023 0 0 0 -1.96 0 6.64716 6.64716 0 0 1 -5.22 5.22 1.00395 1.00395 0 0 0 0 1.96 6.64731 6.64731 0 0 1 5.22 5.22 1.00023 1.00023 0 0 0 1.96 0 6.64731 6.64731 0 0 1 5.22-5.22 1.004 1.004 0 0 0 0-1.96z"></path><path d="m50.8 9.98a4.10461 4.10461 0 0 1 3.22 3.22 1.00023 1.00023 0 0 0 1.96 0 4.10461 4.10461 0 0 1 3.22-3.22 1.00392 1.00392 0 0 0 0-1.96 4.10447 4.10447 0 0 1 -3.22-3.22 1.00023 1.00023 0 0 0 -1.96 0 4.10447 4.10447 0 0 1 -3.22 3.22 1.00393 1.00393 0 0 0 0 1.96z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Israel</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" id="Glyph" height="512" viewBox="0 0 64 64" width="512"><path d="m22.39 12.73c.02-.06.03-.12.05-.18h-6.53a5.20668 5.20668 0 0 0 -4.11 2.03l-6.74 8.86a5.10194 5.10194 0 0 0 -.97 2.2h14.65z"></path><path d="m18.75 27.64h-14.63a5.05788 5.05788 0 0 0 1.03 2.17l22.61 28-.11-.37z"></path><path d="m36.35 57.43c-.98264 1.86308 22.70053-28.06874 22.50014-27.61978a5.20013 5.20013 0 0 0 1.03986-2.17022h-14.64z"></path><path d="m52.2 14.58a5.20668 5.20668 0 0 0 -4.11-2.03h-6.54a1.45661 1.45661 0 0 1 .07.19l3.64 12.9h14.65a5.10194 5.10194 0 0 0 -.97-2.2z"></path><path d="m20.84 27.64 8.73 29.22.71 2.36c.22251.75585 1.06663.76723 1.72.78.65308-.01268 1.4978-.02375 1.71995-.78l.71-2.36 8.73-29.22z"></path><path d="m43.17 25.64c-.20577-.74322-3.36719-11.96569-3.48-12.36a.99613.99613 0 0 0 -.96-.73h-13.46c-1.00933-.03975-1.08361 1.3142-1.32 2l-3.12 11.09z"></path><path d="m17.2 52.02a6.64716 6.64716 0 0 1 -5.22-5.22 1.00023 1.00023 0 0 0 -1.96 0 6.64716 6.64716 0 0 1 -5.22 5.22 1.00395 1.00395 0 0 0 0 1.96 6.64731 6.64731 0 0 1 5.22 5.22 1.00023 1.00023 0 0 0 1.96 0 6.64731 6.64731 0 0 1 5.22-5.22 1.004 1.004 0 0 0 0-1.96z"></path><path d="m50.8 9.98a4.10461 4.10461 0 0 1 3.22 3.22 1.00023 1.00023 0 0 0 1.96 0 4.10461 4.10461 0 0 1 3.22-3.22 1.00392 1.00392 0 0 0 0-1.96 4.10447 4.10447 0 0 1 -3.22-3.22 1.00023 1.00023 0 0 0 -1.96 0 4.10447 4.10447 0 0 1 -3.22 3.22 1.00393 1.00393 0 0 0 0 1.96z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Belgium</span>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<span class="elementor-icon-list-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" id="Glyph" height="512" viewBox="0 0 64 64" width="512"><path d="m22.39 12.73c.02-.06.03-.12.05-.18h-6.53a5.20668 5.20668 0 0 0 -4.11 2.03l-6.74 8.86a5.10194 5.10194 0 0 0 -.97 2.2h14.65z"></path><path d="m18.75 27.64h-14.63a5.05788 5.05788 0 0 0 1.03 2.17l22.61 28-.11-.37z"></path><path d="m36.35 57.43c-.98264 1.86308 22.70053-28.06874 22.50014-27.61978a5.20013 5.20013 0 0 0 1.03986-2.17022h-14.64z"></path><path d="m52.2 14.58a5.20668 5.20668 0 0 0 -4.11-2.03h-6.54a1.45661 1.45661 0 0 1 .07.19l3.64 12.9h14.65a5.10194 5.10194 0 0 0 -.97-2.2z"></path><path d="m20.84 27.64 8.73 29.22.71 2.36c.22251.75585 1.06663.76723 1.72.78.65308-.01268 1.4978-.02375 1.71995-.78l.71-2.36 8.73-29.22z"></path><path d="m43.17 25.64c-.20577-.74322-3.36719-11.96569-3.48-12.36a.99613.99613 0 0 0 -.96-.73h-13.46c-1.00933-.03975-1.08361 1.3142-1.32 2l-3.12 11.09z"></path><path d="m17.2 52.02a6.64716 6.64716 0 0 1 -5.22-5.22 1.00023 1.00023 0 0 0 -1.96 0 6.64716 6.64716 0 0 1 -5.22 5.22 1.00395 1.00395 0 0 0 0 1.96 6.64731 6.64731 0 0 1 5.22 5.22 1.00023 1.00023 0 0 0 1.96 0 6.64731 6.64731 0 0 1 5.22-5.22 1.004 1.004 0 0 0 0-1.96z"></path><path d="m50.8 9.98a4.10461 4.10461 0 0 1 3.22 3.22 1.00023 1.00023 0 0 0 1.96 0 4.10461 4.10461 0 0 1 3.22-3.22 1.00392 1.00392 0 0 0 0-1.96 4.10447 4.10447 0 0 1 -3.22-3.22 1.00023 1.00023 0 0 0 -1.96 0 4.10447 4.10447 0 0 1 -3.22 3.22 1.00393 1.00393 0 0 0 0 1.96z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">USA</span>
+									</li>
+						</ul>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-94549fa elementor-widget__width-inherit elementor-invisible elementor-widget elementor-widget-heading" data-id="94549fa" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Other Gemstones</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-4044a02 elementor-widget__width-inherit color-scheme-inherit text-left elementor-invisible elementor-widget elementor-widget-text-editor" data-id="4044a02" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<ul><li data-start="666" data-end="720"><p data-start="668" data-end="720"><strong data-start="668" data-end="678">Rubies</strong> → Myanmar (Burma), Mozambique, Thailand
+<strong data-start="723" data-end="735">Emeralds</strong> → Colombia, Zambia
+<strong data-start="759" data-end="772">Sapphires</strong> → Kashmir, Myanmar (Burma), Sri Lanka (Ceylon), Madagascar
+<strong data-start="836" data-end="847">Spinels</strong> → Burma, Vietnam, Tanzania
+</path><path d="m25 10a3 3 0 0 1 -3-3v-5h-11a3 3 0 0 0 -3 3v3a8 8 0 0 1 6 13.27v7.73a2.81 2.81 0 0 1 -.18 1h13.18a3 3 0 0 0 3-3v-17zm-10-1a1 1 0 0 1 1-1h3a1 1 0 0 1 0 2h-3a1 1 0 0 1 -1-1zm10 16h-8a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2zm0-5h-6a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zm0-5h-6a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2z"></path><path d="m4 22.92v6.08a1 1 0 0 0 .62.92 1 1 0 0 0 1.09-.21l2.29-2.3 2.29 2.3a1 1 0 0 0 .71.29.84.84 0 0 0 .38-.08 1 1 0 0 0 .62-.92v-6.08a7.95 7.95 0 0 1 -8 0z"></path><circle cx="8" cy="16" r="6"></circle></g></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Grading Reports						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Every stone is accompanied by trusted grading reports, offering transparency and assurance of quality.
+</path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Quality Control						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Each piece undergoes meticulous checks at every stage to ensure perfection.
+Designing &amp; Craftsmanship
+Production Excellence
+At HARENEs, production is where precision meets passion. Our skilled artisans and state-of-the-art facilities transform responsibly sourced stones into finished masterpieces through careful planning, meticulous setting, and exacting quality checks. Every piece is finished, polished, and inspected to ensure it meets our highest standards of beauty, durability, and value.
+After-Sales Service
+Our relationship doesn’t end with a purchase — we provide lifelong care for your jewellery
+</path><path d="m21.86 11.188a3.84 3.84 0 1 0 3.841 3.84 3.844 3.844 0 0 0 -3.841-3.84z"></path><path d="m27.5 13.524a18.736 18.736 0 0 1 2.955-1.084 6.475 6.475 0 0 1 -1.316-3.862 23.183 23.183 0 0 0 -4.073 1.573 5.858 5.858 0 0 1 2.434 3.373z"></path><path d="m59.238 31.232a23.564 23.564 0 0 0 -4.47-13.795 5.873 5.873 0 0 1 -2.937 2.921 19.237 19.237 0 0 1 3.323 10.874 19.528 19.528 0 0 1 -19.506 19.507 19.216 19.216 0 0 1 -7.365-1.451v4.336a23.541 23.541 0 0 0 30.955-22.392z"></path><path d="m35.648 48.739a17.526 17.526 0 0 0 17.506-17.507 17.261 17.261 0 0 0 -3.431-10.378c-.089.005-.178.014-.269.014a5.846 5.846 0 0 1 -5.8-5.187 17.063 17.063 0 0 0 -4.593-1.6 6.461 6.461 0 0 1 -6.808 0 16.692 16.692 0 0 0 -4.59 1.6 5.846 5.846 0 0 1 -5.8 5.187c-.091 0-.179-.009-.269-.014a17.231 17.231 0 0 0 -3.335 8.673h9.027a1 1 0 0 1 1 1v16.578a17.226 17.226 0 0 0 7.362 1.634z"></path><path d="m4.762 60h21.521v-5.581c0-.01 0-.02 0-.03v-22.862h-9.083c-.006 0-.012 0-.019 0h-.037-.015-6.013c-.007 0-.012 0-.019 0h-.028-.015-6.292zm11.207-23.077h6.471a1 1 0 0 1 0 2h-6.471a1 1 0 0 1 0-2zm0 8.3h6.471a1 1 0 0 1 0 2h-6.471a1 1 0 0 1 0-2zm0 8.3h6.471a1 1 0 0 1 0 2h-6.471a1 1 0 1 1 0-2zm-8.069-16.763a1 1 0 0 1 1.415 0l.8.8 2.311-2.31a1 1 0 1 1 1.414 1.414l-3.02 3.018a1 1 0 0 1 -1.414 0l-1.506-1.508a1 1 0 0 1 0-1.414zm0 8.3a1 1 0 0 1 1.415 0l.8.8 2.311-2.31a1 1 0 1 1 1.414 1.414l-3.02 3.015a1 1 0 0 1 -1.414 0l-1.506-1.508a1 1 0 0 1 0-1.414zm0 8.3a1 1 0 0 1 1.415 0l.8.8 2.311-2.31a1 1 0 1 1 1.414 1.414l-3.02 3.012a1 1 0 0 1 -1.414 0l-1.506-1.508a1 1 0 0 1 0-1.414z"></path><circle cx="49.454" cy="15.028" r="3.84"></circle><circle cx="35.657" cy="8.523" r="4.523"></circle><path d="m46.251 10.151a23.183 23.183 0 0 0 -4.073-1.573 6.477 6.477 0 0 1 -1.32 3.866 19.032 19.032 0 0 1 2.96 1.081 5.851 5.851 0 0 1 2.433-3.374z"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Free Cleaning						</span>
+					</h3>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-22b8467 e-con-full e-flex e-con e-child" data-id="22b8467" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-0cf1a55 elementor-view-default elementor-position-top elementor-widget elementor-widget-icon-box" data-id="0cf1a55" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" height="512" viewBox="0 0 24 24" width="512" data-name="Layer 1"><path d="m12 1a11 11 0 1 0 11 11 10.994 10.994 0 0 0 -11-11zm5.72 8.57-6 6.25a1 1 0 0 1 -.72.3.988.988 0 0 1 -.63-.22l-4-3.25a1 1 0 1 1 1.26-1.55l3.29 2.67 5.36-5.59a1 1 0 1 1 1.44 1.39z"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Regular Check-Ups						</span>
+					</h3>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-9e727cd e-con-full e-flex e-con e-child" data-id="9e727cd" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-b1c6efb elementor-view-default elementor-position-top elementor-widget elementor-widget-icon-box" data-id="b1c6efb" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" height="512" viewBox="0 0 512 512" width="512" data-name="Layer 1"><path d="m100 0h312a100.193 100.193 0 0 1 100 100v312a100.193 100.193 0 0 1 -100 100h-312a100.193 100.193 0 0 1 -100-100v-312a100.193 100.193 0 0 1 100-100zm6 387.251a18.754 18.754 0 0 0 18.75 18.749h98.133a18.751 18.751 0 1 0 0-37.5h-52.865l69.8-69.8a18.752 18.752 0 0 0 -26.518-26.523l-69.8 69.81v-52.87a18.751 18.751 0 0 0 -37.5 0zm300-262.5a18.755 18.755 0 0 0 -18.75-18.751h-98.133a18.751 18.751 0 1 0 0 37.5h52.87l-69.81 69.8a18.753 18.753 0 0 0 26.523 26.523l69.8-69.81v52.871a18.751 18.751 0 0 0 37.5 0z" fill-rule="evenodd"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Re-Sizing						</span>
+					</h3>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-e06c7f5 e-con-full e-flex e-con e-child" data-id="e06c7f5" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-ffc4b5e elementor-view-default elementor-position-top elementor-widget elementor-widget-icon-box" data-id="ffc4b5e" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 100 100"><path d="m79.438446 55.3708191c-25.9878387 4.2735596-30.6078987 9.7021255-34.0729446 41.3495407-.1155014 1.0395203-1.6170235 1.0395203-1.7325249 0-3.4650459-31.6474152-8.0851059-36.9604836-34.0729446-41.3495407-1.0395136-.1154976-1.0395136-1.6170235 0-1.7325211 25.9878387-4.2735558 30.6078987-9.5866241 34.0729446-41.2340431.1155014-1.0395136 1.6170235-1.0395136 1.7325249 0 3.4650459 31.647419 8.0851059 36.844986 34.0729446 41.2340431.9240189.1154976.9240189 1.5015183 0 1.7325211z"></path><path d="m90.5265961 18.8723392c-8.0851059 1.6170216-10.395134 4.2735577-11.7811508 13.7446804-.1154938 1.0395164-1.6170197 1.0395164-1.7325211 0-1.3860168-9.4711246-3.6960449-12.1276588-11.7811508-13.8601818-.9240112-.2310028-.9240112-1.5015182 0-1.732523 7.9695969-1.6170206 10.395134-4.2735567 11.7811508-13.7446804.1155014-1.0395133 1.6170273-1.0395133 1.7325211 0 1.3860168 9.4711227 3.6960449 12.1276588 11.7811508 13.8601818.9240112.2310029.9240112 1.6170216 0 1.732523z"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Re-Polishing						</span>
+					</h3>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+					</div><!-- .main-page-wrapper --> 
+			</div> <!-- end row -->
+	</div> <!-- end container -->
+
+					<div class="wd-prefooter">
+			<div class="container">
+																</div>
+		</div>
+	
+			<footer class="footer-container color-scheme-dark">
+																<div class="container main-footer">
+									<link rel="stylesheet" id="elementor-post-790-css" href="https://vipulmaheshwari.sites2.digju.in/wp-content/uploads/elementor/css/post-790.css?ver=1766472447" type="text/css" media="all">
+					<div data-elementor-type="wp-post" data-elementor-id="790" class="elementor elementor-790" data-elementor-post-type="cms_block">
+				<div class="elementor-element elementor-element-3b4e855 wd-section-stretch-content e-flex e-con-boxed e-con e-parent" data-id="3b4e855" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-412ebe5 e-con-full elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile e-flex e-con e-child" data-id="412ebe5" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+		<div class="elementor-element elementor-element-024a830 e-con-full e-flex e-con e-child" data-id="024a830" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-0a28bd4 elementor-widget elementor-widget-wd_banner" data-id="0a28bd4" data-element_type="widget" data-widget_type="wd_banner.default">
+				<div class="elementor-widget-container">
+							<div class="promo-banner-wrapper">
+			<div class="promo-banner banner-mask banner-hover-zoom color-scheme- banner-btn-size-default banner-btn-style-default banner-increased-padding">
+				<div class="main-wrapp-img">
+					<div class="banner-image">
+													<video src="https://vipulmaheshwari.sites2.digju.in/wp-content/uploads/2025/10/0.39-FVOY-2-1.mp4" autoplay muted loop playsinline></video>
+											</div>
+				</div>
+
+				<div class="wrapper-content-banner wd-fill wd-items-bottom wd-justify-left">
+					<div class="content-banner  text-left">
+													<div class="banner-subtitle subtitle-style-default wd-fontsize-xs" data-elementor-setting-key="subtitle">
+								MADE FOR YOU							</div>
+						
+													<h4 class="banner-title wd-fontsize-l" data-elementor-setting-key="title">
+								Timeless Style							</h4>
+						
+						
+						
+											</div>
+				</div>
+
+							</div>
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-90d0039 e-con-full e-flex e-con e-child" data-id="90d0039" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-98713c0 elementor-widget elementor-widget-wd_banner" data-id="98713c0" data-element_type="widget" data-widget_type="wd_banner.default">
+				<div class="elementor-widget-container">
+							<div class="promo-banner-wrapper">
+			<div class="promo-banner banner-mask banner-hover-zoom color-scheme- banner-btn-size-default banner-btn-style-default">
+				<div class="main-wrapp-img">
+					<div class="banner-image">
+																					<img width="1920" height="1034" src="https://vipulmaheshwari.sites2.digju.in/wp-content/uploads/2025/09/Frame-317.jpg" class="attachment-full size-full" alt="" decoding="async" srcset="https://vipulmaheshwari.sites2.digju.in/wp-content/uploads/2025/09/Frame-317.jpg 1920w, https://vipulmaheshwari.sites2.digju.in/wp-content/uploads/2025/09/Frame-317-300x162.jpg 300w, https://vipulmaheshwari.sites2.digju.in/wp-content/uploads/2025/09/Frame-317-1024x551.jpg 1024w, https://vipulmaheshwari.sites2.digju.in/wp-content/uploads/2025/09/Frame-317-768x414.jpg 768w, https://vipulmaheshwari.sites2.digju.in/wp-content/uploads/2025/09/Frame-317-1536x827.jpg 1536w, https://vipulmaheshwari.sites2.digju.in/wp-content/uploads/2025/09/Frame-317-1200x646.jpg 1200w, https://vipulmaheshwari.sites2.digju.in/wp-content/uploads/2025/09/Frame-317-150x81.jpg 150w" sizes="(max-width: 1920px) 100vw, 1920px" />																		</div>
+				</div>
+
+				<div class="wrapper-content-banner wd-fill wd-items-bottom wd-justify-left">
+					<div class="content-banner  text-left">
+													<div class="banner-subtitle subtitle-style-default wd-fontsize-xs" data-elementor-setting-key="subtitle">
+								LATEST TREND<br />
+							</div>
+						
+													<h4 class="banner-title wd-fontsize-l" data-elementor-setting-key="title">
+								Unique Collections							</h4>
+						
+						
+						
+											</div>
+				</div>
+
+							</div>
+		</div>
+						</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-31e76fc e-con-full e-flex e-con e-child" data-id="31e76fc" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+		<div class="elementor-element elementor-element-b95c9c3 e-con-full e-flex e-con e-child" data-id="b95c9c3" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-3cb4bff elementor-widget elementor-widget-heading" data-id="3cb4bff" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Quick Links</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-523f398 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="523f398" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="/">
+
+											<span class="elementor-icon-list-text">Home</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://vipulmaheshwari.sites2.digju.in/our-services/">
+
+											<span class="elementor-icon-list-text">Our Services</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://vipulmaheshwari.sites2.digju.in/csr/">
+
+											<span class="elementor-icon-list-text">CSR</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://vipulmaheshwari.sites2.digju.in/expertise/">
+
+											<span class="elementor-icon-list-text">Expertise</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://vipulmaheshwari.sites2.digju.in/care-instructions/">
+
+											<span class="elementor-icon-list-text">Care Instructions</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://vipulmaheshwari.sites2.digju.in/education/">
+
+											<span class="elementor-icon-list-text">Education</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://vipulmaheshwari.sites2.digju.in/contact-us/">
+
+											<span class="elementor-icon-list-text">Contact Us</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://vipulmaheshwari.sites2.digju.in/size-guide/">
+
+											<span class="elementor-icon-list-text">Size Guide</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-7078be7 e-con-full e-flex e-con e-child" data-id="7078be7" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-1fb6eaf elementor-widget elementor-widget-heading" data-id="1fb6eaf" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Our Offerings</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-da07e73 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="da07e73" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="https://vipulmaheshwari.sites2.digju.in/product-category/diamonds/">
+
+											<span class="elementor-icon-list-text">Diamonds</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://vipulmaheshwari.sites2.digju.in/product-category/fine-jewellery/">
+
+											<span class="elementor-icon-list-text">Fine Jewellery</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://vipulmaheshwari.sites2.digju.in/product-category/precious-gemstones/">
+
+											<span class="elementor-icon-list-text">Precious Gemstones</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://vipulmaheshwari.sites2.digju.in/product-category/rare-collectorsgemstones/">
+
+											<span class="elementor-icon-list-text">Rare (Collector’s)Gemstones</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://vipulmaheshwari.sites2.digju.in/product-category/semi-precious-gemstones/">
+
+											<span class="elementor-icon-list-text">Semi-Precious Gemstones</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-d650fb2 e-con-full e-flex e-con e-child" data-id="d650fb2" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-c99ee46 elementor-widget elementor-widget-heading" data-id="c99ee46" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Contact Us</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-0b99e38 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="0b99e38" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="tel:+85269731885">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-phone-alt"></i>						</span>
+										<span class="elementor-icon-list-text">+852-69731885</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="mailto:vipul@vndiamonds.com">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-envelope"></i>						</span>
+										<span class="elementor-icon-list-text">vipul@vndiamonds.com</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://www.google.com/maps/place/VN+Diamonds/@22.2981918,114.1721542,17z/data=!3m1!4b1!4m6!3m5!1s0x340401d21d96f2cf:0x768cc49597bbdb16!8m2!3d22.2981918!4d114.1747291!16s%2Fg%2F11jnc054vw!5m1!1e1?entry=ttu&#038;g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D">
+
+												<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-map-marker-alt"></i>						</span>
+										<span class="elementor-icon-list-text">Suite D, 25/F, No. 8 Hart Avenue, Tsim Sha Tsui, Kowloon, Hong Kong</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-1634c18 e-con-full e-flex e-con e-child" data-id="1634c18" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-b08860a elementor-widget elementor-widget-image" data-id="b08860a" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="/">
+							<img width="1920" height="1187" src="https://vipulmaheshwari.sites2.digju.in/wp-content/uploads/2021/08/6104c7af60-vn-diamond-logo-for-ONLINE-STATUS-RGB-MODE-e1756805584122.png" class="attachment-full size-full wp-image-2242" alt="" srcset="https://vipulmaheshwari.sites2.digju.in/wp-content/uploads/2021/08/6104c7af60-vn-diamond-logo-for-ONLINE-STATUS-RGB-MODE-e1756805584122.png 1920w, https://vipulmaheshwari.sites2.digju.in/wp-content/uploads/2021/08/6104c7af60-vn-diamond-logo-for-ONLINE-STATUS-RGB-MODE-e1756805584122-300x185.png 300w, https://vipulmaheshwari.sites2.digju.in/wp-content/uploads/2021/08/6104c7af60-vn-diamond-logo-for-ONLINE-STATUS-RGB-MODE-e1756805584122-1024x633.png 1024w, https://vipulmaheshwari.sites2.digju.in/wp-content/uploads/2021/08/6104c7af60-vn-diamond-logo-for-ONLINE-STATUS-RGB-MODE-e1756805584122-768x475.png 768w, https://vipulmaheshwari.sites2.digju.in/wp-content/uploads/2021/08/6104c7af60-vn-diamond-logo-for-ONLINE-STATUS-RGB-MODE-e1756805584122-1536x950.png 1536w, https://vipulmaheshwari.sites2.digju.in/wp-content/uploads/2021/08/6104c7af60-vn-diamond-logo-for-ONLINE-STATUS-RGB-MODE-e1756805584122-1200x742.png 1200w, https://vipulmaheshwari.sites2.digju.in/wp-content/uploads/2021/08/6104c7af60-vn-diamond-logo-for-ONLINE-STATUS-RGB-MODE-e1756805584122-150x93.png 150w" sizes="(max-width: 1920px) 100vw, 1920px" />								</a>
+															</div>
+				</div>
+				<div class="elementor-element elementor-element-1aac85f elementor-widget elementor-widget-heading" data-id="1aac85f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">The Perfect Present for Your Partner</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-3dfe9c3 color-scheme-inherit text-left elementor-widget elementor-widget-text-editor" data-id="3dfe9c3" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><a href="https://vipulmaheshwari.sites2.digju.in/terms-and-conditions/">Terms &amp; Conditions</a> . <a href="https://vipulmaheshwari.sites2.digju.in/privacy-policy/">Privacy Policy</a> . <a href="https://vipulmaheshwari.sites2.digju.in/refund_returns/">Refund &amp; Return Policy</a>
+</path></g></svg>					</a>
+				</span>
+							<span class="elementor-grid-item" role="listitem">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon- elementor-repeater-item-738da45" href="https://www.instagram.com/vndiamonds/?hl=en" target="_blank">
+						<span class="elementor-screen-only"></span>
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" x="0px" y="0px" viewBox="0 0 551.034 551.034" style="enable-background:new 0 0 551.034 551.034;" xml:space="preserve"><g>			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.57" x2="275.517" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)">		<stop offset="0" style="stop-color:#E09B3D"></stop>		<stop offset="0.3" style="stop-color:#C74C4D"></stop>		<stop offset="0.6" style="stop-color:#C21975"></stop>		<stop offset="1" style="stop-color:#7024C4"></stop>	</linearGradient>	<path style="fill:url(#SVGID_1_);" d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722  c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156  C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156  c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722  c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z"></path>			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.57" x2="275.517" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)">		<stop offset="0" style="stop-color:#E09B3D"></stop>		<stop offset="0.3" style="stop-color:#C74C4D"></stop>		<stop offset="0.6" style="stop-color:#C21975"></stop>		<stop offset="1" style="stop-color:#7024C4"></stop>	</linearGradient>	<path style="fill:url(#SVGID_2_);" d="M275.517,133C196.933,133,133,196.933,133,275.516s63.933,142.517,142.517,142.517  S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6c-48.095,0-87.083-38.988-87.083-87.083  s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083C362.6,323.611,323.611,362.6,275.517,362.6z"></path>			<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="418.31" y1="4.57" x2="418.31" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)">		<stop offset="0" style="stop-color:#E09B3D"></stop>		<stop offset="0.3" style="stop-color:#C74C4D"></stop>		<stop offset="0.6" style="stop-color:#C21975"></stop>		<stop offset="1" style="stop-color:#7024C4"></stop>	</linearGradient>	<circle style="fill:url(#SVGID_3_);" cx="418.31" cy="134.07" r="34.15"></circle></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>					</a>
+				</span>
+					</div>
+						</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-89e64ff e-con-full e-flex e-con e-child" data-id="89e64ff" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+		<div class="elementor-element elementor-element-accebfa e-con-full e-flex e-con e-child" data-id="accebfa" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+		<div class="elementor-element elementor-element-b7ef6bf e-con-full e-flex e-con e-child" data-id="b7ef6bf" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-ad17fd2 color-scheme-inherit text-left elementor-widget elementor-widget-text-editor" data-id="ad17fd2" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Registration No: B-B-24-03-06490 for Category B Registrant (Section 53ZUP, Cap 615, LAWS OF HONG KONG)
+© Copyright 2025. All Rights Reserved By <a href="https://vipulmaheshwari.sites2.digju.in/"><strong>HARENEs.</strong></a> Designed by <strong><a href="http://digju.com">Digju.com.</a></strong>
+<label for="username">Username or email address&nbsp;<span class="required">*</span></label>
+					<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" value="" />
+<label for="password">Password&nbsp;<span class="required">*</span></label>
+					<input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" autocomplete="current-password" />
+<input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="bb075bf4e8" /><input type="hidden" name="_wp_http_referer" value="/expertise/" />											<input type="hidden" name="redirect" value="https://vipulmaheshwari.sites2.digju.in/expertise/" />
+										<button type="submit" class="button woocommerce-button woocommerce-form-login__submit" name="login" value="Log in">Log in</button>
+<a href="https://vipulmaheshwari.sites2.digju.in/my-account/lost-password/" class="woocommerce-LostPassword lost_password">Lost your password?</a>
+					<label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
+						<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" value="forever" title="Remember me" aria-label="Remember me" /> <span>Remember me</span>
+					</label>
+No account yet?

@@ -1,0 +1,195 @@
+@use '../utils' as *;
+/*----------------------------------------*/
+/*  2.8 Nice Select (Modern UI Revamp)
+/*----------------------------------------*/
+
+.nice-select{
+    -webkit-tap-highlight-color: transparent;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    clear: both;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 500;
+    color: #334155;
+    height: 46px;
+    line-height: 44px;
+    outline: none;
+    padding-left: 20px;
+    padding-right: 42px;
+    position: relative;
+    text-align: left !important;
+    -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    width: auto;
+
+    &:hover{
+        border-color: #cbd5e1;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+    }
+
+    &:active,
+    &.open,
+    &:focus{
+        border-color: #0989ff;
+        box-shadow: 0 0 0 3px rgba(9, 137, 255, 0.15);
+    }
+
+    &::after{
+        position: absolute;
+        content: '\f107';
+        top: 50%;
+        right: 18px;
+        font-family: var(--tp-ff-fontawesome);
+        color: #64748b;
+        font-size: 14px;
+        font-weight: 500;
+        pointer-events: none;
+        -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        margin-top: 0;
+        transform-origin: center;
+        @include transform(translateY(-50%));
+    }
+
+    &.open{
+        &::after{
+            @include transform(translateY(-50%) rotate(-180deg));
+            color: #0989ff;
+        }
+
+        & .list{
+            opacity: 1;
+            pointer-events: auto;
+            -webkit-transform: scale(1) translateY(0);
+            -ms-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+        }
+    }
+
+    &.disabled{
+        background-color: #f8fafc;
+        border-color: #e2e8f0;
+        color: #94a3b8;
+        pointer-events: none;
+
+        &::after{
+            color: #cbd5e1;
+        }
+    }
+
+    &.wide{
+        width: 100%;
+
+        & .list{
+            left: 0 !important;
+            right: 0 !important;
+        }
+    }
+
+    &.right{
+        float: right;
+
+        & .list{
+            left: auto;
+            right: 0;
+        }
+    }
+    
+    &.small{
+        font-size: 13px;
+        height: 38px;
+        line-height: 36px;
+        padding-left: 16px;
+        padding-right: 34px;
+
+        &::after{
+            right: 14px;
+            font-size: 12px;
+        }
+
+        & .option{
+            line-height: 34px;
+            min-height: 34px;
+            font-size: 13px;
+        }
+    }
+
+    & .list{
+        background-color: #fff;
+        border-radius: 8px;
+        border: 1px solid #e2e8f0;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        box-sizing: border-box;
+        margin-top: 6px;
+        opacity: 0;
+        overflow: hidden;
+        padding: 8px 0;
+        pointer-events: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 100%;
+        -webkit-transform-origin: 50% 0;
+        -ms-transform-origin: 50% 0;
+        transform-origin: 50% 0;
+        -webkit-transform: scale(0.95) translateY(-8px);
+        -ms-transform: scale(0.95) translateY(-8px);
+        transform: scale(0.95) translateY(-8px);
+        -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 99;
+    }
+
+    & .option{
+        cursor: pointer;
+        font-weight: 500;
+        line-height: 38px;
+        list-style: none;
+        min-height: 38px;
+        outline: none;
+        padding: 0 16px;
+        margin: 0 8px;
+        border-radius: 6px;
+        text-align: left;
+        -webkit-transition: all 0.15s ease-in-out;
+        transition: all 0.15s ease-in-out;
+        color: #475569;
+
+        &:hover, &.focus, &.selected.focus {
+            background-color: #f1f5f9;
+            color: #0f172a;
+        }
+
+        &.selected{
+            font-weight: 600;
+            color: #0989ff;
+            background-color: rgba(9, 137, 255, 0.05);
+        }
+
+        &.disabled{
+            background-color: transparent;
+            color: #94a3b8;
+            cursor: default;
+        }
+    }
+}
+
+.no-csspointerevents .nice-select .list {
+    display: none;
+}
+
+.no-csspointerevents .nice-select.open .list {
+    display: block;
+}
