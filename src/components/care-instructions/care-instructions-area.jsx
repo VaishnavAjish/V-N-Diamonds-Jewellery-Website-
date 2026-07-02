@@ -180,18 +180,12 @@ const CareInstructionsArea = () => {
         </div>
 
         <style>{`
-          .care-list li {
-            position: relative;
+          .care-list {
+            list-style-type: disc;
             padding-left: 20px;
           }
-          .care-list li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            top: 0;
-            color: #cd9a5b;
-            font-size: 20px;
-            line-height: 1.5;
+          .care-list li {
+            position: relative;
           }
           .care-img-wrapper {
             transition: transform 0.4s ease;

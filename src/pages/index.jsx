@@ -30,16 +30,16 @@ export default function Home() {
     <Wrapper>
       <SEO pageTitle='Home'/>
       <HeaderFour/>
-      <JewelryBanner settings={storefrontSettings} />
+      {storefrontSettings && <JewelryBanner settings={storefrontSettings} />}
       <FeatureAreaThree />
-      <JewelryShopBanner settings={storefrontSettings} />
-      <JewelryAbout settings={storefrontSettings} />
+      {storefrontSettings && <JewelryShopBanner settings={storefrontSettings} />}
+      {storefrontSettings && <JewelryAbout settings={storefrontSettings} />}
       <PopularProducts/>
       <ProductArea/>
-      <JewelryCollectionBanner settings={storefrontSettings} />
+      {storefrontSettings && <JewelryCollectionBanner settings={storefrontSettings} />}
       <BestSellerPrd/>
 
-      <InstagramAreaFour settings={storefrontSettings} />
+      {storefrontSettings && <InstagramAreaFour settings={storefrontSettings} />}
       <FooterTwo/>
     </Wrapper>
   )
