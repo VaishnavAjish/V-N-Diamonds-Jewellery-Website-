@@ -18,7 +18,8 @@ export default function Home() {
   const [storefrontSettings, setStorefrontSettings] = useState(null);
 
   useEffect(() => {
-    fetch('http://192.168.1.211:7000/api/settings/storefront')
+    const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://192.168.1.211:7000';
+    fetch(`${baseUrl}/api/settings/storefront`)
       .then(res => res.json())
       .then(data => {
         if (data.success) setStorefrontSettings(data.data);

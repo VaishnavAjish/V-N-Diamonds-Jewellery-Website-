@@ -38,7 +38,8 @@ const HeaderFour = () => {
   };
 
   useEffect(() => {
-    fetch('http://192.168.1.211:7000/api/settings/storefront')
+    const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://192.168.1.211:7000';
+    fetch(`${baseUrl}/api/settings/storefront`)
       .then(res => res.json())
       .then(data => {
         if(data.success && data.data?.activeDesignTemplate === 'minimal') {

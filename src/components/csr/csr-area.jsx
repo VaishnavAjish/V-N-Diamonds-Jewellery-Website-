@@ -12,7 +12,7 @@ const CSR_CARDS = [
     id: 1,
     title: "Responsible Growth, Lasting Impact.",
     number: "01",
-    description: "At HERENE, we follow an ethical approach which includes taking all possible measures to ensure that the materials we use in our products are sourced from businesses that follow the law, respect the rights of workers and the communities in which they operate.This policy is intended to affirm our commitment to respect human rights, avoid contributing to finance conflicts and comply with all applicable laws, regulations and national and international conventions, relevant UN sanctions and resolutions.",
+    description: "At HARENE, we follow an ethical approach which includes taking all possible measures to ensure that the materials we use in our products are sourced from businesses that follow the law, respect the rights of workers and the communities in which they operate.This policy is intended to affirm our commitment to respect human rights, avoid contributing to finance conflicts and comply with all applicable laws, regulations and national and international conventions, relevant UN sanctions and resolutions.",
     image: "/assets/img/about/about-1.jpg"
   },
   {
@@ -20,9 +20,9 @@ const CSR_CARDS = [
     title: "Responsible Sourcing",
     subtitle: "Kimberley Process requirement",
     number: "02",
-    description: "HERENE only buys or sells diamonds that are fully compliant with the Kimberley Process Certification, and we comply with the World Diamond Council (WDC) System of Warranties (SoW). We require our business partners and suppliers involved in the international trade of rough diamonds to comply with the Kimberley Process Certification Scheme (KPCS) requirements and recommendations and to comply with all applicable laws relating to the international trade of diamonds in the countries where they operate. We require our business partners and suppliers in the diamond supply chain, including buying and selling diamonds, (rough, polished, or jewellery), to implement the World Diamond Council (WDC) System of Warranties (SoW) Guidelines from Suppliers.",
+    description: "HARENE only buys or sells diamonds that are fully compliant with the Kimberley Process Certification, and we comply with the World Diamond Council (WDC) System of Warranties (SoW). We require our business partners and suppliers involved in the international trade of rough diamonds to comply with the Kimberley Process Certification Scheme (KPCS) requirements and recommendations and to comply with all applicable laws relating to the international trade of diamonds in the countries where they operate. We require our business partners and suppliers in the diamond supply chain, including buying and selling diamonds, (rough, polished, or jewellery), to implement the World Diamond Council (WDC) System of Warranties (SoW) Guidelines from Suppliers.",
     subtitle2: "Coloured Gemstones sourcing",
-    description2: "HERENE is committed to implementing the due diligence on the colored gemstones supply chain in accordance with the ICA (International Colored Gemstone Association) of Gems from Conflict-Affected and High-Risk Areas. We require our Suppliers of Gemstone supply chain, including buying and selling Gemstones, (rough, polished, or set in jewellery) to implement the due diligence tools of the Gemstones Working Group or, if members of the ICA Code of Practices where that applies to Gems.",
+    description2: "HARENE is committed to implementing the due diligence on the colored gemstones supply chain in accordance with the ICA (International Colored Gemstone Association) of Gems from Conflict-Affected and High-Risk Areas. We require our Suppliers of Gemstone supply chain, including buying and selling Gemstones, (rough, polished, or set in jewellery) to implement the due diligence tools of the Gemstones Working Group or, if members of the ICA Code of Practices where that applies to Gems.",
     image: "/assets/img/about/about-2.jpg"
   },
   {
@@ -30,7 +30,7 @@ const CSR_CARDS = [
     title: "Ethical Business Practices",
     subtitle: "Anti-Money Laundering",
     number: "03",
-    description: "HERENE supports and tries to contribute to efforts to eliminate money laundering and financing of terrorism activities where we identify a reasonable risk which may be a result of or connected to, the extraction, trade, handling, transport, or export of Rough be it Diamonds or Gemstone.",
+    description: "HARENE supports and tries to contribute to efforts to eliminate money laundering and financing of terrorism activities where we identify a reasonable risk which may be a result of or connected to, the extraction, trade, handling, transport, or export of Rough be it Diamonds or Gemstone.",
     subtitle2: "Transparent & Responsible Supply Chain",
     description2: "We maintain full transparency throughout our supply chain to ensure every step meets our rigorous ethical standards.",
     image: "/assets/img/slider/4/slider-3.png"
@@ -39,7 +39,7 @@ const CSR_CARDS = [
     id: 4,
     title: "Community Empowerment",
     number: "04",
-    description: "HERENE believes in creating lasting, positive impact within the communities where we operate and source from. We are committed to supporting initiatives that promote education, skill development, healthcare, and livelihood opportunities. By partnering with local organizations and stakeholders, we aim to strengthen community resilience, foster sustainable growth, and ensure that the benefits of the diamond and gemstone trade extend beyond business into meaningful social progress.",
+    description: "HARENE believes in creating lasting, positive impact within the communities where we operate and source from. We are committed to supporting initiatives that promote education, skill development, healthcare, and livelihood opportunities. By partnering with local organizations and stakeholders, we aim to strengthen community resilience, foster sustainable growth, and ensure that the benefits of the diamond and gemstone trade extend beyond business into meaningful social progress.",
     image: "/assets/img/slider/4/slider-4.png"
   }
 ];
@@ -129,7 +129,7 @@ const CsrArea = () => {
                 <div className="tp-about-title-wrapper mb-30">
                   <h3 className="tp-about-title mb-20" style={{ fontSize: '36px' }}>CSR – Corporate Social Responsibility</h3>
                   <p className="mx-auto" style={{ maxWidth: '800px', fontSize: '18px', lineHeight: '1.6' }}>
-                    At HERENE, ethical integrity is at the heart of everything we do. We proactively partner with suppliers who uphold the rule of law, champion workers rights, and positively uplift their local communities. This rigorous standard reflects our dedication to safeguarding human rights, preventing conflict financing, and strictly adhering to all international laws, UN sanctions, and global conventions.
+                    At HARENE, ethical integrity is at the heart of everything we do. We proactively partner with suppliers who uphold the rule of law, champion workers rights, and positively uplift their local communities. This rigorous standard reflects our dedication to safeguarding human rights, preventing conflict financing, and strictly adhering to all international laws, UN sanctions, and global conventions.
                   </p>
                 </div>
               </div>

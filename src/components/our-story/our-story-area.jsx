@@ -102,16 +102,16 @@ const OurStoryArea = () => {
 
       <section className="story-area" style={{ backgroundColor: '#fdfdfd' }}>
         <div className="story-container">
-          <h1 className="story-title">The Story of HERENE</h1>
+          <h1 className="story-title">The Story of HARENE</h1>
           <h3 className="story-subtitle">"Shaping Dreams into Diamonds."</h3>
 
           <div className="story-content">
             <p className="story-paragraph">
-              <strong style={{ color: '#0f172a', fontWeight: '800' }}>HERENE</strong> was born out of pure passion on April 2, 2012, when founders Vipul and Nidhi transformed their lifelong love for fine jewelry into a thriving business. From a modest beginning in the heart of Hong Kong, they brought together deep industry expertise, unwavering integrity, and a shared vision to offer something truly exceptional in the world of diamonds and gemstones.
+              <strong style={{ color: '#0f172a', fontWeight: '800' }}>HARENE</strong> was born out of pure passion on April 2, 2012, when founders Vipul and Nidhi transformed their lifelong love for fine jewelry into a thriving business. From a modest beginning in the heart of Hong Kong, they brought together deep industry expertise, unwavering integrity, and a shared vision to offer something truly exceptional in the world of diamonds and gemstones.
             </p>
 
             <p className="story-paragraph">
-              What began as a dream quickly evolved into a flourishing enterprise. Word spread fast &mdash; clients were drawn not just to the unmatched quality of our products, but to the personalized care and attention that defined every interaction. From Hong Kong to neighboring regions, HERENE became synonymous with trust, elegance, and excellence.
+              What began as a dream quickly evolved into a flourishing enterprise. Word spread fast &mdash; clients were drawn not just to the unmatched quality of our products, but to the personalized care and attention that defined every interaction. From Hong Kong to neighboring regions, HARENE became synonymous with trust, elegance, and excellence.
             </p>
 
             <p className="story-paragraph">
@@ -119,12 +119,12 @@ const OurStoryArea = () => {
             </p>
 
             <p className="story-paragraph">
-              Today, HERENE proudly offers a curated selection of world-class diamonds, rare gemstones, and handcrafted jewelry. Each piece reflects our dedication to beauty, precision, and the timeless values that started it all.
+              Today, HARENE proudly offers a curated selection of world-class diamonds, rare gemstones, and handcrafted jewelry. Each piece reflects our dedication to beauty, precision, and the timeless values that started it all.
             </p>
           </div>
 
           <div className="story-quote">
-            Welcome to HERENE
+            Welcome to HARENE
             <span>where passion meets perfection.</span>
           </div>
         </div>
