@@ -306,19 +306,18 @@ export default function ProductsPage() {
     const finalSubCategory = isDiamond ? '' : subCategory;
 
     if (isDiamond) {
-      if (!lotNumber || !metal || !metalGms || !diamondPcs || !shape || !certificate || !certNo || !grossGms || !usdPrice || !photo1) {
+      if (!lotNumber || !metal || !metalGms || !shape || !certificate || !certNo || !grossGms || !usdPrice || !photo1) {
         alert('Please fill out all required fields for Diamond.');
         return;
       }
     } else {
-      if (!finalTitle || !finalSku || !finalPrice || !finalQuantity || !finalBrandId || !finalCategoryId || !photo1 || !finalPoeticName || !lotNumber || !metal || !metalGms || !diamondPcs || !shape || !certificate || !certNo || !grossGms || !usdPrice) {
+      if (!finalTitle || !finalSku || !finalPrice || !finalQuantity || !finalBrandId || !finalCategoryId || !photo1 || !finalPoeticName || !lotNumber || !metal || !metalGms || !shape || !certificate || !certNo || !grossGms || !usdPrice) {
         alert('Please fill out all required fields for Jewellery.');
         return;
       }
     }
 
     setSubmitting(true);
-    try {
     try {
       const selectedBrand = brands.find(b => (b.id || b._id) === finalBrandId);
       const selectedCategory = categories.find(c => (c.id || c._id) === finalCategoryId);
@@ -756,8 +755,8 @@ export default function ProductsPage() {
 
                 <div className="form-row">
                   <div className="form-group">
-                    <label className="form-label">Diamond Pcs *</label>
-                    <input className="form-control" placeholder="E.g. 15" type="number" value={diamondPcs} onChange={(e) => setDiamondPcs(e.target.value)} required />
+                    <label className="form-label">Diamond Pcs</label>
+                    <input className="form-control" placeholder="E.g. 15" type="number" value={diamondPcs} onChange={(e) => setDiamondPcs(e.target.value)} />
                   </div>
                   <div className="form-group">
                     <label className="form-label">Shape *</label>
