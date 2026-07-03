@@ -1,2 +1,10 @@
+# large/generated files not tracked in this combined repo
 *.xlsx
 ~$*
+*.mp4
+.next_new/
+
+# dependencies (defense in depth; each subproject also has its own .gitignore)
+node_modules/
+.next/
+.vercel
