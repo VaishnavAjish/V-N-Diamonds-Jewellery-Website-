@@ -1,0 +1,216 @@
+datasource db {
+  provider = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Admin {
+  id        String   @id @default(uuid())
+  name      String
+  image     String?
+  address   String?
+  country   String?
+  city      String?
+  email     String   @unique
+  phone     String?
+  status    String   @default("Active")
+  password  String?
+  role      String   @default("Admin")
+  joiningDate DateTime?
+  confirmationToken String?
+  confirmationTokenExpires DateTime?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Brand {
+  id          String   @id @default(uuid())
+  logo        String?
+  name        String   @unique
+  description String?
+  email       String?
+  website     String?
+  location    String?
+  status      String   @default("active")
+  products    Product[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Category {
+  id          String   @id @default(uuid())
+  img         String?
+  parent      String   @unique
+  children    String[]
+  productType String
+  description String?
+  products    Product[]
+  status      String   @default("Show")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Coupon {
+  id                 String   @id @default(uuid())
+  title              String
+  logo               String
+  couponCode         String
+  startTime          DateTime?
+  endTime            DateTime
+  discountPercentage Float
+  minimumAmount      Float
+  productType        String
+  status             String   @default("active")
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+}
+
+model Product {
+  id             String   @id @default(uuid())
+  sku            String?
+  img            String
+  title          String
+  slug           String?
+  unit           String
+  imageURLs      Json[]   // Stored as JSON to handle complex objects
+  parent         String
+  children       String
+  price          Float
+  discount       Float?
+  quantity       Int
+  brandId        String
+  brandName      String
+  brand          Brand    @relation(fields: [brandId], references: [id])
+  categoryId     String
+  categoryName   String
+  category       Category @relation(fields: [categoryId], references: [id])
+  status         String   @default("in-stock")
+  productType    String
+  description    String
+  videoId        String?
+  additionalInformation Json[] // Stored as JSON
+  tags           String[]
+  sizes          String[]
+  offerStartDate DateTime?
+  offerEndDate   DateTime?
+  featured       Boolean  @default(false)
+  sellCount      Int      @default(0)
+  reviews        Review[]
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+model User {
+  id                 String   @id @default(uuid())
+  name               String
+  email              String   @unique
+  password           String?
+  role               String   @default("user")
+  contactNumber      String?
+  shippingAddress    String?
+  imageURL           String?
+  phone              String?
+  address            String?
+  bio                String?
+  status             String   @default("inactive")
+  confirmationToken  String?
+  confirmationTokenExpires DateTime?
+  passwordChangedAt  DateTime?
+  passwordResetToken String?
+  passwordResetExpires DateTime?
+  cart               Json?
+  wishlist           Json?
+  reviews            Review[]
+  orders             Order[]
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+}
+
+model Review {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  productId String
+  product   Product  @relation(fields: [productId], references: [id])
+  rating    Float
+  comment   String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Client {
+  id        String    @id @default(uuid())
+  name      String
+  email     String?
+  phone     String?
+  company   String?
+  address   String?
+  memos     Memo[]
+  invoices  Invoice[]
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+}
+
+model Memo {
+  id         String    @id @default(uuid())
+  memoNumber Int       @unique @default(autoincrement())
+  clientId   String
+  client     Client    @relation(fields: [clientId], references: [id])
+  items      Json[]    // [{ productId, sku, title, img, qty, price }]
+  status     String    @default("open") // open | returned | invoiced | partial
+  notes      String?
+  invoices   Invoice[]
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+}
+
+model Invoice {
+  id            String   @id @default(uuid())
+  invoiceNumber Int      @unique @default(autoincrement())
+  clientId      String
+  client        Client   @relation(fields: [clientId], references: [id])
+  memoId        String?
+  memo          Memo?    @relation(fields: [memoId], references: [id])
+  items         Json[]   // [{ productId, sku, title, img, qty, price }]
+  amount        Float
+  status        String   @default("unpaid") // unpaid | paid
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Order {
+  id             String   @id @default(uuid())
+  userId         String
+  user           User     @relation(fields: [userId], references: [id])
+  cart           Json[]   // Store cart items as JSON
+  name           String
+  address        String
+  email          String
+  contact        String
+  city           String
+  country        String
+  zipCode        String
+  subTotal       Float
+  shippingCost   Float
+  discount       Float    @default(0)
+  totalAmount    Float
+  shippingOption String?
+  cardInfo       Json?    // Stored as JSON
+  paymentIntent  Json?    // Stored as JSON
+  paymentMethod  String
+  orderNote      String?
+  invoice        Int      @unique @default(autoincrement())
+  status         String   @default("pending")
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
+
+model Setting {
+  id        String   @id @default(uuid())
+  key       String   @unique
+  value     Json
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

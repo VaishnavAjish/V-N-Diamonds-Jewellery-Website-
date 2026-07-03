@@ -1,0 +1,285 @@
+@import '~bootstrap/scss/bootstrap';
+@import "~slick-carousel/slick/slick.css";
+@import "swiper/css/bundle";
+@import 'node_modules/react-modal-video/scss/modal-video.scss';
+@import '../../public/assets/scss/main.scss';
+
+.logo img,
+.tp-footer-logo img,
+.tp-footer-widget-logo img,
+.logo-light,
+.logo-dark {
+    max-height: 120px !important;
+    width: auto !important;
+}
+
+/* Dropdown Menu Styles */
+.tp-submenu,
+.tp-mega-menu {
+    border-radius: 14px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.5s ease-in-out !important;
+    width: max-content !important;
+    min-width: 240px !important;
+    max-width: 340px !important;
+}
+
+.tp-submenu>li>a,
+.tp-mega-menu>li>a {
+    color: #1a1a1a !important;
+}
+
+/* Minimal Layout Dynamic Override */
+.minimal-design-active {
+    background-color: #cecac7 !important;
+}
+
+.minimal-design-active .tp-slider-item-4,
+.minimal-design-active .tp-slider-area,
+.minimal-design-active .tp-slider-active-4 {
+    background-color: #ffffff !important;
+}
+
+.minimal-design-active .tp-slider-title-4 {
+    color: #1a1a1a !important;
+    font-weight: 300 !important;
+}
+
+.minimal-design-active .tp-slider-subtitle-4 {
+    color: #666 !important;
+    letter-spacing: 2px !important;
+}
+
+.tp-submenu>li:first-child>a,
+.tp-mega-menu>li:first-child>a {
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.tp-submenu>li:last-child>a,
+.tp-mega-menu>li:last-child>a {
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+.tp-cart-checkout-top {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #eaeaef;
+}
+
+
+/* Hero Banner Image - constrained size (Removed to allow dynamic sizing) */
+@media (min-width: 992px) {
+    .main-slider-img {
+        /* Let inline styles dictate width */
+        height: auto !important;
+    }
+}
+
+/* Better spacing and readable text for dropdown items */
+.tp-submenu li,
+.tp-mega-menu ul li {
+    margin-bottom: 6px !important;
+    white-space: nowrap !important;
+}
+
+.tp-submenu li a,
+.tp-mega-menu ul li a {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #cd9a5b !important;
+    padding: 4px 20px !important;
+}
+
+/* Specific styling for the mega menu column titles */
+.mega-menu-title {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    color: #000 !important;
+    margin-bottom: 12px !important;
+}
+
+/* 
+===================================================================
+HOTSPOT POSITIONING (The '+' Icons on the Jewelry Collection Banner)
+Change the percentages below to move the icons around!
+===================================================================
+*/
+
+/* Hotspot 1 (Currently near the neck) */
+.tp-collection-hotspot-1 {
+    top: 39% !important;
+    left: 26% !important;
+}
+
+/* Hotspot 2 (Currently near the chest) */
+.tp-collection-hotspot-2 {
+    bottom: 29% !important;
+    right: 47% !important;
+}
+
+/* 
+===================================================================
+ABOUT SECTION FLOATING IMAGE (Shop our limited Collaborations)
+Decrease the max-width below if the overlapping image is too large!
+===================================================================
+*/
+.tp-about-thumb-2 img {
+    max-width: 300px !important;
+    height: auto !important;
+}
+
+/* 
+===================================================================
+SEARCH MODAL POPUP
+===================================================================
+*/
+.tp-search-area {
+    top: 50% !important;
+    left: 50% !important;
+    right: auto !important;
+    bottom: auto !important;
+    width: 90% !important;
+    max-width: 650px !important;
+    transform: translate(-50%, -50%) scale(0.9) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3) !important;
+    padding: 40px !important;
+    background-color: #fff !important;
+    transition: all 0.3s ease !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    opacity: 0 !important;
+}
+
+.tp-search-area.opened {
+    transform: translate(-50%, -50%) scale(1) !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    opacity: 1 !important;
+}
+
+/* Adjust the close button */
+.tp-search-close {
+    display: block !important;
+    position: absolute !important;
+    top: 15px !important;
+    right: 15px !important;
+    margin-bottom: 0 !important;
+    z-index: 10 !important;
+}
+
+.tp-search-close-btn {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+/* Make the input look nicer inside the modal */
+.tp-search-input input {
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 8px !important;
+    padding: 0 50px 0 20px !important;
+}
+
+/* Search category text */
+.tp-search-category {
+    margin-top: 15px !important;
+}
+
+/* Custom Overrides for Jewelry Product Hover States */
+.tp-product-item-4:hover .tp-product-price-wrapper-4,
+.tp-product-item-4:hover .tp-product-price-inner-4,
+.tp-product-item-4:hover .tp-product-price-4 {
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+/* Fix product action buttons (white squares) */
+.tp-product-action-btn-3 {
+    background-color: transparent !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.tp-product-action-btn-3 svg,
+.tp-product-action-btn-3 i {
+    fill: #cd9a5b !important;
+    color: #cd9a5b !important;
+}
+
+.tp-product-action-btn-3:hover {
+    background-color: #cd9a5b !important;
+}
+
+.tp-product-action-btn-3:hover svg,
+.tp-product-action-btn-3:hover i {
+    fill: #fff !important;
+    color: #fff !important;
+
+}
+
+.tp-category-item-4:hover .tp-category-price-4 {
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+/*
+===================================================================
+HOMEPAGE HERO BACKGROUND COLOR
+Change the hex value on the "background-color" line below.
+Examples:  #1a1a1a (dark)   #f5f5f5 (light grey)   #800020 (maroon)
+===================================================================
+*/
+.khaki-bg,
+.tp-slider-item-4.khaki-bg,
+.tp-slider-active-4.khaki-bg {
+    background-color: #020202 !important;
+    /* <-- CHANGE THIS COLOR */
+}
+
+/* Continuous Swiper Marquee */
+.continuous-slider .swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+
+.main-slider-img {
+    mix-blend-mode: multiply;
+    height: auto;
+}
+
+.tp-footer-dark-theme-content ul li a {
+    color: #fff !important;
+}
+
+.tp-footer-dark-theme-content ul li a:hover {
+    color: #cd9a5b !important;
+}
+
+.tp-footer-dark-theme-content p a {
+    color: #fff !important;
+}
+
+.tp-footer-dark-theme-content p a:hover {
+    color: #cd9a5b !important;
+}
+
+.tp-footer-dark-theme-content .tp-footer-contact-content p a {
+    color: #fff !important;
+}
+
+/* Slow zoom animation for hero banner background */
+@keyframes slowZoom {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.15);
+    }
+}
+
+.hero-bg-animated {
+    animation: slowZoom 25s linear infinite alternate;
+}

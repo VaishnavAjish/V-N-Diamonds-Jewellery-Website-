@@ -1,0 +1,11 @@
+Starting import...
+Deleted existing data.
+Brands inserted.
+Categories inserted.
+Products inserted.
+Coupons inserted.
+Admins inserted.
+Users inserted.
+Orders: 0 valid out of 1.
+Reviews inserted.
+Data inserted successfully into PostgreSQL via Prisma!
