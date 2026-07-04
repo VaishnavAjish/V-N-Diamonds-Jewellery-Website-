@@ -664,7 +664,7 @@ export default function ProductsPage() {
                 {productType !== 'diamond' && (
                   <div className="form-row">
                     <div className="form-group">
-                      <label className="form-label">Price (INR) *</label>
+                      <label className="form-label">Price (USD) *</label>
                       <input className="form-control" type="number" step="0.01" placeholder="45000" value={price} onChange={(e) => setPrice(e.target.value)} required={productType !== 'diamond'} />
                     </div>
                     <div className="form-group">
