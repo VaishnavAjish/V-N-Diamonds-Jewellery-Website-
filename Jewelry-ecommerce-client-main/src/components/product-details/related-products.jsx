@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper";
 // internal
-import { useGetRelatedProductsQuery } from "@/redux/features/productApi";
+import { useGetAllProductsQuery } from "@/redux/features/productApi";
 import ProductItem from "../products/fashion/product-item";
 import ErrorMsg from "../common/error-msg";
 import { HomeNewArrivalPrdLoader } from "../loader";
@@ -28,8 +28,7 @@ const slider_setting = {
 };
 
 const RelatedProducts = ({ id, category }) => {
-  // Use the dedicated related products API — it fetches same-category products by product ID
-  const { data: products, isError, isLoading } = useGetRelatedProductsQuery(id, { skip: !id });
+  const { data: products, isError, isLoading } = useGetAllProductsQuery();
 
   let content = null;
 
@@ -39,18 +38,13 @@ const RelatedProducts = ({ id, category }) => {
   if (!isLoading && isError) {
     content = <ErrorMsg msg="There was an error" />;
   }
-  if (!isLoading && !isError) {
-    // Support both { data: [...] } and direct array responses
-    const rawList = Array.isArray(products?.data)
-      ? products.data
-      : Array.isArray(products)
-      ? products
-      : [];
-
-    // Exclude the current product just in case backend returns it
-    const product_items = rawList.filter(
-      (p) => (p._id || p.id) !== id
-    ).slice(0, 8);
+  if (!isLoading && !isError && products?.data?.length > 0) {
+    // Filter locally by parent category to ensure all products in the same top-level category match
+    const product_items = products.data.filter(p => {
+      const sameCategory = p.parent === category;
+      const notCurrent = (p._id !== id) && (p.id !== id);
+      return sameCategory && notCurrent;
+    }).slice(0, 8);
 
     if (product_items.length === 0) {
       content = null;
