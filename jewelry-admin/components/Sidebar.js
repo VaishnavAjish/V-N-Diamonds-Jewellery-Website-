@@ -45,7 +45,7 @@ export default function Sidebar({ user }) {
   const handleLogout = () => {
     localStorage.removeItem('admin_token');
     localStorage.removeItem('admin_info');
-    router.push('/');
+    window.location.href = 'http://harenejewels.com/';
   };
 
   return (
