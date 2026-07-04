@@ -110,7 +110,7 @@ export default function OrdersPage() {
                     <td className="text-muted text-sm">{o.email}</td>
                     <td>{o.city}, {o.country}</td>
                     <td><span className="badge badge-blue">{o.paymentMethod}</span></td>
-                    <td className="td-primary">₹{Number(o.totalAmount || 0).toLocaleString('en-IN')}</td>
+                    <td className="td-primary">${Number(o.totalAmount || 0).toLocaleString('en-US')}</td>
                     <td>{statusBadge(o.status)}</td>
                     <td>
                       <button className="btn btn-sm btn-primary" style={{ marginRight: 8 }} onClick={() => setSelected(o)}>✏️ Status</button>
@@ -132,7 +132,7 @@ export default function OrdersPage() {
                 <button className="btn btn-sm" onClick={() => setSelected(null)}>✕</button>
               </div>
               <p style={{ color: 'var(--text-secondary)', fontSize: 13, marginBottom: 16 }}>
-                Customer: <strong>{selected.name}</strong> — Total: ₹{Number(selected.totalAmount).toLocaleString('en-IN')}
+                Customer: <strong>{selected.name}</strong> — Total: ${Number(selected.totalAmount).toLocaleString('en-US')}
               </p>
               <div className="form-group">
                 <label className="form-label">New Status</label>

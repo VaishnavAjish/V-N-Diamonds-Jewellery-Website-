@@ -611,7 +611,7 @@ export default function ProductsPage() {
                     </td>
                     <td><span className="td-mono">{p.sku}</span></td>
                     <td><span className="badge badge-blue">{p.productType}</span></td>
-                    <td className="td-primary">₹{Number(p.price || 0).toLocaleString('en-IN')}</td>
+                    <td className="td-primary">${Number(p.price || 0).toLocaleString('en-US')}</td>
                     <td>{p.discount ? <span className="badge badge-yellow">{p.discount}% off</span> : '—'}</td>
                     <td>{p.quantity ?? '—'}</td>
                     <td>{statusBadge(p.status)}</td>

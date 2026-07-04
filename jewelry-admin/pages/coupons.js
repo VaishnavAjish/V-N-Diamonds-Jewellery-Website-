@@ -193,7 +193,7 @@ export default function CouponsPage() {
                       </code>
                     </td>
                     <td><span className="badge badge-green">{c.discountPercentage}% off</span></td>
-                    <td>₹{Number(c.minimumAmount || 0).toLocaleString('en-IN')}</td>
+                    <td>${Number(c.minimumAmount || 0).toLocaleString('en-US')}</td>
                     <td><span className="badge badge-blue">{c.productType}</span></td>
                     <td className="text-muted text-sm">{c.endTime ? new Date(c.endTime).toLocaleDateString('en-IN') : '—'}</td>
                     <td>
