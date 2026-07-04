@@ -124,7 +124,10 @@ const ShopPage = ({ query }) => {
             if (search.includes("ring") && !search.includes("earring") && field.includes("earring")) return false;
             return true;
           }
-          if (field.length > 3 && search.includes(field)) return true;
+          if (field.length > 3 && search.includes(field)) {
+            if (field.includes("ring") && !field.includes("earring") && search.includes("earring")) return false;
+            return true;
+          }
           return false;
         };
 
