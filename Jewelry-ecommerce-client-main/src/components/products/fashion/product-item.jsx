@@ -30,10 +30,7 @@ const ProductItem = ({ product, style_2 = false }) => {
   // Metal + Metal gms — e.g. "18K 4.65gms"
   const metal = getAdditional('Metal');
   const metalGms = getAdditional('Metal gms');
-  const metalDisplay = metal && metalGms ? `${metal} ${metalGms}gms` : metalGms ? `${metalGms}gms` : null;
-
-  // Balance = quantity in stock
-  const balance = quantity !== undefined && quantity !== null ? quantity : null;
+  const metalDisplay = metal && metalGms ? `${metal} ${metalGms}` : metalGms ? `${metalGms}` : null;
 
   return (
     <div className={`skylab-product-card mb-40`} style={{
@@ -117,17 +114,9 @@ const ProductItem = ({ product, style_2 = false }) => {
           </div>
         )}
 
-        {/* Carat Weight */}
         {caratWgt && (
           <div style={{ fontSize: '12px', color: '#666', marginBottom: '4px' }}>
             {caratWgt} ct
-          </div>
-        )}
-
-        {/* Balance (Quantity in Stock) */}
-        {balance !== null && (
-          <div style={{ fontSize: '12px', color: '#888' }}>
-            Balance: {balance}
           </div>
         )}
       </div>
