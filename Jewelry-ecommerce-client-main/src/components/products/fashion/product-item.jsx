@@ -9,16 +9,28 @@ import { add_to_wishlist } from "@/redux/features/wishlist-slice";
 import { add_to_compare } from "@/redux/features/compareSlice";
 
 const ProductItem = ({ product, style_2 = false }) => {
-  const { img, category, title, reviews, price, discount, tags, status, description, parent, children, videoId, quantity } = product || {};
+  const { img, category, title, reviews, price, discount, tags, status, description, parent, children, videoId, quantity, additionalInformation } = product || {};
   const _id = product?.id || product?._id;
   const dispatch = useDispatch();
   const [isHovered, setIsHovered] = useState(false);
+
+  // Helper to get value from additionalInformation array by key
+  const getAdditional = (key) => {
+    if (!Array.isArray(additionalInformation)) return null;
+    const found = additionalInformation.find(i => i.key === key);
+    return found ? found.value : null;
+  };
 
   // Get the clean product name — just the title as-is (poetic name)
   const productName = title || 'Untitled';
 
   const caratWgtMatch = description?.match(/Total Diamond Weight:\s*([\d.]+)/);
   const caratWgt = caratWgtMatch ? caratWgtMatch[1] : null;
+
+  // Metal + Metal gms — e.g. "18K 4.65gms"
+  const metal = getAdditional('Metal');
+  const metalGms = getAdditional('Metal gms');
+  const metalDisplay = metal && metalGms ? `${metal} ${metalGms}gms` : metalGms ? `${metalGms}gms` : null;
 
   // Balance = quantity in stock
   const balance = quantity !== undefined && quantity !== null ? quantity : null;
@@ -97,6 +109,13 @@ const ProductItem = ({ product, style_2 = false }) => {
             {productName}
           </h3>
         </Link>
+
+        {/* Metal gms (Net Weight) — e.g. "18K 4.65gms" */}
+        {metalDisplay && (
+          <div style={{ fontSize: '12px', color: '#555', marginBottom: '4px', fontWeight: '500' }}>
+            {metalDisplay}
+          </div>
+        )}
 
         {/* Carat Weight */}
         {caratWgt && (
