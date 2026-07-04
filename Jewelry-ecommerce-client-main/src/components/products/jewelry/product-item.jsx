@@ -118,10 +118,6 @@ const ProductItem = ({ product }) => {
         <h3 className="tp-product-title-4">
           <Link href={`/product-details/${_id}`}>{title}</Link>
         </h3>
-        <div className="tp-product-info-4">
-          <p>{tags[0]}</p>
-        </div>
-
       </div>
     </div>
   );

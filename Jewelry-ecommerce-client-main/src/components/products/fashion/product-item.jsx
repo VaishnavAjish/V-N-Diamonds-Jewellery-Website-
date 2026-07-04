@@ -117,9 +117,7 @@ const ProductItem = ({ product, style_2 = false }) => {
               {title.split(' | ')[0] || title.substring(0, 20)}
             </h3>
           </Link>
-          <span style={{ fontSize: '10px', fontWeight: 'bold', color: getShapeColor(shape) }}>
-            {shape}
-          </span>
+
         </div>
 
 
@@ -127,11 +125,6 @@ const ProductItem = ({ product, style_2 = false }) => {
         {/* Footer (Price & Carat) */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
-            <span style={{ color: '#0f9d58' }}>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-              </svg>
-            </span>
             <span style={{ fontSize: '14px', fontWeight: '700', color: '#111' }}>
               ${price}
             </span>
