@@ -117,6 +117,17 @@ const ShopPage = ({ query }) => {
         let matchCat = false;
         let matchSub = false;
 
+        const isTextMatch = (field, search) => {
+          if (!field || !search) return false;
+          if (field === search) return true;
+          if (field.includes(search)) {
+            if (search.includes("ring") && !search.includes("earring") && field.includes("earring")) return false;
+            return true;
+          }
+          if (field.length > 3 && search.includes(field)) return true;
+          return false;
+        };
+
         // Check Category
         if (targetCategories.length > 0) {
           for (let target of targetCategories) {
@@ -125,11 +136,7 @@ const ShopPage = ({ query }) => {
             
             const searchStr = cleanFlatTarget.length > 2 ? cleanFlatTarget : flatTarget;
 
-            if (flatParent === searchStr || flatParent.includes(searchStr) || (flatParent.length > 3 && searchStr.includes(flatParent))) {
-              matchCat = true;
-            } else if (flatChildren === searchStr || flatChildren.includes(searchStr) || (flatChildren.length > 3 && searchStr.includes(flatChildren))) {
-              matchCat = true;
-            } else if (flatTitle && (flatTitle.includes(searchStr) || (flatTitle.length > 3 && searchStr.includes(flatTitle)))) {
+            if (isTextMatch(flatParent, searchStr) || isTextMatch(flatChildren, searchStr) || isTextMatch(flatTitle, searchStr)) {
               matchCat = true;
             }
           }
@@ -146,11 +153,7 @@ const ShopPage = ({ query }) => {
             // If target is effectively empty after cleaning, use the original flatTarget
             const searchStr = cleanFlatTarget.length > 2 ? cleanFlatTarget : flatTarget;
 
-            if (flatChildren === searchStr || flatChildren.includes(searchStr) || (flatChildren.length > 3 && searchStr.includes(flatChildren))) {
-              matchSub = true;
-            } else if (flatTitle && (flatTitle.includes(searchStr) || (flatTitle.length > 3 && searchStr.includes(flatTitle)))) {
-              matchSub = true;
-            } else if (flatParent === searchStr || flatParent.includes(searchStr) || flatParent === searchStr.replace("pendants", "pendent") || (flatParent.length > 3 && searchStr.includes(flatParent))) {
+            if (isTextMatch(flatChildren, searchStr) || isTextMatch(flatTitle, searchStr) || isTextMatch(flatParent, searchStr) || isTextMatch(flatParent, searchStr.replace("pendants", "pendent"))) {
               matchSub = true;
             } else if (searchStr.includes("gia")) {
               const certObj = p.additionalInformation?.find(info => info.key.toLowerCase() === 'certificate');
