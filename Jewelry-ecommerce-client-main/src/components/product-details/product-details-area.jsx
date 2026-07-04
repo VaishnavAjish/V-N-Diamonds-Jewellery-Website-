@@ -67,7 +67,9 @@ const ProductDetailsArea = ({ productItem }) => {
         <div className="container">
           <div className="row">
             <div className="tp-section-title-wrapper-6 text-center mb-40">
-              <span className="tp-section-title-pre-6">Next day Products</span>
+              {productItem?.parent && (
+                <span className="tp-section-title-pre-6">Category: {productItem.parent}</span>
+              )}
               <h3 className="tp-section-title-6">Related Products</h3>
             </div>
           </div>
