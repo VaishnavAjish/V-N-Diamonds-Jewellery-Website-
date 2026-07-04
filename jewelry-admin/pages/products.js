@@ -255,7 +255,7 @@ export default function ProductsPage() {
     setVideoId(p.videoId || '');
     setStatus(p.status || 'in-stock');
     setFeatured(p.featured || false);
-    const getAdd = (key) => (p.additionalInformation || []).find(i => i.key === key)?.value || '';
+    const getAdd = (key) => (p.additionalInformation || []).find(i => i.key?.toLowerCase() === key.toLowerCase())?.value || '';
     setPoeticName(getAdd('Poetic Name'));
     setLotNumber(getAdd('Lot Number'));
     setMetal(getAdd('Metal'));
