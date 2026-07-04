@@ -6,6 +6,9 @@ const DetailsTabNav = ({ product }) => {
   const {_id, description, additionalInformation, reviews, color, setting, parent, children, metalWgt, metalId, shape } = product || {};
   const activeRef = useRef(null)
   const marker = useRef(null);
+
+  // Extract cert PDF from additionalInformation
+  const certPdf = additionalInformation?.find(i => i.key?.toLowerCase() === 'cert pdf')?.value;
   // handleActive
   const handleActive = (e) => {
     if (e.target.classList.contains('active')) {
@@ -47,6 +50,7 @@ const DetailsTabNav = ({ product }) => {
           <div className="nav nav-tabs justify-content-center p-relative tp-product-tab" id="navPresentationTab" role="tablist">
             <NavItem active={true} linkRef={activeRef} id="desc" title="Description" />
             <NavItem id="additional" title="Additional information" />
+            {certPdf && <NavItem id="certificate" title="Certificate" />}
             <NavItem id="review" title={`Reviews (${reviews?.length || 0})`} />
 
             <span ref={marker} id="productTabMarker" className="tp-product-details-tab-line"></span>
@@ -131,6 +135,27 @@ const DetailsTabNav = ({ product }) => {
               </div>
             </div>
           </div>
+          {/* Certificate PDF */}
+          {certPdf && (
+            <div className="tab-pane fade" id="nav-certificate" role="tabpanel" aria-labelledby="nav-certificate-tab" tabIndex="-1">
+              <div className="tp-product-details-desc-wrapper pt-60">
+                <div className="row justify-content-center">
+                  <div className="col-xl-10 text-center">
+                    <iframe
+                      src={`${certPdf}#view=FitH`}
+                      title="Product Certificate"
+                      width="100%"
+                      height="800px"
+                      style={{ border: 'none', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
+                    />
+                    <div className="mt-20">
+                      <a href={certPdf} target="_blank" rel="noreferrer" className="tp-btn">Open PDF in New Tab</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
           {/* review */}
           <div className="tab-pane fade" id="nav-review" role="tabpanel" aria-labelledby="nav-review-tab" tabIndex="-1">
             <div className="tp-product-details-review-wrapper pt-60">
