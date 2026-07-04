@@ -19,7 +19,7 @@ const ExpertiseArea = () => {
   const [images, setImages] = useState(DEFAULT_EXPERTISE_IMAGES);
 
   useEffect(() => {
-    fetch('http://192.168.1.211:7000/api/settings/storefront')
+    fetch(process.env.NEXT_PUBLIC_API_BASE_URL + '/api/settings/storefront')
       .then(res => res.json())
       .then(data => {
         if (data.success && data.data.expertiseImages && data.data.expertiseImages.length > 0) {

@@ -5,16 +5,16 @@ export const categoryApi = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     addCategory: builder.mutation({
       query: (data) => ({
-        url: "http://192.168.1.211:7000/api/category/add",
+        url: process.env.NEXT_PUBLIC_API_BASE_URL + "/api/category/add",
         method: "POST",
         body: data,
       }),
     }),
     getShowCategory: builder.query({
-      query: () => `http://192.168.1.211:7000/api/category/show`
+      query: () => `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/category/show`
     }),
     getProductTypeCategory: builder.query({
-      query: (type) => `http://192.168.1.211:7000/api/category/show/${type}`
+      query: (type) => `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/category/show/${type}`
     }),
   }),
 });

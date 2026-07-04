@@ -5,7 +5,7 @@ export const reviewApi = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     addReview: builder.mutation({
       query: (data) => ({
-        url: "http://192.168.1.211:7000/api/review/add",
+        url: process.env.NEXT_PUBLIC_API_BASE_URL + "/api/review/add",
         method: "POST",
         body: data,
       }),

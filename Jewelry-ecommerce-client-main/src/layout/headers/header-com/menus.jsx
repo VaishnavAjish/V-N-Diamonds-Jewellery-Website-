@@ -77,7 +77,7 @@ const Menus = () => {
           return (
             <li key={menu.id}>
               <a
-                href={`http://localhost:4000/auth-redirect?token=${accessToken}&user=${encodeURIComponent(JSON.stringify(userInfo))}`}
+                href={`${process.env.NEXT_PUBLIC_ADMIN_URL || 'http://localhost:4000'}/auth-redirect?token=${accessToken}&user=${encodeURIComponent(JSON.stringify(userInfo))}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >

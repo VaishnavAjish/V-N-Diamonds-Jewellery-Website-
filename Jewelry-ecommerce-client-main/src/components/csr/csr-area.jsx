@@ -49,7 +49,7 @@ const CsrArea = () => {
   const [cards, setCards] = useState(CSR_CARDS);
 
   useEffect(() => {
-    fetch('http://192.168.1.211:7000/api/settings/storefront')
+    fetch(process.env.NEXT_PUBLIC_API_BASE_URL + '/api/settings/storefront')
       .then(res => res.json())
       .then(data => {
         if (data.success && data.data.csrImages && data.data.csrImages.length > 0) {

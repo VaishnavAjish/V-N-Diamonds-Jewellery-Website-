@@ -7,7 +7,7 @@ export const authApi = apiSlice.injectEndpoints({
     // createPaymentIntent
     createPaymentIntent: builder.mutation({
       query: (data) => ({
-        url: "http://192.168.1.211:7000/api/order/create-payment-intent",
+        url: process.env.NEXT_PUBLIC_API_BASE_URL + "/api/order/create-payment-intent",
         method: "POST",
         body: data,
       }),
@@ -25,7 +25,7 @@ export const authApi = apiSlice.injectEndpoints({
     // saveOrder
     saveOrder: builder.mutation({
       query: (data) => ({
-        url: "http://192.168.1.211:7000/api/order/saveOrder",
+        url: process.env.NEXT_PUBLIC_API_BASE_URL + "/api/order/saveOrder",
         method: "POST",
         body: data,
       }),
@@ -46,13 +46,13 @@ export const authApi = apiSlice.injectEndpoints({
     }),
     // getUserOrders
     getUserOrders: builder.query({
-      query: () => `http://192.168.1.211:7000/api/user-order`,
+      query: () => `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/user-order`,
       providesTags:["UserOrders"],
       keepUnusedDataFor: 600,
     }),
     // getUserOrders
     getUserOrderById: builder.query({
-      query: (id) => `http://192.168.1.211:7000/api/user-order/${id}`,
+      query: (id) => `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/user-order/${id}`,
       providesTags: (result, error, arg) => [{ type: "UserOrder", id: arg }],
       keepUnusedDataFor: 600,
     }),

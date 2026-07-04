@@ -17,13 +17,13 @@ const syncMiddleware = (store) => (next) => (action) => {
   if (user && (user.id || user._id)) {
     // Exclude the set actions to avoid infinite loops if we dispatch them on login
     if (action.type.startsWith('cart/') && action.type !== 'cart/set_cart') {
-      fetch(`http://192.168.1.211:7000/api/user/sync-cart/${user.id || user._id}`, {
+      fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/user/sync-cart/${user.id || user._id}`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ cart: state.cart.cart_products })
       }).catch(() => {}); // ignore fetch errors silently in background
     } else if (action.type.startsWith('wishlist/') && action.type !== 'wishlist/set_wishlist') {
-      fetch(`http://192.168.1.211:7000/api/user/sync-wishlist/${user.id || user._id}`, {
+      fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/user/sync-wishlist/${user.id || user._id}`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ wishlist: state.wishlist.wishlist })

@@ -5,7 +5,7 @@ export const authApi = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     // get offer coupon
     getOfferCoupons: builder.query({
-      query: () => `http://192.168.1.211:7000/api/coupon`,
+      query: () => `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/coupon`,
       providesTags:['Coupon'],
       keepUnusedDataFor: 600,
     }),

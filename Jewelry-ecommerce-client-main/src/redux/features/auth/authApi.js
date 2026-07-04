@@ -7,7 +7,7 @@ export const authApi = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     registerUser: builder.mutation({
       query: (data) => ({
-        url: "http://192.168.1.211:7000/api/user/signup",
+        url: process.env.NEXT_PUBLIC_API_BASE_URL + "/api/user/signup",
         method: "POST",
         body: data,
       }),
@@ -15,7 +15,7 @@ export const authApi = apiSlice.injectEndpoints({
     // signUpProvider
     signUpProvider: builder.mutation({
       query: (token) => ({
-        url: `http://192.168.1.211:7000/api/user/register/${token}`,
+        url: `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/user/register/${token}`,
         method: "POST",
       }),
 
@@ -46,7 +46,7 @@ export const authApi = apiSlice.injectEndpoints({
     // login
     loginUser: builder.mutation({
       query: (data) => ({
-        url: "http://192.168.1.211:7000/api/user/login",
+        url: process.env.NEXT_PUBLIC_API_BASE_URL + "/api/user/login",
         method: "POST",
         body: data,
       }),
@@ -83,7 +83,7 @@ export const authApi = apiSlice.injectEndpoints({
             dispatch({ type: 'cart/set_cart', payload: user.cart });
           } else if (localCart.length > 0) {
             // Push local to DB (we can do this in a separate thunk or API call, but doing a simple fetch here is fine)
-            fetch(`http://192.168.1.211:7000/api/user/sync-cart/${user.id || user._id}`, {
+            fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/user/sync-cart/${user.id || user._id}`, {
               method: 'PATCH',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify({ cart: localCart })
@@ -93,7 +93,7 @@ export const authApi = apiSlice.injectEndpoints({
           if (localWishlist.length === 0 && user.wishlist && user.wishlist.length > 0) {
             dispatch({ type: 'wishlist/set_wishlist', payload: user.wishlist });
           } else if (localWishlist.length > 0) {
-            fetch(`http://192.168.1.211:7000/api/user/sync-wishlist/${user.id || user._id}`, {
+            fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/user/sync-wishlist/${user.id || user._id}`, {
               method: 'PATCH',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify({ wishlist: localWishlist })
@@ -108,7 +108,7 @@ export const authApi = apiSlice.injectEndpoints({
     }),
     // get me
     getUser: builder.query({
-      query: () => "http://192.168.1.211:7000/api/user/me",
+      query: () => process.env.NEXT_PUBLIC_API_BASE_URL + "/api/user/me",
 
       async onQueryStarted(arg, { queryFulfilled, dispatch }) {
         try {
@@ -125,7 +125,7 @@ export const authApi = apiSlice.injectEndpoints({
     }),
     // confirmEmail
     confirmEmail: builder.query({
-      query: (token) => `http://192.168.1.211:7000/api/user/confirmEmail/${token}`,
+      query: (token) => `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/user/confirmEmail/${token}`,
 
       async onQueryStarted(arg, { queryFulfilled, dispatch }) {
         try {
@@ -154,7 +154,7 @@ export const authApi = apiSlice.injectEndpoints({
     // reset password
     resetPassword: builder.mutation({
       query: (data) => ({
-        url: "http://192.168.1.211:7000/api/user/forget-password",
+        url: process.env.NEXT_PUBLIC_API_BASE_URL + "/api/user/forget-password",
         method: "PATCH",
         body: data,
       }),
@@ -162,7 +162,7 @@ export const authApi = apiSlice.injectEndpoints({
     // confirmForgotPassword
     confirmForgotPassword: builder.mutation({
       query: (data) => ({
-        url: "http://192.168.1.211:7000/api/user/confirm-forget-password",
+        url: process.env.NEXT_PUBLIC_API_BASE_URL + "/api/user/confirm-forget-password",
         method: "PATCH",
         body: data,
       }),
@@ -170,7 +170,7 @@ export const authApi = apiSlice.injectEndpoints({
     // change password
     changePassword: builder.mutation({
       query: (data) => ({
-        url: "http://192.168.1.211:7000/api/user/change-password",
+        url: process.env.NEXT_PUBLIC_API_BASE_URL + "/api/user/change-password",
         method: "PATCH",
         body: data,
       }),
@@ -178,7 +178,7 @@ export const authApi = apiSlice.injectEndpoints({
     // updateProfile password
     updateProfile: builder.mutation({
       query: ({ id, ...data }) => ({
-        url: `http://192.168.1.211:7000/api/user/update-user/${id}`,
+        url: `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/user/update-user/${id}`,
         method: "PUT",
         body: data,
       }),

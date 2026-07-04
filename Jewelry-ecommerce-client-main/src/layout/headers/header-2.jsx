@@ -71,7 +71,7 @@ const HeaderTwo = ({ style_2 = false }) => {
                       <div className="tp-header-login d-none d-lg-block ml-30 position-relative">
                         <div className="d-flex align-items-center">
                           {userInfo?.imageURL ? (
-                            <a href={userInfo?.role?.toLowerCase() === 'admin' || userInfo?.role?.toLowerCase() === 'superadmin' ? `http://localhost:4000/auth-redirect?token=${accessToken}&user=${encodeURIComponent(JSON.stringify(userInfo))}` : "/profile"} target={userInfo?.role?.toLowerCase() === 'admin' || userInfo?.role?.toLowerCase() === 'superadmin' ? "_blank" : "_self"} rel="noopener noreferrer" className="tp-header-action-btn" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '40px', height: '40px', borderRadius: '50%', overflow: 'hidden', border: '1.5px solid currentColor' }}>
+                            <a href={userInfo?.role?.toLowerCase() === 'admin' || userInfo?.role?.toLowerCase() === 'superadmin' ? `${process.env.NEXT_PUBLIC_ADMIN_URL || 'http://localhost:4000'}/auth-redirect?token=${accessToken}&user=${encodeURIComponent(JSON.stringify(userInfo))}` : "/profile"} target={userInfo?.role?.toLowerCase() === 'admin' || userInfo?.role?.toLowerCase() === 'superadmin' ? "_blank" : "_self"} rel="noopener noreferrer" className="tp-header-action-btn" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '40px', height: '40px', borderRadius: '50%', overflow: 'hidden', border: '1.5px solid currentColor' }}>
                               <Image
                                 src={userInfo.imageURL}
                                 alt="user img"
@@ -81,7 +81,7 @@ const HeaderTwo = ({ style_2 = false }) => {
                               />
                             </a>
                           ) : userInfo?.name ? (
-                            <a href={userInfo?.role?.toLowerCase() === 'admin' || userInfo?.role?.toLowerCase() === 'superadmin' ? `http://localhost:4000/auth-redirect?token=${accessToken}&user=${encodeURIComponent(JSON.stringify(userInfo))}` : "/profile"} target={userInfo?.role?.toLowerCase() === 'admin' || userInfo?.role?.toLowerCase() === 'superadmin' ? "_blank" : "_self"} rel="noopener noreferrer" className="tp-header-action-btn" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '40px', height: '40px', borderRadius: '50%', border: '1.5px solid currentColor', textDecoration: 'none' }}>
+                            <a href={userInfo?.role?.toLowerCase() === 'admin' || userInfo?.role?.toLowerCase() === 'superadmin' ? `${process.env.NEXT_PUBLIC_ADMIN_URL || 'http://localhost:4000'}/auth-redirect?token=${accessToken}&user=${encodeURIComponent(JSON.stringify(userInfo))}` : "/profile"} target={userInfo?.role?.toLowerCase() === 'admin' || userInfo?.role?.toLowerCase() === 'superadmin' ? "_blank" : "_self"} rel="noopener noreferrer" className="tp-header-action-btn" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '40px', height: '40px', borderRadius: '50%', border: '1.5px solid currentColor', textDecoration: 'none' }}>
                               <span className="text-uppercase" style={{ fontSize: '18px', fontWeight: 600 }}>
                                 {userInfo?.name[0]}
                               </span>

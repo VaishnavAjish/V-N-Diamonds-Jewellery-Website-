@@ -94,7 +94,7 @@ function ProfileSetting({active,handleActive}) {
         )}
         {(user?.role?.toLowerCase() === 'admin' || user?.role?.toLowerCase() === 'superadmin') && (
           <li>
-            <a href={`http://localhost:4000/auth-redirect?token=${accessToken}&user=${encodeURIComponent(JSON.stringify(user))}`} target="_blank" rel="noopener noreferrer">Admin Page</a>
+            <a href={`${process.env.NEXT_PUBLIC_ADMIN_URL || 'http://localhost:4000'}/auth-redirect?token=${accessToken}&user=${encodeURIComponent(JSON.stringify(user))}`} target="_blank" rel="noopener noreferrer">Admin Page</a>
           </li>
         )}
         <li>

@@ -31,7 +31,7 @@ const Wrapper = ({ children }) => {
 
   useEffect(() => {
     if (authChecked && user?._id) {
-      fetch(`http://192.168.1.211:7000/api/user/sync-cart/${user._id}`, {
+      fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/user/sync-cart/${user._id}`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ cart: cart_products })
@@ -41,7 +41,7 @@ const Wrapper = ({ children }) => {
 
   useEffect(() => {
     if (authChecked && user?._id) {
-      fetch(`http://192.168.1.211:7000/api/user/sync-wishlist/${user._id}`, {
+      fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/user/sync-wishlist/${user._id}`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ wishlist: wishlist })

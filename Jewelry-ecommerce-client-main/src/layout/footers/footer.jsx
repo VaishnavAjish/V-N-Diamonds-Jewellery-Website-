@@ -20,7 +20,7 @@ const Footer = ({ style_2 = false, style_3 = false, primary_style = false }) => 
   });
 
   useEffect(() => {
-    fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:7000'}/api/settings/storefront`)
+    fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/settings/storefront`)
       .then(res => res.json())
       .then(data => {
         if (data.success && data.data && data.data.contactInfo) {

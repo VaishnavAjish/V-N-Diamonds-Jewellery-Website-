@@ -10,7 +10,7 @@ const CsrPage = () => {
   const [storefrontSettings, setStorefrontSettings] = useState(null);
 
   useEffect(() => {
-    fetch('http://192.168.1.211:7000/api/settings/storefront')
+    fetch(process.env.NEXT_PUBLIC_API_BASE_URL + '/api/settings/storefront')
       .then(res => res.json())
       .then(data => {
         if (data.success) setStorefrontSettings(data.data);
