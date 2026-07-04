@@ -20,6 +20,19 @@ const team_data = [
 ];
 
 const OurTeamArea = () => {
+  const [teamMembers, setTeamMembers] = React.useState(team_data);
+
+  React.useEffect(() => {
+    fetch(process.env.NEXT_PUBLIC_API_BASE_URL + '/api/settings/storefront')
+      .then(res => res.json())
+      .then(data => {
+        if (data.success && data.data?.teamMembers?.length > 0) {
+          setTeamMembers(data.data.teamMembers);
+        }
+      })
+      .catch(err => console.error("Failed to load storefront settings", err));
+  }, []);
+
   return (
     <>
       <style>{`
@@ -127,12 +140,12 @@ const OurTeamArea = () => {
           <h2 className="team-title">Our Team</h2>
 
           <div className="team-grid">
-            {team_data.map((member) => (
-              <div key={member.id} className="team-card">
+            {teamMembers.map((member, index) => (
+              <div key={member.id || index} className="team-card">
                 <div className="team-img-wrapper">
                   <Image 
-                    src={member.img} 
-                    alt={member.name} 
+                    src={member.img || '/assets/img/users/user-2.jpg'} 
+                    alt={member.name || 'Team Member'} 
                     fill 
                     style={{ objectFit: 'cover' }} 
                     sizes="(max-width: 768px) 100vw, 33vw"
