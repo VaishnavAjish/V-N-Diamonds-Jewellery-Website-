@@ -69,6 +69,8 @@ export default function ProductsPage() {
   const [shape, setShape] = useState('');
   const [certificate, setCertificate] = useState('');
   const [certNo, setCertNo] = useState('');
+  const [certPdf, setCertPdf] = useState('');
+  const [uploadingCertPdf, setUploadingCertPdf] = useState(false);
   const [grossGms, setGrossGms] = useState('');
   const [usdPrice, setUsdPrice] = useState('');
   
@@ -262,6 +264,7 @@ export default function ProductsPage() {
     setShape(getAdd('Shape'));
     setCertificate(getAdd('Certificate'));
     setCertNo(getAdd('Cert.No'));
+    setCertPdf(getAdd('Cert PDF') || '');
     setGrossGms(getAdd('Gross Gms'));
     setUsdPrice(getAdd('USD Price'));
 
@@ -349,6 +352,7 @@ export default function ProductsPage() {
           { key: 'Shape', value: shape },
           { key: 'Certificate', value: certificate },
           { key: 'Cert.No', value: certNo },
+          { key: 'Cert PDF', value: certPdf },
           { key: 'Gross Gms', value: grossGms },
           { key: 'USD Price', value: usdPrice },
           { key: 'Video 2', value: video2 },
@@ -511,6 +515,7 @@ export default function ProductsPage() {
     setShape('');
     setCertificate('');
     setCertNo('');
+    setCertPdf('');
     setGrossGms('');
     setUsdPrice('');
     setShowNewCategory(false);
@@ -775,6 +780,47 @@ export default function ProductsPage() {
                   </div>
                 </div>
 
+                {/* Certificate PDF Upload */}
+                <div className="form-row">
+                  <div className="form-group" style={{ gridColumn: '1 / -1' }}>
+                    <label className="form-label">Certificate PDF (Optional)</label>
+                    <div style={{ display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap' }}>
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Paste PDF URL or upload below"
+                        value={certPdf}
+                        onChange={e => setCertPdf(e.target.value)}
+                        style={{ flex: 1 }}
+                      />
+                      <label className="btn btn-secondary" style={{ cursor: 'pointer', marginBottom: 0 }}>
+                        {uploadingCertPdf ? 'Uploading...' : '📎 Upload PDF'}
+                        <input
+                          type="file"
+                          accept=".pdf,application/pdf"
+                          style={{ display: 'none' }}
+                          disabled={uploadingCertPdf}
+                          onChange={async (e) => {
+                            const file = e.target.files[0];
+                            if (!file) return;
+                            setUploadingCertPdf(true);
+                            const fd = new FormData();
+                            fd.append('image', file);
+                            try {
+                              const res = await fetch(`${API_BASE}/api/cloudinary/add-img`, { method: 'POST', body: fd });
+                              const d = await res.json();
+                              if (d.success && d.data?.url) setCertPdf(d.data.url);
+                              else alert('PDF upload failed: ' + (d.message || 'unknown'));
+                            } catch(err) { alert('Upload error: ' + err.message); }
+                            finally { setUploadingCertPdf(false); }
+                          }}
+                        />
+                      </label>
+                      {certPdf && <a href={certPdf} target="_blank" rel="noreferrer" style={{ fontSize: 12, color: '#c5a267' }}>View PDF ↗</a>}
+                    </div>
+                  </div>
+                </div>
+
                 <div className="form-row">
                   <div className="form-group">
                     <label className="form-label">Gross Gms *</label>
@@ -854,6 +900,47 @@ export default function ProductsPage() {
                   <div className="form-group">
                     <label className="form-label">Cert.No</label>
                     <input className="form-control" value={certNo} onChange={e => setCertNo(e.target.value)} />
+                  </div>
+                </div>
+
+                {/* Certificate PDF Upload (Edit) */}
+                <div className="form-row">
+                  <div className="form-group" style={{ gridColumn: '1 / -1' }}>
+                    <label className="form-label">Certificate PDF</label>
+                    <div style={{ display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap' }}>
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Paste PDF URL or upload below"
+                        value={certPdf}
+                        onChange={e => setCertPdf(e.target.value)}
+                        style={{ flex: 1 }}
+                      />
+                      <label className="btn btn-secondary" style={{ cursor: 'pointer', marginBottom: 0 }}>
+                        {uploadingCertPdf ? 'Uploading...' : '📎 Upload PDF'}
+                        <input
+                          type="file"
+                          accept=".pdf,application/pdf"
+                          style={{ display: 'none' }}
+                          disabled={uploadingCertPdf}
+                          onChange={async (e) => {
+                            const file = e.target.files[0];
+                            if (!file) return;
+                            setUploadingCertPdf(true);
+                            const fd = new FormData();
+                            fd.append('image', file);
+                            try {
+                              const res = await fetch(`${API_BASE}/api/cloudinary/add-img`, { method: 'POST', body: fd });
+                              const d = await res.json();
+                              if (d.success && d.data?.url) setCertPdf(d.data.url);
+                              else alert('PDF upload failed: ' + (d.message || 'unknown'));
+                            } catch(err) { alert('Upload error: ' + err.message); }
+                            finally { setUploadingCertPdf(false); }
+                          }}
+                        />
+                      </label>
+                      {certPdf && <a href={certPdf} target="_blank" rel="noreferrer" style={{ fontSize: 12, color: '#c5a267' }}>View PDF ↗</a>}
+                    </div>
                   </div>
                 </div>
 
