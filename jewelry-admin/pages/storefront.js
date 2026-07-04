@@ -49,6 +49,12 @@ export default function StorefrontSettings() {
     phone: '',
     location: ''
   });
+  
+  const [teamMembers, setTeamMembers] = useState([
+    { img: '', name: 'Vipul Maheshwari' },
+    { img: '', name: 'Nidhi Vipul Maheshwari' },
+    { img: '', name: 'Prakhar Maheshwari' }
+  ]);
 
   useEffect(() => {
     loadSettings();
@@ -82,6 +88,7 @@ export default function StorefrontSettings() {
         if (data.data.careInstructionsImages?.length > 0) setCareInstructionsImages(data.data.careInstructionsImages);
         if (data.data.ourServicesImage) setOurServicesImage(data.data.ourServicesImage);
         if (data.data.contactInfo) setContactInfo((prev) => ({ ...prev, ...data.data.contactInfo }));
+        if (data.data.teamMembers?.length > 0) setTeamMembers(data.data.teamMembers);
       }
     } catch (err) {
       console.error('Failed to load settings', err);
@@ -110,6 +117,7 @@ export default function StorefrontSettings() {
           careInstructionsImages,
           ourServicesImage,
           contactInfo,
+          teamMembers,
         }),
       });
       const data = await res.json();
@@ -198,6 +206,36 @@ export default function StorefrontSettings() {
                 placeholder="Suite D, 25/F..." 
               />
             </div>
+          </div>
+        </div>
+
+        <div className="card mb-4 p-4">
+          <h2 className="section-title">Our Team Section</h2>
+          <p className="text-secondary" style={{ fontSize: 13, marginBottom: 15 }}>Manage the team members displayed in the About Us page.</p>
+          <div className="row">
+            {teamMembers.map((member, i) => (
+              <div key={i} className="col-md-4 mb-3">
+                <div style={{ padding: '15px', border: '1px solid var(--border)', borderRadius: '8px' }}>
+                  <div className="form-group mb-3">
+                    <label>Name</label>
+                    <input type="text" className="form-control" value={member.name} onChange={(e) => {
+                      const newMembers = [...teamMembers];
+                      newMembers[i].name = e.target.value;
+                      setTeamMembers(newMembers);
+                    }} />
+                  </div>
+                  <div className="form-group mb-3">
+                    <label>Photo</label>
+                    <input type="file" className="form-control" onChange={(e) => uploadImage(e, (url) => {
+                      const newMembers = [...teamMembers];
+                      newMembers[i].img = url;
+                      setTeamMembers(newMembers);
+                    })} />
+                  </div>
+                  {member.img && <img src={member.img} alt={member.name} style={{ width: '100%', height: '150px', objectFit: 'cover', borderRadius: '4px' }} />}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
