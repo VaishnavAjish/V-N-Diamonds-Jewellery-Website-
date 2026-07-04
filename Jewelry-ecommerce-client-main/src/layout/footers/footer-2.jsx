@@ -155,8 +155,7 @@ const FooterTwo = ({ settings, primary_style = false }) => {
                     <div className="tp-footer-copyright">
                       <p style={{ color: '#aaa', marginBottom: 0 }}>
                         © Copyright {new Date().getFullYear()}. All Rights Reserved By{' '}
-                        <span style={{ color: '#cd9a5b' }}>Harene.</span> Designed by{' '}
-                        <span style={{ color: '#cd9a5b' }}>Nidhi IT</span>
+                        <span style={{ color: '#cd9a5b' }}>Harene.</span>
                       </p>
                     </div>
                   </div>

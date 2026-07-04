@@ -166,7 +166,7 @@ const Footer = ({ style_2 = false, style_3 = false, primary_style = false }) => 
                   <div className="col-lg-6 col-md-12 text-center text-lg-end">
                     <div className="tp-footer-copyright">
                       <p style={{ color: '#aaa', marginBottom: '0' }}>
-                        © Copyright {new Date().getFullYear()}. All Rights Reserved By <span style={{ color: '#cd9a5b' }}>Harene.</span> Designed by <span style={{ color: '#cd9a5b' }}>Nidhi IT</span>
+                        © Copyright {new Date().getFullYear()}. All Rights Reserved By <span style={{ color: '#cd9a5b' }}>Harene.</span>
                       </p>
                     </div>
                   </div>

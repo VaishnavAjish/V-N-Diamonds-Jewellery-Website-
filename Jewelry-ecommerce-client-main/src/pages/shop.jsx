@@ -163,12 +163,23 @@ const ShopPage = ({ query }) => {
           matchSub = true; // No subCategory filter applied
         }
 
+        let isMatch = false;
         // Priority to subcategory match if one was requested
         if (targetSubCategories.length > 0) {
-            return matchSub;
+            isMatch = matchSub;
+        } else {
+            isMatch = matchCat;
         }
         
-        return matchCat;
+        // Final check: if category is diamonds, explicitly exclude jewelry pieces
+        if (isMatch && targetCategories.includes('diamonds')) {
+          const jewelryParents = ['ring', 'earrings', 'earring', 'necklace', 'necklaces', 'bracelet', 'bracelets', 'pendent', 'pendants', 'brooch', 'brooches', 'cufflinks', 'bellybutton', 'watches'];
+          if (jewelryParents.some(jp => flatParent.includes(jp))) {
+            return false;
+          }
+        }
+        
+        return isMatch;
       });
     }
 
