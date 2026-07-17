@@ -57,14 +57,14 @@ const HeaderFour = () => {
             <div className="container-fluid pl-85 pr-85">
               <div className="row">
                 <div className="col-12 d-flex justify-content-center align-items-center" style={{ color: sticky ? '#000' : '#fff', fontSize: '13px', fontWeight: 500, letterSpacing: '0.5px' }}>
-                  <a href="#" style={{ 
+                  <a href="https://www.facebook.com/vndiamonds/?locale=zh_HK" target="_blank" rel="noreferrer" style={{ 
                     display: 'inline-flex', alignItems: 'center', justifyContent: 'center', 
                     width: '24px', height: '24px', backgroundColor: sticky ? '#f0f0f0' : '#fff', 
                     borderRadius: '50%', color: '#1877F2', marginRight: '8px', textDecoration: 'none' 
                   }}>
                     <i className="fa-brands fa-facebook-f" style={{ fontSize: '12px' }}></i>
                   </a>
-                  <a href="#" style={{ 
+                  <a href="https://www.instagram.com/harenejewels?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noreferrer" style={{ 
                     display: 'inline-flex', alignItems: 'center', justifyContent: 'center', 
                     width: '24px', height: '24px', backgroundColor: sticky ? '#f0f0f0' : '#fff', 
                     borderRadius: '50%', color: '#E1306C', marginRight: '25px', textDecoration: 'none' 
