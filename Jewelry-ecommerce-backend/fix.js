@@ -1,5 +1,4 @@
-const { PrismaClient } = require('@prisma/client');
-const prisma = new PrismaClient();
+const prisma = require('./prisma/client');
 
 async function fix() {
     try {
@@ -16,9 +15,8 @@ async function fix() {
             select: { categoryName: true, productType: true },
             distinct: ['categoryName']
         });
-        console.log(categories);
+        console.log("Categories found:", categories);
 
-        // Gemstones are usually things like Sapphire, Ruby, Emerald, Aquamarine, etc.
         const gemstoneCats = categories
             .map(c => c.categoryName)
             .filter(c => !['Ring', 'Necklace', 'Earrings', 'Bracelet', 'Pendant', 'Bangle'].includes(c));
