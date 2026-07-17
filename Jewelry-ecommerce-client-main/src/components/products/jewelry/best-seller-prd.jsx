@@ -54,7 +54,7 @@ const BestSellerPrd = () => {
             <div className="col-xl-12">
               <div className="tp-section-title-wrapper-4 mb-50 text-center">
                 <span className="tp-section-title-pre-4">Best Seller This Week&apos;s</span>
-                <h3 className="tp-section-title-4">Top Sellers In Jewellery &amp; Diamonds for You</h3>
+                <h3 className="tp-section-title-4">Exquisite by the House of Harene Jewels.</h3>
               </div>
             </div>
           </div>
