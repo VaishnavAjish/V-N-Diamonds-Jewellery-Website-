@@ -17,9 +17,11 @@ exports.bulkImportExcel = async (req, res, next) => {
   }
 
   const workDir = fs.mkdtempSync(path.join(os.tmpdir(), 'product-import-'));
-  const xlsxPath = path.join(workDir, 'upload.xlsx');
+  const ext = path.extname(req.file.originalname || '').toLowerCase();
+  const isCsv = ext === '.csv';
+  const filePath = path.join(workDir, isCsv ? 'upload.csv' : 'upload.xlsx');
   const imgDir = path.join(workDir, 'images');
-  fs.writeFileSync(xlsxPath, req.file.buffer);
+  fs.writeFileSync(filePath, req.file.buffer);
 
   try {
     const brand = await prisma.brand.findUnique({ where: { id: brandId } });
@@ -27,7 +29,12 @@ exports.bulkImportExcel = async (req, res, next) => {
       return res.status(400).json({ success: false, message: 'Brand not found' });
     }
 
-    const rows = await runExtractScript(xlsxPath, imgDir);
+    let rows;
+    if (isCsv) {
+      rows = await runExtractCsvScript(filePath);
+    } else {
+      rows = await runExtractScript(filePath, imgDir);
+    }
 
     // pre-create all distinct categories once, instead of one upsert per row
     const categoryNames = [...new Set(rows.map((r) => r.categoryName || 'Uncategorized'))];
@@ -209,6 +216,30 @@ function runExtractScript(xlsxPath, imgDir) {
         resolve(parsed);
       } catch (e) {
         reject(new Error('Failed to parse extractor output: ' + e.message));
+      }
+    });
+  });
+}
+
+function runExtractCsvScript(csvPath) {
+  return new Promise((resolve, reject) => {
+    const scriptPath = path.join(__dirname, '..', 'scripts', 'extract_csv_products.py');
+    const py = spawn('python', [scriptPath, csvPath]);
+    let stdout = '';
+    let stderr = '';
+    py.stdout.on('data', (d) => { stdout += d; });
+    py.stderr.on('data', (d) => { stderr += d; });
+    py.on('error', reject);
+    py.on('close', (code) => {
+      if (code !== 0) {
+        return reject(new Error(stderr || `csv extract script exited with code ${code}`));
+      }
+      try {
+        const parsed = JSON.parse(stdout);
+        if (parsed && parsed.error) return reject(new Error(parsed.error));
+        resolve(parsed);
+      } catch (e) {
+        reject(new Error('Failed to parse csv extractor output: ' + e.message));
       }
     });
   });
