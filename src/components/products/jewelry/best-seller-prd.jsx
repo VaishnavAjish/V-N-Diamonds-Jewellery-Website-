@@ -46,14 +46,14 @@ const slider_setting = {
 const BestSellerPrd = () => {
   const { data: products, isError, isLoading } =
     useGetProductTypeQuery({ type: 'jewelry', query: `topSeller=true` });
-    
+
   const swiperRef = React.useRef(null);
 
   const handleMouseEnter = () => {
     if (swiperRef.current) {
       const swiper = swiperRef.current;
       if (swiper.resumeTimeout) clearTimeout(swiper.resumeTimeout);
-      
+
       swiper.autoplay.stop();
       const translate = swiper.getTranslate();
       swiper.setTransition(0);
@@ -65,27 +65,27 @@ const BestSellerPrd = () => {
     if (swiperRef.current) {
       const swiper = swiperRef.current;
       if (swiper.resumeTimeout) clearTimeout(swiper.resumeTimeout);
-      
+
       const currentRawTranslate = swiper.getTranslate();
       const sign = currentRawTranslate <= 0 ? -1 : 1;
       const currentTranslate = Math.abs(currentRawTranslate);
-      
+
       const absoluteSnaps = swiper.snapGrid.map(snap => Math.abs(snap)).sort((a, b) => a - b);
       const nextSnap = absoluteSnaps.find(snap => snap > currentTranslate + 1);
-      
+
       if (nextSnap) {
         const remainingDistance = nextSnap - currentTranslate;
-        const slideDistance = absoluteSnaps[1] - absoluteSnaps[0] || 1; 
-        
+        const slideDistance = absoluteSnaps[1] - absoluteSnaps[0] || 1;
+
         const remainingTime = (remainingDistance / slideDistance) * swiper.params.speed;
-        
+
         swiper.setTransition(remainingTime);
         swiper.setTranslate(sign * nextSnap);
-        
+
         swiper.resumeTimeout = setTimeout(() => {
           if (swiperRef.current) {
-             swiperRef.current.setTransition(swiperRef.current.params.speed);
-             swiperRef.current.autoplay.start();
+            swiperRef.current.setTransition(swiperRef.current.params.speed);
+            swiperRef.current.autoplay.start();
           }
         }, remainingTime);
       } else {
@@ -117,10 +117,10 @@ const BestSellerPrd = () => {
     const product_items = [...base_items, ...base_items, ...base_items];
     content = (
       <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        <Swiper 
+        <Swiper
           onSwiper={(swiper) => swiperRef.current = swiper}
-          {...slider_setting} 
-          modules={[Scrollbar, Autoplay]} 
+          {...slider_setting}
+          modules={[Scrollbar, Autoplay]}
           className="tp-best-slider-active swiper-container mb-10 continuous-slider"
         >
           {product_items.map((item, i) => (
@@ -140,7 +140,7 @@ const BestSellerPrd = () => {
             <div className="col-xl-12">
               <div className="tp-section-title-wrapper-4 mb-50 text-center">
                 <span className="tp-section-title-pre-4">Best Seller This Week’s</span>
-                <h3 className="tp-section-title-4">Top Sellers In Jewellery & Diamonds for You</h3>
+                <h3 className="tp-section-title-4">Top Sellers In Diamonds for You</h3>
               </div>
             </div>
           </div>
