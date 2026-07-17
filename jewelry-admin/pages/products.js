@@ -649,6 +649,7 @@ export default function ProductsPage() {
                     <select className="form-control" value={productType} onChange={(e) => setProductType(e.target.value)}>
                       <option value="jewelry">Jewellery</option>
                       <option value="diamond">Diamond</option>
+                      <option value="gemstone">Gemstone</option>
                     </select>
                   </div>
                 </div>
@@ -692,10 +693,10 @@ export default function ProductsPage() {
                   </div>
                 )}
 
-                {productType !== 'diamond' && (
+                {(productType === 'jewelry' || productType === 'gemstone') && (
                   <div className="form-row">
                     <div className="form-group">
-                      <label className="form-label">Category (Jewellery) *</label>
+                      <label className="form-label">Category ({productType === 'gemstone' ? 'Stone Type' : 'Jewellery'}) *</label>
                       <Select 
                         options={Array.from(new Map(categories.map(c => [
                           ((c.parent || '').trim().toLowerCase().replace(/s$/, '').replace('pendent', 'pendant')), 
@@ -704,39 +705,41 @@ export default function ProductsPage() {
                         value={categories.filter(c => (c.id || c._id) === categoryId).map(c => ({ value: c.id || c._id, label: c.parent }))}
                         onChange={(opt) => { setCategoryId(opt?.value || ''); setSubCategory(''); }}
                         isClearable
-                        placeholder="Select Category"
+                        placeholder={productType === 'gemstone' ? "Select Stone Type" : "Select Category"}
                         styles={{ control: (base) => ({ ...base, minHeight: '42px', borderColor: 'var(--border)' }) }}
                         components={{ MenuList: CustomMenuList }}
                         onAddNew={() => setShowNewCategory(true)}
-                        addNewLabel="category"
+                        addNewLabel={productType === 'gemstone' ? "stone type" : "category"}
                         required={productType !== 'diamond'}
                       />
                     </div>
-                    <div className="form-group">
-                      <label className="form-label">Sub Category (Product) *</label>
-                      <Select
-                        options={Array.from(new Set(subCategoryOptions.map(sub => {
-                          return sub;
-                        }))).filter((v, i, a) => a.findIndex(t => t.trim().toLowerCase().replace(/s$/, '').replace('pendent', 'pendant') === v.trim().toLowerCase().replace(/s$/, '').replace('pendent', 'pendant')) === i).map(sub => ({ value: sub, label: sub }))}
-                        value={subCategory ? { value: subCategory, label: subCategory } : null}
-                        onChange={(opt) => setSubCategory(opt?.value || '')}
-                        isClearable
-                        placeholder="Select Subcategory"
-                        styles={{ control: (base) => ({ ...base, minHeight: '42px', borderColor: 'var(--border)' }) }}
-                        components={{ MenuList: CustomMenuList }}
-                        onAddNew={() => setShowNewSub(true)}
-                        addNewLabel="sub category"
-                        required={productType !== 'diamond'}
-                      />
-                    </div>
+                    {productType === 'jewelry' && (
+                      <div className="form-group">
+                        <label className="form-label">Sub Category (Product) *</label>
+                        <Select
+                          options={Array.from(new Set(subCategoryOptions.map(sub => {
+                            return sub;
+                          }))).filter((v, i, a) => a.findIndex(t => t.trim().toLowerCase().replace(/s$/, '').replace('pendent', 'pendant') === v.trim().toLowerCase().replace(/s$/, '').replace('pendent', 'pendant')) === i).map(sub => ({ value: sub, label: sub }))}
+                          value={subCategory ? { value: subCategory, label: subCategory } : null}
+                          onChange={(opt) => setSubCategory(opt?.value || '')}
+                          isClearable
+                          placeholder="Select Subcategory"
+                          styles={{ control: (base) => ({ ...base, minHeight: '42px', borderColor: 'var(--border)' }) }}
+                          components={{ MenuList: CustomMenuList }}
+                          onAddNew={() => setShowNewSub(true)}
+                          addNewLabel="sub category"
+                          required={productType === 'jewelry'}
+                        />
+                      </div>
+                    )}
                   </div>
                 )}
 
-                {productType !== 'diamond' && (
+                {productType === 'jewelry' && (
                   <div className="form-row">
                     <div className="form-group">
                       <label className="form-label">Poetic Name *</label>
-                      <input className="form-control" placeholder="E.g. Midnight Star" value={poeticName} onChange={(e) => setPoeticName(e.target.value)} required={productType !== 'diamond'} />
+                      <input className="form-control" placeholder="E.g. Midnight Star" value={poeticName} onChange={(e) => setPoeticName(e.target.value)} required={productType === 'jewelry'} />
                     </div>
                   </div>
                 )}
@@ -747,23 +750,27 @@ export default function ProductsPage() {
                   </div>
                 </div>
 
-                <div className="form-row">
-                  <div className="form-group">
-                    <label className="form-label">Metal *</label>
-                    <input className="form-control" placeholder="E.g. 18K Gold" value={metal} onChange={(e) => setMetal(e.target.value)} required />
+                {productType !== 'gemstone' && (
+                  <div className="form-row">
+                    <div className="form-group">
+                      <label className="form-label">Metal *</label>
+                      <input className="form-control" placeholder="E.g. 18K Gold" value={metal} onChange={(e) => setMetal(e.target.value)} required />
+                    </div>
+                    <div className="form-group">
+                      <label className="form-label">Metal gms *</label>
+                      <input className="form-control" placeholder="E.g. 10.5" type="number" step="0.01" value={metalGms} onChange={(e) => setMetalGms(e.target.value)} required />
+                    </div>
                   </div>
-                  <div className="form-group">
-                    <label className="form-label">Metal gms *</label>
-                    <input className="form-control" placeholder="E.g. 10.5" type="number" step="0.01" value={metalGms} onChange={(e) => setMetalGms(e.target.value)} required />
-                  </div>
-                </div>
+                )}
 
                 <div className="form-row">
-                  <div className="form-group">
-                    <label className="form-label">Diamond Pcs</label>
-                    <input className="form-control" placeholder="E.g. 15" type="number" value={diamondPcs} onChange={(e) => setDiamondPcs(e.target.value)} />
-                  </div>
-                  <div className="form-group">
+                  {productType !== 'gemstone' && (
+                    <div className="form-group">
+                      <label className="form-label">Diamond Pcs</label>
+                      <input className="form-control" placeholder="E.g. 15" type="number" value={diamondPcs} onChange={(e) => setDiamondPcs(e.target.value)} />
+                    </div>
+                  )}
+                  <div className="form-group" style={productType === 'gemstone' ? { gridColumn: '1 / -1' } : {}}>
                     <label className="form-label">Shape *</label>
                     <input className="form-control" placeholder="E.g. Round" value={shape} onChange={(e) => setShape(e.target.value)} required />
                   </div>
@@ -822,21 +829,23 @@ export default function ProductsPage() {
                 </div>
 
                 <div className="form-row">
-                  <div className="form-group">
-                    <label className="form-label">Gross Gms *</label>
-                    <input className="form-control" placeholder="E.g. 12.0" type="number" step="0.01" value={grossGms} onChange={(e) => setGrossGms(e.target.value)} required />
-                  </div>
-                  <div className="form-group">
+                  {productType !== 'gemstone' && (
+                    <div className="form-group">
+                      <label className="form-label">Gross Gms *</label>
+                      <input className="form-control" placeholder="E.g. 12.0" type="number" step="0.01" value={grossGms} onChange={(e) => setGrossGms(e.target.value)} required />
+                    </div>
+                  )}
+                  <div className="form-group" style={productType === 'gemstone' ? { gridColumn: '1 / -1' } : {}}>
                     <label className="form-label">USD Price *</label>
                     <input className="form-control" placeholder="E.g. 500" type="number" step="0.01" value={usdPrice} onChange={(e) => setUsdPrice(e.target.value)} required />
                   </div>
                 </div>
 
-                {productType !== 'diamond' && (
+                {productType === 'jewelry' && (
                   <div className="form-row">
                     <div className="form-group">
                       <label className="form-label">Brand *</label>
-                      <select className="form-control" value={brandId} onChange={(e) => setBrandId(e.target.value)} required={productType !== 'diamond'}>
+                      <select className="form-control" value={brandId} onChange={(e) => setBrandId(e.target.value)} required={productType === 'jewelry'}>
                         <option value="">Select Brand</option>
                         {brands.map(b => (
                           <option key={b.id || b._id} value={b.id || b._id}>{b.name}</option>
