@@ -81,7 +81,7 @@ const HeaderFour = () => {
               </div>
             </div>
           </div>
-          <div className="tp-header-bottom-3 pl-85 pr-85" style={{ paddingTop: '5px' }}>
+          <div className="tp-header-bottom-3 pl-85 pr-85" style={{ marginTop: '-25px' }}>
             <div className="container-fluid">
               <div className="row align-items-center">
                 <div className="col-xl-2 col-lg-2 col-6">
