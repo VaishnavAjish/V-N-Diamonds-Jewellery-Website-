@@ -53,30 +53,30 @@ const HeaderFour = () => {
       <header>
         <div id="header-sticky" className={`tp-header-area ${isMinimalDesign ? '' : 'tp-header-style-transparent-white'} tp-header-sticky tp-header-transparent has-dark-logo tp-header-height ${sticky ? 'header-sticky' : ''}`}>
           {/* NEW TOP BAR */}
-          <div style={{ backgroundColor: 'transparent', padding: '8px 0', borderBottom: '1px solid rgba(255,255,255,0.1)' }} className={`d-none d-md-block ${sticky ? 'd-none' : ''}`}>
+          <div style={{ backgroundColor: 'transparent', padding: '2px 0' }} className="d-none d-md-block">
             <div className="container-fluid pl-85 pr-85">
               <div className="row">
-                <div className="col-12 d-flex justify-content-center align-items-center" style={{ color: '#fff', fontSize: '13px', fontWeight: 500, letterSpacing: '0.5px' }}>
+                <div className="col-12 d-flex justify-content-center align-items-center" style={{ color: sticky ? '#000' : '#fff', fontSize: '13px', fontWeight: 500, letterSpacing: '0.5px' }}>
                   <a href="#" style={{ 
                     display: 'inline-flex', alignItems: 'center', justifyContent: 'center', 
-                    width: '24px', height: '24px', backgroundColor: '#fff', 
+                    width: '24px', height: '24px', backgroundColor: sticky ? '#f0f0f0' : '#fff', 
                     borderRadius: '50%', color: '#1877F2', marginRight: '8px', textDecoration: 'none' 
                   }}>
                     <i className="fa-brands fa-facebook-f" style={{ fontSize: '12px' }}></i>
                   </a>
                   <a href="#" style={{ 
                     display: 'inline-flex', alignItems: 'center', justifyContent: 'center', 
-                    width: '24px', height: '24px', backgroundColor: '#fff', 
+                    width: '24px', height: '24px', backgroundColor: sticky ? '#f0f0f0' : '#fff', 
                     borderRadius: '50%', color: '#E1306C', marginRight: '25px', textDecoration: 'none' 
                   }}>
                     <i className="fa-brands fa-instagram" style={{ fontSize: '12px' }}></i>
                   </a>
                   
-                  <a href="/contact" style={{ color: '#fff', textDecoration: 'none', transition: 'opacity 0.3s' }} onMouseOver={(e) => e.target.style.opacity=0.7} onMouseOut={(e) => e.target.style.opacity=1}>Client Services</a>
+                  <a href="/contact" style={{ color: sticky ? '#000' : '#fff', textDecoration: 'none', transition: 'opacity 0.3s' }} onMouseOver={(e) => e.target.style.opacity=0.7} onMouseOut={(e) => e.target.style.opacity=1}>Client Services</a>
                   <span style={{ margin: '0 12px', opacity: 0.6 }}>·</span>
-                  <a href="/contact" style={{ color: '#fff', textDecoration: 'none', transition: 'opacity 0.3s' }} onMouseOver={(e) => e.target.style.opacity=0.7} onMouseOut={(e) => e.target.style.opacity=1}>Book an Appointment</a>
+                  <a href="/contact" style={{ color: sticky ? '#000' : '#fff', textDecoration: 'none', transition: 'opacity 0.3s' }} onMouseOver={(e) => e.target.style.opacity=0.7} onMouseOut={(e) => e.target.style.opacity=1}>Book an Appointment</a>
                   <span style={{ margin: '0 12px', opacity: 0.6 }}>·</span>
-                  <a href="tel:+85269731885" style={{ color: '#fff', textDecoration: 'none', transition: 'opacity 0.3s' }} onMouseOver={(e) => e.target.style.opacity=0.7} onMouseOut={(e) => e.target.style.opacity=1}>+852-69731885</a>
+                  <a href="tel:+85269731885" style={{ color: sticky ? '#000' : '#fff', textDecoration: 'none', transition: 'opacity 0.3s' }} onMouseOver={(e) => e.target.style.opacity=0.7} onMouseOut={(e) => e.target.style.opacity=1}>+852-69731885</a>
                 </div>
               </div>
             </div>
