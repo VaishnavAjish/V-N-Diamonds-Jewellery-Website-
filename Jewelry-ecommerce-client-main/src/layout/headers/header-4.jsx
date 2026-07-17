@@ -51,8 +51,7 @@ const HeaderFour = () => {
   return (
     <>
       <header>
-        {/* NEW TOP BAR */}
-        <div style={{ backgroundColor: '#2C3E50', padding: '8px 0' }} className="d-none d-md-block">
+        <div style={{ backgroundColor: 'transparent', padding: '8px 0', borderBottom: '1px solid rgba(255,255,255,0.1)' }} className="d-none d-md-block">
           <div className="container-fluid pl-85 pr-85">
             <div className="row">
               <div className="col-12 d-flex justify-content-center align-items-center" style={{ color: '#fff', fontSize: '13px', fontWeight: 500, letterSpacing: '0.5px' }}>
