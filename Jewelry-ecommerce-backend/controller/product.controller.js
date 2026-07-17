@@ -200,7 +200,8 @@ exports.getDynamicFilters = async (req, res, next) => {
 function runExtractScript(xlsxPath, imgDir) {
   return new Promise((resolve, reject) => {
     const scriptPath = path.join(__dirname, '..', 'scripts', 'extract_excel_products.py');
-    const py = spawn('python', [scriptPath, xlsxPath, imgDir]);
+    const pyCmd = process.platform === 'win32' ? 'python' : 'python3';
+    const py = spawn(pyCmd, [scriptPath, xlsxPath, imgDir]);
     let stdout = '';
     let stderr = '';
     py.stdout.on('data', (d) => { stdout += d; });
@@ -224,7 +225,8 @@ function runExtractScript(xlsxPath, imgDir) {
 function runExtractCsvScript(csvPath) {
   return new Promise((resolve, reject) => {
     const scriptPath = path.join(__dirname, '..', 'scripts', 'extract_csv_products.py');
-    const py = spawn('python', [scriptPath, csvPath]);
+    const pyCmd = process.platform === 'win32' ? 'python' : 'python3';
+    const py = spawn(pyCmd, [scriptPath, csvPath]);
     let stdout = '';
     let stderr = '';
     py.stdout.on('data', (d) => { stdout += d; });
