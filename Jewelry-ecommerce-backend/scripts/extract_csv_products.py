@@ -50,6 +50,7 @@ def parse_csv(csv_path):
             }
             
             if fmt == "jewellery":
+                data["productType"] = "jewelry"
                 data["categoryName"] = get_val("Category") or get_val("Type")
                 data["subCategory"] = get_val("Type")
                 data["settingType"] = get_val("Item Title")
@@ -67,6 +68,7 @@ def parse_csv(csv_path):
                 data["certNo"] = get_val("Jewelry Lab Report") or get_val("Gem Lab Report #")
                 
             elif fmt == "gemstone":
+                data["productType"] = "gemstone"
                 data["categoryName"] = get_val("Stone Type")
                 data["subCategory"] = ""
                 data["settingType"] = ""
@@ -83,6 +85,7 @@ def parse_csv(csv_path):
                 data["certNo"] = get_val("Report # 1")
                 
             elif fmt == "loosediamond":
+                data["productType"] = "diamond"
                 data["categoryName"] = "Diamond"
                 data["subCategory"] = ""
                 data["settingType"] = ""

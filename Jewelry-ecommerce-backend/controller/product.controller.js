@@ -95,7 +95,7 @@ exports.bulkImportExcel = async (req, res, next) => {
           categoryId: category.id,
           categoryName: category.parent,
           status: 'in-stock',
-          productType: 'jewelry',
+          productType: row.productType || 'jewelry',
           description,
           additionalInformation: [
             { key: 'Jewellery', value: row.categoryName },
