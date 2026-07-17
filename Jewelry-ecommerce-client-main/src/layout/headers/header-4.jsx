@@ -48,6 +48,7 @@ const HeaderFour = () => {
       .catch(err => console.error(err));
   }, []);
 
+  return (
     <>
       <header>
         <div id="header-sticky" className={`tp-header-area ${isMinimalDesign ? '' : 'tp-header-style-transparent-white'} tp-header-sticky tp-header-transparent has-dark-logo tp-header-height ${sticky ? 'header-sticky' : ''}`}>
