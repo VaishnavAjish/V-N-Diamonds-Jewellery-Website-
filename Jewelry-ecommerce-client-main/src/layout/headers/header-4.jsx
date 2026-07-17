@@ -53,7 +53,7 @@ const HeaderFour = () => {
       <header>
         <div id="header-sticky" className={`tp-header-area ${isMinimalDesign ? '' : 'tp-header-style-transparent-white'} tp-header-sticky tp-header-transparent has-dark-logo tp-header-height ${sticky ? 'header-sticky' : ''}`}>
           {/* NEW TOP BAR */}
-          <div style={{ backgroundColor: 'transparent', padding: '0', marginBottom: '-15px', position: 'relative', zIndex: 99 }} className="d-none d-md-block">
+          <div style={{ backgroundColor: 'transparent', padding: '10px 0 5px 0', position: 'relative', zIndex: 99 }} className="d-none d-md-block">
             <div className="container-fluid pl-85 pr-85">
               <div className="row">
                 <div className="col-12 d-flex justify-content-center align-items-center" style={{ color: sticky ? '#000' : '#fff', fontSize: '13px', fontWeight: 500, letterSpacing: '0.5px' }}>
@@ -81,7 +81,7 @@ const HeaderFour = () => {
               </div>
             </div>
           </div>
-          <div className="tp-header-bottom-3 pl-85 pr-85">
+          <div className="tp-header-bottom-3 pl-85 pr-85" style={{ paddingTop: '5px' }}>
             <div className="container-fluid">
               <div className="row align-items-center">
                 <div className="col-xl-2 col-lg-2 col-6">
