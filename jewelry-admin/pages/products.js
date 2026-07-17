@@ -36,6 +36,7 @@ export default function ProductsPage() {
   const [filtered, setFiltered] = useState([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState('');
+  const [activeTypeFilter, setActiveTypeFilter] = useState('all');
   const [deleteId, setDeleteId] = useState(null);
 
   // Metadata states
@@ -105,6 +106,7 @@ export default function ProductsPage() {
   const [showImportModal, setShowImportModal] = useState(false);
   const [importBrandId, setImportBrandId] = useState('');
   const [importFile, setImportFile] = useState(null);
+  const [importProductType, setImportProductType] = useState('auto');
   const [importing, setImporting] = useState(false);
   const [importResult, setImportResult] = useState(null);
 
@@ -116,12 +118,14 @@ export default function ProductsPage() {
 
   useEffect(() => {
     const q = search.toLowerCase();
-    setFiltered(products.filter(p =>
-      (p.title || '').toLowerCase().includes(q) ||
-      (p.productType || '').toLowerCase().includes(q) ||
-      (p.sku || '').toLowerCase().includes(q)
-    ));
-  }, [search, products]);
+    setFiltered(products.filter(p => {
+      const matchesSearch = (p.title || '').toLowerCase().includes(q) ||
+        (p.productType || '').toLowerCase().includes(q) ||
+        (p.sku || '').toLowerCase().includes(q);
+      const matchesType = activeTypeFilter === 'all' || p.productType === activeTypeFilter;
+      return matchesSearch && matchesType;
+    }));
+  }, [search, products, activeTypeFilter]);
 
   const load = async () => {
     setLoading(true);
@@ -455,6 +459,9 @@ export default function ProductsPage() {
     const formData = new FormData();
     formData.append('file', importFile);
     formData.append('brandId', importBrandId);
+    if (importProductType !== 'auto') {
+      formData.append('productType', importProductType);
+    }
     try {
       const res = await fetch(`${API_BASE}/api/product/bulk-import-excel`, {
         method: 'POST',
@@ -573,6 +580,24 @@ export default function ProductsPage() {
           <span className="text-muted text-sm">{filtered.length} found</span>
         </div>
 
+        <div style={{ display: 'flex', gap: 8, marginBottom: 16, flexWrap: 'wrap' }}>
+          {[
+            { key: 'all', label: '🔹 All' },
+            { key: 'jewelry', label: '💍 Jewellery' },
+            { key: 'gemstone', label: '💎 Gemstone' },
+            { key: 'diamond', label: '🔷 Loose Diamond' },
+          ].map(tab => (
+            <button
+              key={tab.key}
+              onClick={() => setActiveTypeFilter(tab.key)}
+              className={`btn${activeTypeFilter === tab.key ? ' btn-primary' : ''}`}
+              style={{ fontSize: 13 }}
+            >
+              {tab.label} ({products.filter(p => tab.key === 'all' ? true : p.productType === tab.key).length})
+            </button>
+          ))}
+        </div>
+
         {loading ? (
           <div className="flex-center" style={{ height: 200 }}><div className="spinner" style={{ width: 32, height: 32, borderWidth: 3 }} /></div>
         ) : filtered.length === 0 ? (
@@ -615,7 +640,15 @@ export default function ProductsPage() {
                       </div>
                     </td>
                     <td><span className="td-mono">{p.sku}</span></td>
-                    <td><span className="badge badge-blue">{p.productType}</span></td>
+                    <td>
+                      {p.productType === 'diamond' ? (
+                        <span className="badge" style={{ background: '#dbeafe', color: '#1e40af' }}>🔷 Diamond</span>
+                      ) : p.productType === 'gemstone' ? (
+                        <span className="badge" style={{ background: '#fce7f3', color: '#9d174d' }}>💎 Gemstone</span>
+                      ) : (
+                        <span className="badge" style={{ background: '#d1fae5', color: '#065f46' }}>💍 Jewellery</span>
+                      )}
+                    </td>
                     <td className="td-primary">${Number(p.price || 0).toLocaleString('en-US')}</td>
                     <td>{p.discount ? <span className="badge badge-yellow">{p.discount}% off</span> : '—'}</td>
                     <td>{p.quantity ?? '—'}</td>
@@ -1102,7 +1135,16 @@ export default function ProductsPage() {
                   </select>
                 </div>
                 <div className="form-group">
-                  <label className="form-label">Excel File *</label>
+                  <label className="form-label">Product Type</label>
+                  <select className="form-control" value={importProductType} onChange={(e) => setImportProductType(e.target.value)}>
+                    <option value="auto">🔍 Auto-Detect from File Headers</option>
+                    <option value="jewelry">💍 Jewellery</option>
+                    <option value="gemstone">💎 Gemstone</option>
+                    <option value="diamond">🔷 Loose Diamond</option>
+                  </select>
+                </div>
+                <div className="form-group">
+                  <label className="form-label">Excel / CSV File *</label>
                   <input type="file" className="form-control" accept=".xlsx,.xls,.csv" onChange={(e) => setImportFile(e.target.files[0])} required />
                 </div>
 
