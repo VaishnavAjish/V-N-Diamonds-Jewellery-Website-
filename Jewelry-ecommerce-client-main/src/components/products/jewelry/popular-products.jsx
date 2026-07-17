@@ -5,6 +5,13 @@ import ProductItem from './product-item';
 import ErrorMsg from '@/components/common/error-msg';
 import { HomeTwoPopularPrdLoader } from '@/components/loader';
 
+const CATEGORIES = [
+  { key: 'ring', label: 'Ring' },
+  { key: 'earring', label: 'Earring' },
+  { key: 'necklace', label: 'Necklace' },
+  { key: 'bracelet', label: 'Bracelet' },
+];
+
 const PopularProducts = () => {
   const { data: products, isError, isLoading } =
     useGetProductTypeQuery({ type: 'jewelry', query: `new=true` });
@@ -21,20 +28,18 @@ const PopularProducts = () => {
     content = <ErrorMsg msg="No Products found!" />;
   }
   if (!isLoading && !isError && products?.data?.length > 0) {
-    // Filter out watches and LGD, then pick the 4 most expensive
-    const jewelleryProducts = products.data.filter(p => {
-      const cat = (p.parent || p.children || '').toLowerCase();
-      return !cat.includes('watch') && !cat.includes('lgd');
-    });
-
-    // Sort by price descending, take top 4
-    const top4Expensive = [...jewelleryProducts]
-      .sort((a, b) => (b.price || 0) - (a.price || 0))
-      .slice(0, 4);
+    // Pick one product from each category: Ring, Earring, Necklace, Bracelet
+    const categoryProducts = CATEGORIES.map(({ key }) => {
+      return products.data.find(p => {
+        const parent = (p.parent || '').toLowerCase();
+        const child = (p.children || '').toLowerCase();
+        return parent.includes(key) || child.includes(key);
+      });
+    }).filter(Boolean);
 
     content = (
       <div className="row justify-content-center">
-        {top4Expensive.map((product) => (
+        {categoryProducts.map((product) => (
           <div key={product?.id || product?._id} className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
             <ProductItem product={product} />
           </div>

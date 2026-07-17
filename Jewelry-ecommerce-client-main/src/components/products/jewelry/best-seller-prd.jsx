@@ -5,13 +5,6 @@ import ErrorMsg from '@/components/common/error-msg';
 import { useGetProductTypeQuery } from '@/redux/features/productApi';
 import { HomeTwoBestSellPrdPrdLoader } from '@/components/loader';
 
-const CATEGORIES = [
-  { key: 'ring', label: 'Ring' },
-  { key: 'earring', label: 'Earring' },
-  { key: 'necklace', label: 'Necklace' },
-  { key: 'bracelet', label: 'Bracelet' },
-];
-
 const BestSellerPrd = () => {
   const { data: products, isError, isLoading } =
     useGetProductTypeQuery({ type: 'jewelry' });
@@ -33,21 +26,20 @@ const BestSellerPrd = () => {
     content = <ErrorMsg msg="No Products found!" />;
   }
   if (!isLoading && !isError && products?.data?.length > 0) {
-    // Pick one product for each category: Ring, Earring, Necklace, Bracelet
-    const categoryProducts = CATEGORIES.map(({ key, label }) => {
-      const match = products.data.find(p => {
-        const parent = (p.parent || '').toLowerCase();
-        const child = (p.children || '').toLowerCase();
-        return parent.includes(key) || child.includes(key);
-      });
-      return { label, product: match };
-    }).filter(({ product }) => !!product);
+    // Sort by price descending, take top 4 most expensive
+    const top4 = [...products.data]
+      .filter(p => {
+        const cat = (p.parent || p.children || '').toLowerCase();
+        return !cat.includes('watch') && !cat.includes('lgd');
+      })
+      .sort((a, b) => (b.price || 0) - (a.price || 0))
+      .slice(0, 4);
 
     content = (
       <div className="row justify-content-center">
-        {categoryProducts.map(({ label, product }) => (
-          <div key={product?.id || product?._id} className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-            <ProductItem product={product} />
+        {top4.map((item) => (
+          <div key={item?.id || item?._id} className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+            <ProductItem product={item} />
           </div>
         ))}
       </div>
