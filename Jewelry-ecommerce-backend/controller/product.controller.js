@@ -11,7 +11,7 @@ exports.bulkImportExcel = async (req, res, next) => {
   if (!req.file) {
     return res.status(400).json({ success: false, message: 'No file uploaded' });
   }
-  const { brandId } = req.body;
+  const { brandId, productType: productTypeOverride } = req.body;
   if (!brandId) {
     return res.status(400).json({ success: false, message: 'brandId is required' });
   }
@@ -95,7 +95,7 @@ exports.bulkImportExcel = async (req, res, next) => {
           categoryId: category.id,
           categoryName: category.parent,
           status: 'in-stock',
-          productType: row.productType || 'jewelry',
+          productType: productTypeOverride || row.productType || 'jewelry',
           description,
           additionalInformation: [
             { key: 'Jewellery', value: row.categoryName },
