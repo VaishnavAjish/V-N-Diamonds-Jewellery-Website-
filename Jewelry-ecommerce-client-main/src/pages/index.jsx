@@ -6,7 +6,6 @@ import JewelryBanner from '@/components/banner/jewelry-banner';
 import JewelryShopBanner from '@/components/shop-banner/jewelry-shop-banner';
 import JewelryAbout from '@/components/about/jewelry-about';
 import PopularProducts from '@/components/products/jewelry/popular-products';
-import ProductArea from '@/components/products/jewelry/product-area';
 import JewelryCollectionBanner from '@/components/shop-banner/jewelry-collection-banner';
 import BestSellerPrd from '@/components/products/jewelry/best-seller-prd';
 import JewelryBrands from '@/components/brand/jewelry-brands';
@@ -35,7 +34,6 @@ export default function Home() {
       <JewelryShopBanner settings={storefrontSettings} />
       <JewelryAbout settings={storefrontSettings} />
       <PopularProducts/>
-      <ProductArea/>
       <JewelryCollectionBanner settings={storefrontSettings} />
       <BestSellerPrd/>
 
