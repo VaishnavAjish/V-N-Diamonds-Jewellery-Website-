@@ -14,7 +14,7 @@ const CATEGORIES = [
 
 const PopularProducts = () => {
   const { data: products, isError, isLoading } =
-    useGetProductTypeQuery({ type: 'jewelry', query: `new=true` });
+    useGetProductTypeQuery({ type: 'jewelry' });
 
   let content = null;
 
