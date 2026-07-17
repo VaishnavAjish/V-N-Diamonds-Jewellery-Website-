@@ -1094,7 +1094,7 @@ export default function ProductsPage() {
                 </div>
                 <div className="form-group">
                   <label className="form-label">Excel File *</label>
-                  <input type="file" className="form-control" accept=".xlsx,.xls" onChange={(e) => setImportFile(e.target.files[0])} required />
+                  <input type="file" className="form-control" accept=".xlsx,.xls,.csv" onChange={(e) => setImportFile(e.target.files[0])} required />
                 </div>
 
                 {importResult && (
