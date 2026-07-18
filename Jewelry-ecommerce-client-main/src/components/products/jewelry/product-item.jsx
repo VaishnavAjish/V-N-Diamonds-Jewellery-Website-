@@ -37,8 +37,8 @@ const ProductItem = ({ product }) => {
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
       >
-        <Link href={`/product-details/${_id}`} style={{ display: 'block', height: '352px', width: '100%' }}>
-          <Image src={(img && (img.startsWith('http') || img.startsWith('/'))) ? img : 'https://images.unsplash.com/photo-1605100804763-247f67982213?auto=format&fit=crop&q=80&w=800'} alt="product img" width={284} height={352} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        <Link href={`/product-details/${_id}`} style={{ display: 'block', aspectRatio: '1/1', width: '100%' }}>
+          <Image src={(img && (img.startsWith('http') || img.startsWith('/'))) ? img : 'https://images.unsplash.com/photo-1605100804763-247f67982213?auto=format&fit=crop&q=80&w=800'} alt="product img" width={300} height={300} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
         </Link>
         {hasVideo && (
           <video
@@ -114,7 +114,7 @@ const ProductItem = ({ product }) => {
           </div>
         </div>
       </div>
-      <div className="tp-product-content-4">
+      <div className="tp-product-content-4 text-center mt-15">
         <h3 className="tp-product-title-4">
           <Link href={`/product-details/${_id}`}>{title}</Link>
         </h3>
