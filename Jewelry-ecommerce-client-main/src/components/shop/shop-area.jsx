@@ -43,8 +43,7 @@ const ShopArea = ({ all_products, products, otherProps }) => {
                 {/* inventory hierarchy */}
                 <InventoryFilter setCurrPage={setCurrPage} />
                 {/* setting type removed */}
-                {/* metal id */}
-                <MetalFilter setCurrPage={setCurrPage} />
+                {/* metal filter removed - covered by InventoryFilter above */}
                 {/* shape */}
                 <ShapeFilter setCurrPage={setCurrPage} />
                 {/* certificate */}
