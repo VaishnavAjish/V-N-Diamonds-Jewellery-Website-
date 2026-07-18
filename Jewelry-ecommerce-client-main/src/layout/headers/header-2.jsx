@@ -27,30 +27,30 @@ const HeaderTwo = ({ style_2 = false }) => {
       <header>
         <div className={`tp-header-area tp-header-style-${style_2 ? 'primary' : 'darkRed'} tp-header-height`}>
           {/* NEW TOP BAR */}
-          <div style={{ backgroundColor: sticky ? 'transparent' : '#555', padding: '10px 0 5px 0', position: 'relative', zIndex: 99 }} className="d-none d-md-block">
+          <div style={{ backgroundColor: 'transparent', padding: '10px 0 0px 0', position: 'relative', zIndex: 99 }} className="d-none d-md-block">
             <div className="container-fluid pl-85 pr-85">
               <div className="row">
-                <div className="col-12 d-flex justify-content-center align-items-center" style={{ color: '#fff', fontSize: '13px', fontWeight: 500, letterSpacing: '0.5px' }}>
+                <div className="col-12 d-flex justify-content-center align-items-center" style={{ color: '#000', fontSize: '13px', fontWeight: 500, letterSpacing: '0.5px' }}>
                   <a href="https://www.facebook.com/vndiamonds/?locale=zh_HK" target="_blank" rel="noreferrer" style={{ 
                     display: 'inline-flex', alignItems: 'center', justifyContent: 'center', 
-                    width: '24px', height: '24px', backgroundColor: '#fff', 
+                    width: '24px', height: '24px', backgroundColor: '#f0f0f0', 
                     borderRadius: '50%', color: '#1877F2', marginRight: '8px', textDecoration: 'none' 
                   }}>
                     <i className="fa-brands fa-facebook-f" style={{ fontSize: '12px' }}></i>
                   </a>
                   <a href="https://www.instagram.com/harenejewels?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noreferrer" style={{ 
                     display: 'inline-flex', alignItems: 'center', justifyContent: 'center', 
-                    width: '24px', height: '24px', backgroundColor: '#fff', 
+                    width: '24px', height: '24px', backgroundColor: '#f0f0f0', 
                     borderRadius: '50%', color: '#E1306C', marginRight: '25px', textDecoration: 'none' 
                   }}>
                     <i className="fa-brands fa-instagram" style={{ fontSize: '12px' }}></i>
                   </a>
                   
-                  <a href="/contact" style={{ color: '#fff', textDecoration: 'none', transition: 'opacity 0.3s' }} onMouseOver={(e) => e.target.style.opacity=0.7} onMouseOut={(e) => e.target.style.opacity=1}>Client Services</a>
+                  <a href="/contact" style={{ color: '#000', textDecoration: 'none', transition: 'opacity 0.3s' }} onMouseOver={(e) => e.target.style.opacity=0.7} onMouseOut={(e) => e.target.style.opacity=1}>Client Services</a>
                   <span style={{ margin: '0 12px', opacity: 0.6 }}>·</span>
-                  <a href="/contact" style={{ color: '#fff', textDecoration: 'none', transition: 'opacity 0.3s' }} onMouseOver={(e) => e.target.style.opacity=0.7} onMouseOut={(e) => e.target.style.opacity=1}>Book an Appointment</a>
+                  <a href="/contact" style={{ color: '#000', textDecoration: 'none', transition: 'opacity 0.3s' }} onMouseOver={(e) => e.target.style.opacity=0.7} onMouseOut={(e) => e.target.style.opacity=1}>Book an Appointment</a>
                   <span style={{ margin: '0 12px', opacity: 0.6 }}>·</span>
-                  <a href="tel:+85269731885" style={{ color: '#fff', textDecoration: 'none', transition: 'opacity 0.3s' }} onMouseOver={(e) => e.target.style.opacity=0.7} onMouseOut={(e) => e.target.style.opacity=1}>+852-69731885</a>
+                  <a href="tel:+85269731885" style={{ color: '#000', textDecoration: 'none', transition: 'opacity 0.3s' }} onMouseOver={(e) => e.target.style.opacity=0.7} onMouseOut={(e) => e.target.style.opacity=1}>+852-69731885</a>
                 </div>
               </div>
             </div>
