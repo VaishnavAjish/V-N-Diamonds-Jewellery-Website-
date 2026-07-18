@@ -48,7 +48,7 @@ const BestSellerPrd = () => {
 
   return (
     <>
-      <section className="tp-best-area pt-115 pb-80">
+      <section className="tp-best-area pt-115 pb-80" style={{ backgroundColor: '#EFF1F5' }}>
         <div className="container">
           <div className="row">
             <div className="col-xl-12">
