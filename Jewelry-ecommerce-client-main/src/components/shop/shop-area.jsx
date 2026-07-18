@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import Pagination from "@/ui/Pagination";
 import ProductItem from "../products/fashion/product-item";
-import CategoryFilter from "./shop-filter/category-filter";
-import SubCategoryFilter from "./shop-filter/subcategory-filter";
+import InventoryFilter from "./shop-filter/inventory-filter";
 import SettingFilter from "./shop-filter/setting-filter";
 import MetalFilter from "./shop-filter/metal-filter";
 import ShapeFilter from "./shop-filter/shape-filter";
@@ -41,10 +40,8 @@ const ShopArea = ({ all_products, products, otherProps }) => {
               <div className="tp-shop-sidebar mr-10">
                 {/* status */}
                 <StatusFilter setCurrPage={setCurrPage} />
-                {/* categories */}
-                <CategoryFilter setCurrPage={setCurrPage} />
-                {/* sub categories */}
-                <SubCategoryFilter setCurrPage={setCurrPage} />
+                {/* inventory hierarchy */}
+                <InventoryFilter setCurrPage={setCurrPage} />
                 {/* setting type removed */}
                 {/* metal id */}
                 <MetalFilter setCurrPage={setCurrPage} />
