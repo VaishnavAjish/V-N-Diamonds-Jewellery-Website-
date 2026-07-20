@@ -4,6 +4,7 @@ import CategoryFilter from "../shop/shop-filter/category-filter";
 import SubCategoryFilter from "../shop/shop-filter/subcategory-filter";
 import SettingFilter from "../shop/shop-filter/setting-filter";
 import MetalFilter from "../shop/shop-filter/metal-filter";
+import InventoryFilter from "../shop/shop-filter/inventory-filter";
 import ShapeFilter from "../shop/shop-filter/shape-filter";
 import ColorFilter from "../shop/shop-filter/color-filter";
 import CertificateFilter from "../shop/shop-filter/certificate-filter";
@@ -54,13 +55,12 @@ const ShopFilterOffCanvas = ({
             />
             {/* status */}
             <StatusFilter setCurrPage={setCurrPage} shop_right={right_side} />
-            {/* categories */}
-            <CategoryFilter setCurrPage={setCurrPage} shop_right={right_side} />
-            {/* sub categories */}
-            <SubCategoryFilter setCurrPage={setCurrPage} shop_right={right_side} />
+            {/* inventory hierarchy */}
+            <InventoryFilter setCurrPage={setCurrPage} shop_right={right_side} />
+            {/* categories removed - covered by InventoryFilter */}
+            {/* sub categories removed - covered by InventoryFilter */}
             {/* setting type removed */}
-            {/* metal id */}
-            <MetalFilter setCurrPage={setCurrPage} shop_right={right_side} />
+            {/* metal id removed - covered by InventoryFilter */}
             {/* shape */}
             <ShapeFilter setCurrPage={setCurrPage} shop_right={right_side} />
             {/* color */}

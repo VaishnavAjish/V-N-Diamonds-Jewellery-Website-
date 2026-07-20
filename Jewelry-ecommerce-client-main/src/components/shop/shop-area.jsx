@@ -36,7 +36,7 @@ const ShopArea = ({ all_products, products, otherProps }) => {
       <section className="tp-shop-area pb-120">
         <div className="container-fluid" style={{ padding: '0 40px' }}>
           <div className="row">
-            <div className="col-xl-2 col-lg-2">
+            <div className="col-xl-2 col-lg-2 d-none d-lg-block">
               <div className="tp-shop-sidebar mr-10">
                 {/* status */}
                 <StatusFilter setCurrPage={setCurrPage} />
