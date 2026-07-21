@@ -75,6 +75,27 @@ export default function ProductsPage() {
   const [grossGms, setGrossGms] = useState('');
   const [usdPrice, setUsdPrice] = useState('');
   
+  // New Complex Form States
+  const [availableForMemo, setAvailableForMemo] = useState(false);
+  const [condition, setCondition] = useState('');
+  const [jewelryQuality, setJewelryQuality] = useState('');
+  const [designerMaker, setDesignerMaker] = useState('');
+  const [freeShipping, setFreeShipping] = useState(false);
+  const [shippingFrom, setShippingFrom] = useState('');
+  const [currency, setCurrency] = useState('USD');
+  const [terms, setTerms] = useState('');
+  const [msrp, setMsrp] = useState('');
+  const [deliveryTime, setDeliveryTime] = useState('');
+  const [minimumOrder, setMinimumOrder] = useState('');
+  const [metalKarat, setMetalKarat] = useState('');
+  const [gemstones, setGemstones] = useState([]);
+  const [supplierComment, setSupplierComment] = useState('');
+  const [unpublished, setUnpublished] = useState(false);
+  const [shareable, setShareable] = useState(false);
+  const [ownStock, setOwnStock] = useState(false);
+  const [documents, setDocuments] = useState([]);
+  const [links, setLinks] = useState([]);
+  
   const [showNewCategory, setShowNewCategory] = useState(false);
   const [newCatName, setNewCatName] = useState('');
   const [showNewSub, setShowNewSub] = useState(false);
@@ -271,6 +292,28 @@ export default function ProductsPage() {
     setCertPdf(getAdd('Cert PDF') || '');
     setGrossGms(getAdd('Gross Gms'));
     setUsdPrice(getAdd('USD Price'));
+    
+    // New Fields
+    setAvailableForMemo(getAdd('Available for MEMO') === 'true');
+    setCondition(getAdd('Condition'));
+    setJewelryQuality(getAdd('Jewelry Quality'));
+    setDesignerMaker(getAdd('Designer/Maker'));
+    setFreeShipping(getAdd('Free Worldwide Shipping') === 'true');
+    setShippingFrom(getAdd('Shipping from'));
+    setCurrency(getAdd('Currency') || 'USD');
+    setTerms(getAdd('Terms'));
+    setMsrp(getAdd('MSRP'));
+    setDeliveryTime(getAdd('Delivery Time'));
+    setMinimumOrder(getAdd('Minimum Order'));
+    setMetalKarat(getAdd('Metal Karat'));
+    
+    try { setGemstones(JSON.parse(getAdd('Gemstones') || '[]')); } catch(e) { setGemstones([]); }
+    setSupplierComment(getAdd('Supplier Comment'));
+    setUnpublished(getAdd('Unpublished') === 'true');
+    setShareable(getAdd('Shareable') === 'true');
+    setOwnStock(getAdd('Own Stock for Instant Inventory') === 'true');
+    try { setDocuments(JSON.parse(getAdd('Documents') || '[]')); } catch(e) { setDocuments([]); }
+    try { setLinks(JSON.parse(getAdd('Links') || '[]')); } catch(e) { setLinks([]); }
 
     
     // Find category ID matching name/parent
@@ -360,6 +403,25 @@ export default function ProductsPage() {
           { key: 'Gross Gms', value: grossGms },
           { key: 'USD Price', value: usdPrice },
           { key: 'Video 2', value: video2 },
+          { key: 'Available for MEMO', value: availableForMemo ? 'true' : 'false' },
+          { key: 'Condition', value: condition },
+          { key: 'Jewelry Quality', value: jewelryQuality },
+          { key: 'Designer/Maker', value: designerMaker },
+          { key: 'Free Worldwide Shipping', value: freeShipping ? 'true' : 'false' },
+          { key: 'Shipping from', value: shippingFrom },
+          { key: 'Currency', value: currency },
+          { key: 'Terms', value: terms },
+          { key: 'MSRP', value: msrp },
+          { key: 'Delivery Time', value: deliveryTime },
+          { key: 'Minimum Order', value: minimumOrder },
+          { key: 'Metal Karat', value: metalKarat },
+          { key: 'Gemstones', value: gemstones.length ? JSON.stringify(gemstones) : '' },
+          { key: 'Supplier Comment', value: supplierComment },
+          { key: 'Unpublished', value: unpublished ? 'true' : 'false' },
+          { key: 'Shareable', value: shareable ? 'true' : 'false' },
+          { key: 'Own Stock for Instant Inventory', value: ownStock ? 'true' : 'false' },
+          { key: 'Documents', value: documents.length ? JSON.stringify(documents) : '' },
+          { key: 'Links', value: links.length ? JSON.stringify(links) : '' },
         ].filter(i => i.value),
 
         img: photo1,
@@ -525,6 +587,27 @@ export default function ProductsPage() {
     setCertPdf('');
     setGrossGms('');
     setUsdPrice('');
+    
+    setAvailableForMemo(false);
+    setCondition('');
+    setJewelryQuality('');
+    setDesignerMaker('');
+    setFreeShipping(false);
+    setShippingFrom('');
+    setCurrency('USD');
+    setTerms('');
+    setMsrp('');
+    setDeliveryTime('');
+    setMinimumOrder('');
+    setMetalKarat('');
+    setGemstones([]);
+    setSupplierComment('');
+    setUnpublished(false);
+    setShareable(false);
+    setOwnStock(false);
+    setDocuments([]);
+    setLinks([]);
+
     setShowNewCategory(false);
     setShowNewSub(false);
 
@@ -675,436 +758,413 @@ export default function ProductsPage() {
                 <button className="btn btn-sm" onClick={() => { setShowAddModal(false); resetForm(); }}>✕</button>
               </div>
               <form onSubmit={handleSubmit} className="modal-scroll">
-                
-                <div className="form-row">
-                  <div className="form-group" style={{ flex: 1 }}>
-                    <label className="form-label">Product Type</label>
-                    <select className="form-control" value={productType} onChange={(e) => setProductType(e.target.value)}>
-                      <option value="jewelry">Jewellery</option>
-                      <option value="diamond">Diamond</option>
-                      <option value="gemstone">Gemstone</option>
-                    </select>
-                  </div>
-                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', paddingBottom: '20px' }}>
+                  
+                  {/* PRODUCT DESCRIPTION */}
+                  <div className="card" style={{ padding: '20px', border: '1px solid var(--border)', borderRadius: '8px', background: '#fff' }}>
+                    <h3 style={{ marginTop: 0, marginBottom: '15px', fontSize: '16px', color: 'var(--brand)' }}>Product Description</h3>
+                    
+                    <div className="form-row">
+                      <div className="form-group" style={{ flex: 1 }}>
+                        <label className="form-label">Product Type</label>
+                        <select className="form-control" value={productType} onChange={(e) => setProductType(e.target.value)}>
+                          <option value="jewelry">Jewellery</option>
+                          <option value="diamond">Diamond</option>
+                          <option value="gemstone">Gemstone</option>
+                        </select>
+                      </div>
+                      <div className="form-group" style={{ flex: 1 }}>
+                        <label className="form-label">Stock # (SKU) *</label>
+                        <input className="form-control" placeholder="SKU-RING-01" value={sku} onChange={(e) => setSku(e.target.value)} required={productType !== 'diamond'} />
+                      </div>
+                    </div>
+                    
+                    <div className="form-row">
+                      <div className="form-group checkbox-row" style={{ marginRight: '20px' }}>
+                        <input type="checkbox" id="available-checkbox" checked={status === 'in-stock'} onChange={(e) => setStatus(e.target.checked ? 'in-stock' : 'out-of-stock')} />
+                        <label htmlFor="available-checkbox" className="form-label" style={{ margin: 0, cursor: 'pointer' }}>Available</label>
+                      </div>
+                      <div className="form-group checkbox-row">
+                        <input type="checkbox" id="memo-checkbox" checked={availableForMemo} onChange={(e) => setAvailableForMemo(e.target.checked)} />
+                        <label htmlFor="memo-checkbox" className="form-label" style={{ margin: 0, cursor: 'pointer' }}>Available for MEMO</label>
+                      </div>
+                    </div>
 
-                {productType !== 'diamond' && (
-                  <div className="form-row">
-                    <div className="form-group">
-                      <label className="form-label">Product Title *</label>
-                      <input className="form-control" placeholder="Diamond Engagement Ring" value={title} onChange={(e) => setTitle(e.target.value)} required={productType !== 'diamond'} />
+                    <div className="form-row">
+                      <div className="form-group" style={{ width: '100%' }}>
+                        <label className="form-label">Item Title *</label>
+                        <input className="form-control" placeholder="Diamond Engagement Ring" value={title} onChange={(e) => setTitle(e.target.value)} required={productType !== 'diamond'} />
+                      </div>
                     </div>
-                    <div className="form-group">
-                      <label className="form-label">SKU *</label>
-                      <input className="form-control" placeholder="SKU-RING-01" value={sku} onChange={(e) => setSku(e.target.value)} required={productType !== 'diamond'} />
-                    </div>
-                  </div>
-                )}
 
-                {productType !== 'diamond' && (
-                  <div className="form-row">
                     <div className="form-group">
-                      <label className="form-label">Price (USD) *</label>
-                      <input className="form-control" type="number" step="0.01" placeholder="45000" value={price} onChange={(e) => setPrice(e.target.value)} required={productType !== 'diamond'} />
-                    </div>
-                    <div className="form-group">
-                      <label className="form-label">Discount (%)</label>
-                      <input className="form-control" type="number" placeholder="5" min="0" max="100" value={discount} onChange={(e) => setDiscount(e.target.value)} />
-                    </div>
-                  </div>
-                )}
-
-                {productType !== 'diamond' && (
-                  <div className="form-row">
-                    <div className="form-group">
-                      <label className="form-label">Stock Quantity *</label>
-                      <input className="form-control" type="number" placeholder="10" min="0" value={quantity} onChange={(e) => setQuantity(e.target.value)} required={productType !== 'diamond'} />
-                    </div>
-                    <div className="form-group">
-                      <label className="form-label">Unit</label>
-                      <input className="form-control" placeholder="pcs" value={unit} onChange={(e) => setUnit(e.target.value)} />
+                      <label className="form-label">Description</label>
+                      <textarea className="form-control" rows={3} placeholder="Write a description for this jewelry item..." value={description} onChange={(e) => setDescription(e.target.value)} />
                     </div>
                   </div>
-                )}
 
-                {(productType === 'jewelry' || productType === 'gemstone') && (
-                  <div className="form-row">
-                    <div className="form-group">
-                      <label className="form-label">Category ({productType === 'gemstone' ? 'Stone Type' : 'Jewellery'}) *</label>
-                      <Select 
-                        options={Array.from(new Map(categories.map(c => [
-                          ((c.parent || '').trim().toLowerCase().replace(/s$/, '').replace('pendent', 'pendant')), 
-                          { value: c.id || c._id, label: c.parent }
-                        ])).values())}
-                        value={categories.filter(c => (c.id || c._id) === categoryId).map(c => ({ value: c.id || c._id, label: c.parent }))}
-                        onChange={(opt) => { setCategoryId(opt?.value || ''); setSubCategory(''); }}
-                        isClearable
-                        placeholder={productType === 'gemstone' ? "Select Stone Type" : "Select Category"}
-                        styles={{ control: (base) => ({ ...base, minHeight: '42px', borderColor: 'var(--border)' }) }}
-                        components={{ MenuList: CustomMenuList }}
-                        onAddNew={() => setShowNewCategory(true)}
-                        addNewLabel={productType === 'gemstone' ? "stone type" : "category"}
-                        required={productType !== 'diamond'}
-                      />
-                    </div>
-                    {productType === 'jewelry' && (
+                  {/* PRODUCT INFORMATION */}
+                  <div className="card" style={{ padding: '20px', border: '1px solid var(--border)', borderRadius: '8px', background: '#fff' }}>
+                    <h3 style={{ marginTop: 0, marginBottom: '15px', fontSize: '16px', color: 'var(--brand)' }}>Product Information</h3>
+                    
+                    <div className="form-row">
                       <div className="form-group">
-                        <label className="form-label">Sub Category (Product) *</label>
+                        <label className="form-label">Jewelry Type (Category) *</label>
+                        <Select 
+                          options={Array.from(new Map(categories.map(c => [
+                            ((c.parent || '').trim().toLowerCase().replace(/s$/, '').replace('pendent', 'pendant')), 
+                            { value: c.id || c._id, label: c.parent }
+                          ])).values())}
+                          value={categories.filter(c => (c.id || c._id) === categoryId).map(c => ({ value: c.id || c._id, label: c.parent }))}
+                          onChange={(opt) => { setCategoryId(opt?.value || ''); setSubCategory(''); }}
+                          isClearable
+                          placeholder="Select Jewelry Type"
+                          styles={{ control: (base) => ({ ...base, minHeight: '42px', borderColor: 'var(--border)' }) }}
+                          components={{ MenuList: CustomMenuList }}
+                          onAddNew={() => setShowNewCategory(true)}
+                          addNewLabel="jewelry type"
+                          required={productType !== 'diamond'}
+                        />
+                      </div>
+                      <div className="form-group">
+                        <label className="form-label">Type Style (Sub Category)</label>
                         <Select
-                          options={Array.from(new Set(subCategoryOptions.map(sub => {
-                            return sub;
-                          }))).filter((v, i, a) => a.findIndex(t => t.trim().toLowerCase().replace(/s$/, '').replace('pendent', 'pendant') === v.trim().toLowerCase().replace(/s$/, '').replace('pendent', 'pendant')) === i).map(sub => ({ value: sub, label: sub }))}
+                          options={Array.from(new Set(subCategoryOptions.map(sub => sub))).filter((v, i, a) => a.findIndex(t => t.trim().toLowerCase().replace(/s$/, '').replace('pendent', 'pendant') === v.trim().toLowerCase().replace(/s$/, '').replace('pendent', 'pendant')) === i).map(sub => ({ value: sub, label: sub }))}
                           value={subCategory ? { value: subCategory, label: subCategory } : null}
                           onChange={(opt) => setSubCategory(opt?.value || '')}
                           isClearable
-                          placeholder="Select Subcategory"
+                          placeholder="Select Style"
                           styles={{ control: (base) => ({ ...base, minHeight: '42px', borderColor: 'var(--border)' }) }}
                           components={{ MenuList: CustomMenuList }}
                           onAddNew={() => setShowNewSub(true)}
-                          addNewLabel="sub category"
-                          required={productType === 'jewelry'}
+                          addNewLabel="style"
                         />
                       </div>
-                    )}
-                  </div>
-                )}
+                    </div>
 
-                {productType === 'jewelry' && (
-                  <div className="form-row">
-                    <div className="form-group">
-                      <label className="form-label">Poetic Name *</label>
-                      <input className="form-control" placeholder="E.g. Midnight Star" value={poeticName} onChange={(e) => setPoeticName(e.target.value)} required={productType === 'jewelry'} />
+                    <div className="form-row">
+                      <div className="form-group">
+                        <label className="form-label">Jewelry Category</label>
+                        <input className="form-control" placeholder="E.g. Vintage" value={poeticName} onChange={(e) => setPoeticName(e.target.value)} />
+                      </div>
+                      <div className="form-group">
+                        <label className="form-label">Condition</label>
+                        <select className="form-control" value={condition} onChange={(e) => setCondition(e.target.value)}>
+                          <option value="">Select Condition</option>
+                          <option value="New">New</option>
+                          <option value="Pre-owned">Pre-owned</option>
+                          <option value="Vintage">Vintage</option>
+                          <option value="Antique">Antique</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div className="form-row">
+                      <div className="form-group">
+                        <label className="form-label">Brand</label>
+                        <select className="form-control" value={brandId} onChange={(e) => setBrandId(e.target.value)}>
+                          <option value="">Select Brand</option>
+                          {brands.map(b => (
+                            <option key={b.id || b._id} value={b.id || b._id}>{b.name}</option>
+                          ))}
+                        </select>
+                      </div>
+                      <div className="form-group">
+                        <label className="form-label">Jewelry Quality</label>
+                        <select className="form-control" value={jewelryQuality} onChange={(e) => setJewelryQuality(e.target.value)}>
+                          <option value="">Select Quality</option>
+                          <option value="Fine">Fine</option>
+                          <option value="Fashion">Fashion</option>
+                          <option value="High Jewelry">High Jewelry</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div className="form-row">
+                      <div className="form-group">
+                        <label className="form-label">Designer / Maker</label>
+                        <input className="form-control" placeholder="E.g. Cartier" value={designerMaker} onChange={(e) => setDesignerMaker(e.target.value)} />
+                      </div>
+                      <div className="form-group">
+                        <label className="form-label">Keyword Descriptions (Tags)</label>
+                        <input className="form-control" placeholder="E.g. classic, gold, gift" value={tagsInput} onChange={(e) => setTagsInput(e.target.value)} />
+                      </div>
                     </div>
                   </div>
-                )}
-                <div className="form-row">
-                  <div className="form-group">
-                    <label className="form-label">Lot Number *</label>
-                    <input className="form-control" placeholder="E.g. LOT-1234" value={lotNumber} onChange={(e) => setLotNumber(e.target.value)} required />
-                  </div>
-                </div>
 
-                {productType !== 'gemstone' && (
-                  <div className="form-row">
-                    <div className="form-group">
-                      <label className="form-label">Metal *</label>
-                      <input className="form-control" placeholder="E.g. 18K Gold" value={metal} onChange={(e) => setMetal(e.target.value)} required />
+                  {/* PRICE & LOCATION */}
+                  <div className="card" style={{ padding: '20px', border: '1px solid var(--border)', borderRadius: '8px', background: '#fff' }}>
+                    <h3 style={{ marginTop: 0, marginBottom: '15px', fontSize: '16px', color: 'var(--brand)' }}>Price & Location</h3>
+                    
+                    <div className="form-group checkbox-row" style={{ marginBottom: '15px' }}>
+                      <input type="checkbox" id="freeship-checkbox" checked={freeShipping} onChange={(e) => setFreeShipping(e.target.checked)} />
+                      <label htmlFor="freeship-checkbox" className="form-label" style={{ margin: 0, cursor: 'pointer' }}>Free Worldwide Shipping</label>
                     </div>
-                    <div className="form-group">
-                      <label className="form-label">Metal gms *</label>
-                      <input className="form-control" placeholder="E.g. 10.5" type="number" step="0.01" value={metalGms} onChange={(e) => setMetalGms(e.target.value)} required />
+
+                    <div className="form-row">
+                      <div className="form-group">
+                        <label className="form-label">Shipping From</label>
+                        <input className="form-control" placeholder="E.g. New York, USA" value={shippingFrom} onChange={(e) => setShippingFrom(e.target.value)} />
+                      </div>
+                      <div className="form-group">
+                        <label className="form-label">Price / Piece *</label>
+                        <input className="form-control" type="number" step="0.01" value={price} onChange={(e) => setPrice(e.target.value)} required />
+                      </div>
                     </div>
-                  </div>
-                )}
 
-                <div className="form-row">
-                  {productType !== 'gemstone' && (
-                    <div className="form-group">
-                      <label className="form-label">Diamond Pcs</label>
-                      <input className="form-control" placeholder="E.g. 15" type="number" value={diamondPcs} onChange={(e) => setDiamondPcs(e.target.value)} />
+                    <div className="form-row">
+                      <div className="form-group">
+                        <label className="form-label">Currency</label>
+                        <select className="form-control" value={currency} onChange={(e) => setCurrency(e.target.value)}>
+                          <option value="USD">USD ($)</option>
+                          <option value="EUR">EUR (€)</option>
+                          <option value="GBP">GBP (£)</option>
+                          <option value="INR">INR (₹)</option>
+                        </select>
+                      </div>
+                      <div className="form-group">
+                        <label className="form-label">Terms</label>
+                        <select className="form-control" value={terms} onChange={(e) => setTerms(e.target.value)}>
+                          <option value="">Select Terms</option>
+                          <option value="FOB">FOB</option>
+                          <option value="CIF">CIF</option>
+                          <option value="EXW">EXW</option>
+                        </select>
+                      </div>
                     </div>
-                  )}
-                  <div className="form-group" style={productType === 'gemstone' ? { gridColumn: '1 / -1' } : {}}>
-                    <label className="form-label">Shape *</label>
-                    <input className="form-control" placeholder="E.g. Round" value={shape} onChange={(e) => setShape(e.target.value)} required />
-                  </div>
-                </div>
 
-                <div className="form-row">
-                  <div className="form-group">
-                    <label className="form-label">Certificate *</label>
-                    <input className="form-control" placeholder="E.g. GIA" value={certificate} onChange={(e) => setCertificate(e.target.value)} required />
-                  </div>
-                  <div className="form-group">
-                    <label className="form-label">Cert.No *</label>
-                    <input className="form-control" placeholder="E.g. GIA-123456" value={certNo} onChange={(e) => setCertNo(e.target.value)} required />
-                  </div>
-                </div>
+                    <div className="form-row">
+                      <div className="form-group">
+                        <label className="form-label">MSRP</label>
+                        <input className="form-control" type="number" step="0.01" value={msrp} onChange={(e) => setMsrp(e.target.value)} />
+                      </div>
+                      <div className="form-group">
+                        <label className="form-label">Delivery Time</label>
+                        <input className="form-control" placeholder="E.g. 3-5 Business Days" value={deliveryTime} onChange={(e) => setDeliveryTime(e.target.value)} />
+                      </div>
+                    </div>
 
-                {/* Certificate PDF Upload */}
-                <div className="form-row">
-                  <div className="form-group" style={{ gridColumn: '1 / -1' }}>
-                    <label className="form-label">Certificate PDF (Optional)</label>
-                    <div style={{ display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap' }}>
-                      <input
-                        type="text"
-                        className="form-control"
-                        placeholder="Paste PDF URL or upload below"
-                        value={certPdf}
-                        onChange={e => setCertPdf(e.target.value)}
-                        style={{ flex: 1 }}
-                      />
-                      <label className="btn btn-secondary" style={{ cursor: 'pointer', marginBottom: 0 }}>
-                        {uploadingCertPdf ? 'Uploading...' : '📎 Upload PDF'}
-                        <input
-                          type="file"
-                          accept=".pdf,application/pdf"
-                          style={{ display: 'none' }}
-                          disabled={uploadingCertPdf}
-                          onChange={async (e) => {
-                            const file = e.target.files[0];
-                            if (!file) return;
-                            setUploadingCertPdf(true);
-                            const fd = new FormData();
-                            fd.append('image', file);
-                            try {
-                              const res = await fetch(`${API_BASE}/api/cloudinary/add-img`, { method: 'POST', body: fd });
-                              const d = await res.json();
-                              if (d.success && d.data?.url) setCertPdf(d.data.url);
-                              else alert('PDF upload failed: ' + (d.message || 'unknown'));
-                            } catch(err) { alert('Upload error: ' + err.message); }
-                            finally { setUploadingCertPdf(false); }
-                          }}
-                        />
-                      </label>
-                      {certPdf && <a href={certPdf} target="_blank" rel="noreferrer" style={{ fontSize: 12, color: '#c5a267' }}>View PDF ↗</a>}
+                    <div className="form-row">
+                      <div className="form-group">
+                        <label className="form-label"># Items in Stock *</label>
+                        <input className="form-control" type="number" value={quantity} onChange={(e) => setQuantity(e.target.value)} required />
+                      </div>
+                      <div className="form-group">
+                        <label className="form-label">Minimum Order</label>
+                        <input className="form-control" type="number" value={minimumOrder} onChange={(e) => setMinimumOrder(e.target.value)} />
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div className="form-row">
-                  {productType !== 'gemstone' && (
-                    <div className="form-group">
-                      <label className="form-label">Gross Gms *</label>
-                      <input className="form-control" placeholder="E.g. 12.0" type="number" step="0.01" value={grossGms} onChange={(e) => setGrossGms(e.target.value)} required />
+                  {/* METAL & GEMSTONES */}
+                  <div className="card" style={{ padding: '20px', border: '1px solid var(--border)', borderRadius: '8px', background: '#fff' }}>
+                    <h3 style={{ marginTop: 0, marginBottom: '15px', fontSize: '16px', color: 'var(--brand)' }}>Metal & Gemstones</h3>
+                    
+                    <div className="form-row">
+                      <div className="form-group">
+                        <label className="form-label">Metal Type</label>
+                        <select className="form-control" value={metal} onChange={(e) => setMetal(e.target.value)}>
+                          <option value="">Select Metal</option>
+                          <option value="Gold">Gold</option>
+                          <option value="Platinum">Platinum</option>
+                          <option value="Silver">Silver</option>
+                        </select>
+                      </div>
+                      <div className="form-group">
+                        <label className="form-label">Metal Karat</label>
+                        <select className="form-control" value={metalKarat} onChange={(e) => setMetalKarat(e.target.value)}>
+                          <option value="">Select Karat</option>
+                          <option value="24K">24K</option>
+                          <option value="22K">22K</option>
+                          <option value="18K">18K</option>
+                          <option value="14K">14K</option>
+                          <option value="10K">10K</option>
+                        </select>
+                      </div>
+                      <div className="form-group">
+                        <label className="form-label">Jewelry Total Weight (gms)</label>
+                        <input className="form-control" type="number" step="0.01" value={grossGms} onChange={(e) => setGrossGms(e.target.value)} />
+                      </div>
                     </div>
-                  )}
-                  <div className="form-group" style={productType === 'gemstone' ? { gridColumn: '1 / -1' } : {}}>
-                    <label className="form-label">USD Price *</label>
-                    <input className="form-control" placeholder="E.g. 500" type="number" step="0.01" value={usdPrice} onChange={(e) => setUsdPrice(e.target.value)} required />
-                  </div>
-                </div>
 
-                {productType === 'jewelry' && (
-                  <div className="form-row">
-                    <div className="form-group">
-                      <label className="form-label">Brand *</label>
-                      <select className="form-control" value={brandId} onChange={(e) => setBrandId(e.target.value)} required={productType === 'jewelry'}>
-                        <option value="">Select Brand</option>
-                        {brands.map(b => (
-                          <option key={b.id || b._id} value={b.id || b._id}>{b.name}</option>
-                        ))}
-                      </select>
+                    <div style={{ marginTop: '20px', borderTop: '1px dashed var(--border)', paddingTop: '15px' }}>
+                      <h4 style={{ margin: '0 0 10px 0', fontSize: '14px', color: 'var(--text-secondary)' }}>Gemstones</h4>
+                      {gemstones.map((gem, index) => (
+                        <div key={index} style={{ padding: '15px', border: '1px solid #e2e8f0', borderRadius: '6px', marginBottom: '10px', position: 'relative' }}>
+                          <button type="button" onClick={() => setGemstones(gemstones.filter((_, i) => i !== index))} className="btn btn-sm btn-danger" style={{ position: 'absolute', top: 10, right: 10 }}>Remove</button>
+                          
+                          <div className="form-row" style={{ marginTop: '10px' }}>
+                            <div className="form-group"><label className="form-label">Type</label><input className="form-control" value={gem.type || ''} onChange={e => { const g = [...gemstones]; g[index].type = e.target.value; setGemstones(g); }} /></div>
+                            <div className="form-group"><label className="form-label">Shape</label><input className="form-control" value={gem.shape || ''} onChange={e => { const g = [...gemstones]; g[index].shape = e.target.value; setGemstones(g); }} /></div>
+                            <div className="form-group"><label className="form-label">Carat Wt.</label><input className="form-control" value={gem.caratWeight || ''} onChange={e => { const g = [...gemstones]; g[index].caratWeight = e.target.value; setGemstones(g); }} /></div>
+                          </div>
+                          
+                          <div className="form-row">
+                            <div className="form-group"><label className="form-label">Lab</label><input className="form-control" value={gem.lab || ''} onChange={e => { const g = [...gemstones]; g[index].lab = e.target.value; setGemstones(g); }} /></div>
+                            <div className="form-group"><label className="form-label">Lab #</label><input className="form-control" value={gem.labNo || ''} onChange={e => { const g = [...gemstones]; g[index].labNo = e.target.value; setGemstones(g); }} /></div>
+                            <div className="form-group"><label className="form-label">Treatment</label><input className="form-control" value={gem.treatment || ''} onChange={e => { const g = [...gemstones]; g[index].treatment = e.target.value; setGemstones(g); }} /></div>
+                          </div>
+
+                          <div className="form-row">
+                            <div className="form-group"><label className="form-label"># Stones</label><input className="form-control" type="number" value={gem.numStones || ''} onChange={e => { const g = [...gemstones]; g[index].numStones = e.target.value; setGemstones(g); }} /></div>
+                            <div className="form-group"><label className="form-label">Lot #</label><input className="form-control" value={gem.lotNo || ''} onChange={e => { const g = [...gemstones]; g[index].lotNo = e.target.value; setGemstones(g); }} /></div>
+                          </div>
+                        </div>
+                      ))}
+                      
+                      <button type="button" className="btn btn-secondary btn-sm" onClick={() => setGemstones([...gemstones, {}])}>
+                        + Add another Gemstone
+                      </button>
                     </div>
                   </div>
-                )}
 
-                <div className="form-row">
-                  <div className="form-group">
-                    <label className="form-label">Status</label>
-                    <select className="form-control" value={status} onChange={(e) => setStatus(e.target.value)}>
-                      <option value="in-stock">In Stock</option>
-                      <option value="out-of-stock">Out of Stock</option>
-                      <option value="discontinued">Discontinued</option>
-                    </select>
+                  {/* SUPPLIER COMMENT & MEASUREMENTS */}
+                  <div className="form-row" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+                    <div className="card" style={{ padding: '20px', border: '1px solid var(--border)', borderRadius: '8px', background: '#fff' }}>
+                      <h3 style={{ marginTop: 0, marginBottom: '15px', fontSize: '16px', color: 'var(--brand)' }}>Supplier Comment</h3>
+                      <textarea className="form-control" rows={4} placeholder="Internal comments or notes from supplier..." value={supplierComment} onChange={(e) => setSupplierComment(e.target.value)} />
+                    </div>
+                    
+                    <div className="card" style={{ padding: '20px', border: '1px solid var(--border)', borderRadius: '8px', background: '#fff' }}>
+                      <h3 style={{ marginTop: 0, marginBottom: '15px', fontSize: '16px', color: 'var(--brand)' }}>Measurements</h3>
+                      <div className="form-group">
+                        <label className="form-label">Sizes (Comma separated)</label>
+                        <input className="form-control" placeholder="E.g. 6, 7, 8" value={sizesInput} onChange={(e) => setSizesInput(e.target.value)} />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* VISIBILITY */}
+                  <div className="card" style={{ padding: '20px', border: '1px solid var(--border)', borderRadius: '8px', background: '#fff' }}>
+                    <h3 style={{ marginTop: 0, marginBottom: '15px', fontSize: '16px', color: 'var(--brand)' }}>Visibility</h3>
+                    
+                    <div className="form-row">
+                      <div className="form-group checkbox-row" style={{ flex: 1 }}>
+                        <input type="checkbox" id="unpub-checkbox" checked={unpublished} onChange={(e) => setUnpublished(e.target.checked)} />
+                        <label htmlFor="unpub-checkbox" className="form-label" style={{ margin: 0, cursor: 'pointer' }}>Unpublished</label>
+                      </div>
+                      <div className="form-group checkbox-row" style={{ flex: 1 }}>
+                        <input type="checkbox" id="share-checkbox" checked={shareable} onChange={(e) => setShareable(e.target.checked)} />
+                        <label htmlFor="share-checkbox" className="form-label" style={{ margin: 0, cursor: 'pointer' }}>Shareable</label>
+                      </div>
+                      <div className="form-group checkbox-row" style={{ flex: 1 }}>
+                        <input type="checkbox" id="own-checkbox" checked={ownStock} onChange={(e) => setOwnStock(e.target.checked)} />
+                        <label htmlFor="own-checkbox" className="form-label" style={{ margin: 0, cursor: 'pointer' }}>Own Stock for Instant Inventory</label>
+                      </div>
+                      <div className="form-group checkbox-row" style={{ flex: 1 }}>
+                        <input type="checkbox" id="feat-checkbox" checked={featured} onChange={(e) => setFeatured(e.target.checked)} />
+                        <label htmlFor="feat-checkbox" className="form-label" style={{ margin: 0, cursor: 'pointer' }}>Featured on Homepage</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* IMAGES */}
+                  <div className="card" style={{ padding: '20px', border: '1px solid var(--border)', borderRadius: '8px', background: '#fff' }}>
+                    <h3 style={{ marginTop: 0, marginBottom: '15px', fontSize: '16px', color: 'var(--brand)' }}>Images</h3>
+                    
+                    <div className="form-row">
+                      <div className="form-group">
+                        <label className="form-label">Primary Image *</label>
+                        <div className="upload-box" style={{ position: 'relative' }}>
+                          {uploadingP1 ? <div className="spinner" /> : photo1 ? (
+                            <><img src={photo1} className="upload-preview" alt="P1" /><button type="button" className="btn btn-sm btn-danger" style={{ position: 'absolute', top: 5, right: 5 }} onClick={() => setPhoto1('')}>Remove</button></>
+                          ) : (
+                            <div style={{ textAlign: 'center', padding: '20px 0' }}>
+                              <div>📷 Upload</div>
+                              <input type="file" accept="image/*" onChange={e => handleSlotUpload(e, setPhoto1, setUploadingP1)} style={{ position: 'absolute', inset: 0, opacity: 0, cursor: 'pointer' }} />
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                      <div className="form-group">
+                        <label className="form-label">Additional Image 1</label>
+                        <div className="upload-box" style={{ position: 'relative' }}>
+                          {uploadingP2 ? <div className="spinner" /> : photo2 ? (
+                            <><img src={photo2} className="upload-preview" alt="P2" /><button type="button" className="btn btn-sm btn-danger" style={{ position: 'absolute', top: 5, right: 5 }} onClick={() => setPhoto2('')}>Remove</button></>
+                          ) : (
+                            <div style={{ textAlign: 'center', padding: '20px 0' }}>
+                              <div>📷 Upload</div>
+                              <input type="file" accept="image/*" onChange={e => handleSlotUpload(e, setPhoto2, setUploadingP2)} style={{ position: 'absolute', inset: 0, opacity: 0, cursor: 'pointer' }} />
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                      <div className="form-group">
+                        <label className="form-label">Additional Image 2</label>
+                        <div className="upload-box" style={{ position: 'relative' }}>
+                          {uploadingP3 ? <div className="spinner" /> : photo3 ? (
+                            <><img src={photo3} className="upload-preview" alt="P3" /><button type="button" className="btn btn-sm btn-danger" style={{ position: 'absolute', top: 5, right: 5 }} onClick={() => setPhoto3('')}>Remove</button></>
+                          ) : (
+                            <div style={{ textAlign: 'center', padding: '20px 0' }}>
+                              <div>📷 Upload</div>
+                              <input type="file" accept="image/*" onChange={e => handleSlotUpload(e, setPhoto3, setUploadingP3)} style={{ position: 'absolute', inset: 0, opacity: 0, cursor: 'pointer' }} />
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                      <div className="form-group">
+                        <label className="form-label">Additional Image 3</label>
+                        <div className="upload-box" style={{ position: 'relative' }}>
+                          {uploadingP4 ? <div className="spinner" /> : photo4 ? (
+                            <><img src={photo4} className="upload-preview" alt="P4" /><button type="button" className="btn btn-sm btn-danger" style={{ position: 'absolute', top: 5, right: 5 }} onClick={() => setPhoto4('')}>Remove</button></>
+                          ) : (
+                            <div style={{ textAlign: 'center', padding: '20px 0' }}>
+                              <div>📷 Upload</div>
+                              <input type="file" accept="image/*" onChange={e => handleSlotUpload(e, setPhoto4, setUploadingP4)} style={{ position: 'absolute', inset: 0, opacity: 0, cursor: 'pointer' }} />
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="form-row" style={{ marginTop: '15px' }}>
+                      <div className="form-group">
+                        <label className="form-label">Video (Upload or URL)</label>
+                        <div style={{ display: 'flex', gap: 6 }}>
+                          <input className="form-control" placeholder="URL or upload..." value={video1} onChange={e => setVideo1(e.target.value)} style={{ flex: 1 }} />
+                          <label className="btn btn-sm" style={{ cursor: 'pointer', margin: 0, display: 'flex', alignItems: 'center' }}>
+                            {uploadingV1 ? '...' : 'Upload'}
+                            <input type="file" accept="video/*" style={{ display: 'none' }} onChange={e => handleSlotUpload(e, setVideo1, setUploadingV1)} />
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* DOCUMENTS */}
+                  <div className="card" style={{ padding: '20px', border: '1px solid var(--border)', borderRadius: '8px', background: '#fff' }}>
+                    <h3 style={{ marginTop: 0, marginBottom: '15px', fontSize: '16px', color: 'var(--brand)' }}>Documents</h3>
+                    {documents.map((doc, index) => (
+                      <div key={index} className="form-row" style={{ position: 'relative', marginBottom: '10px' }}>
+                        <div className="form-group"><input className="form-control" placeholder="Type (e.g. Certificate)" value={doc.type || ''} onChange={e => { const d = [...documents]; d[index].type = e.target.value; setDocuments(d); }} /></div>
+                        <div className="form-group"><input className="form-control" placeholder="Title" value={doc.title || ''} onChange={e => { const d = [...documents]; d[index].title = e.target.value; setDocuments(d); }} /></div>
+                        <div className="form-group"><input className="form-control" placeholder="URL or file link" value={doc.url || ''} onChange={e => { const d = [...documents]; d[index].url = e.target.value; setDocuments(d); }} /></div>
+                        <button type="button" onClick={() => setDocuments(documents.filter((_, i) => i !== index))} className="btn btn-sm btn-danger" style={{ alignSelf: 'flex-start', marginTop: '5px' }}>✕</button>
+                      </div>
+                    ))}
+                    <button type="button" className="btn btn-secondary btn-sm" onClick={() => setDocuments([...documents, {}])}>+ Add Document</button>
+                  </div>
+
+                  {/* LINKS */}
+                  <div className="card" style={{ padding: '20px', border: '1px solid var(--border)', borderRadius: '8px', background: '#fff' }}>
+                    <h3 style={{ marginTop: 0, marginBottom: '15px', fontSize: '16px', color: 'var(--brand)' }}>Links</h3>
+                    {links.map((link, index) => (
+                      <div key={index} className="form-row" style={{ position: 'relative', marginBottom: '10px' }}>
+                        <div className="form-group"><input className="form-control" placeholder="Type (e.g. WhatsApp)" value={link.type || ''} onChange={e => { const l = [...links]; l[index].type = e.target.value; setLinks(l); }} /></div>
+                        <div className="form-group"><input className="form-control" placeholder="URL" value={link.url || ''} onChange={e => { const l = [...links]; l[index].url = e.target.value; setLinks(l); }} /></div>
+                        <div className="form-group"><input className="form-control" placeholder="Title" value={link.title || ''} onChange={e => { const l = [...links]; l[index].title = e.target.value; setLinks(l); }} /></div>
+                        <button type="button" onClick={() => setLinks(links.filter((_, i) => i !== index))} className="btn btn-sm btn-danger" style={{ alignSelf: 'flex-start', marginTop: '5px' }}>✕</button>
+                      </div>
+                    ))}
+                    <button type="button" className="btn btn-secondary btn-sm" onClick={() => setLinks([...links, {}])}>+ Add Link</button>
                   </div>
                   
-                </div>
-
-                
-                <div className="form-row">
-                  <div className="form-group">
-                    <label className="form-label">Poetic Name</label>
-                    <input className="form-control" value={poeticName} onChange={e => setPoeticName(e.target.value)} />
+                  <div className="modal-actions" style={{ position: 'sticky', bottom: '-20px', background: '#fff', padding: '15px 0', borderTop: '1px solid var(--border)', margin: '0 -20px -20px -20px', paddingLeft: '20px', paddingRight: '20px', zIndex: 10 }}>
+                    <button type="button" className="btn" onClick={() => { setShowAddModal(false); resetForm(); }}>Cancel</button>
+                    <button type="submit" className="btn btn-primary" disabled={submitting || uploadingP1 || uploadingP2 || uploadingP3 || uploadingP4 || uploadingV1 || uploadingV2}>
+                      {submitting ? <div className="spinner" /> : 'Save Product'}
+                    </button>
                   </div>
-                  <div className="form-group">
-                    <label className="form-label">Lot Number</label>
-                    <input className="form-control" value={lotNumber} onChange={e => setLotNumber(e.target.value)} />
-                  </div>
-                </div>
-
-                <div className="form-row">
-                  <div className="form-group">
-                    <label className="form-label">Metal</label>
-                    <input className="form-control" value={metal} onChange={e => setMetal(e.target.value)} />
-                  </div>
-                  <div className="form-group">
-                    <label className="form-label">Metal gms</label>
-                    <input className="form-control" type="number" step="0.01" value={metalGms} onChange={e => setMetalGms(e.target.value)} />
-                  </div>
-                </div>
-
-                <div className="form-row">
-                  <div className="form-group">
-                    <label className="form-label">Diamond Pcs</label>
-                    <input className="form-control" type="number" value={diamondPcs} onChange={e => setDiamondPcs(e.target.value)} />
-                  </div>
-                  <div className="form-group">
-                    <label className="form-label">Shape</label>
-                    <input className="form-control" value={shape} onChange={e => setShape(e.target.value)} />
-                  </div>
-                </div>
-
-                <div className="form-row">
-                  <div className="form-group">
-                    <label className="form-label">Certificate</label>
-                    <input className="form-control" value={certificate} onChange={e => setCertificate(e.target.value)} />
-                  </div>
-                  <div className="form-group">
-                    <label className="form-label">Cert.No</label>
-                    <input className="form-control" value={certNo} onChange={e => setCertNo(e.target.value)} />
-                  </div>
-                </div>
-
-                {/* Certificate PDF Upload (Edit) */}
-                <div className="form-row">
-                  <div className="form-group" style={{ gridColumn: '1 / -1' }}>
-                    <label className="form-label">Certificate PDF</label>
-                    <div style={{ display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap' }}>
-                      <input
-                        type="text"
-                        className="form-control"
-                        placeholder="Paste PDF URL or upload below"
-                        value={certPdf}
-                        onChange={e => setCertPdf(e.target.value)}
-                        style={{ flex: 1 }}
-                      />
-                      <label className="btn btn-secondary" style={{ cursor: 'pointer', marginBottom: 0 }}>
-                        {uploadingCertPdf ? 'Uploading...' : '📎 Upload PDF'}
-                        <input
-                          type="file"
-                          accept=".pdf,application/pdf"
-                          style={{ display: 'none' }}
-                          disabled={uploadingCertPdf}
-                          onChange={async (e) => {
-                            const file = e.target.files[0];
-                            if (!file) return;
-                            setUploadingCertPdf(true);
-                            const fd = new FormData();
-                            fd.append('image', file);
-                            try {
-                              const res = await fetch(`${API_BASE}/api/cloudinary/add-img`, { method: 'POST', body: fd });
-                              const d = await res.json();
-                              if (d.success && d.data?.url) setCertPdf(d.data.url);
-                              else alert('PDF upload failed: ' + (d.message || 'unknown'));
-                            } catch(err) { alert('Upload error: ' + err.message); }
-                            finally { setUploadingCertPdf(false); }
-                          }}
-                        />
-                      </label>
-                      {certPdf && <a href={certPdf} target="_blank" rel="noreferrer" style={{ fontSize: 12, color: '#c5a267' }}>View PDF ↗</a>}
-                    </div>
-                  </div>
-                </div>
-
-                <div className="form-row">
-                  <div className="form-group">
-                    <label className="form-label">Gross Gms</label>
-                    <input className="form-control" type="number" step="0.01" value={grossGms} onChange={e => setGrossGms(e.target.value)} />
-                  </div>
-                  <div className="form-group">
-                    <label className="form-label">USD Price</label>
-                    <input className="form-control" type="number" step="0.01" value={usdPrice} onChange={e => setUsdPrice(e.target.value)} />
-                  </div>
-                </div>
-
-                <div className="form-row">
-                  <div className="form-group">
-                    <label className="form-label">Tags (Comma separated)</label>
-                    <input className="form-control" placeholder="ring, diamond, gold, gift" value={tagsInput} onChange={(e) => setTagsInput(e.target.value)} />
-                  </div>
-                  <div className="form-group">
-                    <label className="form-label">Sizes (Comma separated)</label>
-                    <input className="form-control" placeholder="6, 7, 8, 9" value={sizesInput} onChange={(e) => setSizesInput(e.target.value)} />
-                  </div>
-                </div>
-
-                <div className="form-group checkbox-row">
-                  <input type="checkbox" id="featured-checkbox" checked={featured} onChange={(e) => setFeatured(e.target.checked)} />
-                  <label htmlFor="featured-checkbox" className="form-label" style={{ margin: 0, cursor: 'pointer' }}>Feature this product on homepage</label>
-                </div>
-
-                <div className="form-group">
-                  <label className="form-label">Product Description</label>
-                  <textarea className="form-control" rows={4} placeholder="Write a premium description for this jewelry item..." value={description} onChange={(e) => setDescription(e.target.value)} />
-                </div>
-
-                
-                <div className="form-row">
-                  <div className="form-group">
-                    <label className="form-label">Video 1 (Upload or URL)</label>
-                    <div style={{ display: 'flex', gap: 6 }}>
-                      <input className="form-control" placeholder="URL or upload..." value={video1} onChange={e => setVideo1(e.target.value)} style={{ flex: 1 }} />
-                      <label className="btn btn-sm" style={{ cursor: 'pointer', margin: 0, display: 'flex', alignItems: 'center' }}>
-                        {uploadingV1 ? '...' : 'Upload'}
-                        <input type="file" accept="video/*" style={{ display: 'none' }} onChange={e => handleSlotUpload(e, setVideo1, setUploadingV1)} />
-                      </label>
-                    </div>
-                  </div>
-                  <div className="form-group">
-                    <label className="form-label">Video 2 (Upload or URL)</label>
-                    <div style={{ display: 'flex', gap: 6 }}>
-                      <input className="form-control" placeholder="URL or upload..." value={video2} onChange={e => setVideo2(e.target.value)} style={{ flex: 1 }} />
-                      <label className="btn btn-sm" style={{ cursor: 'pointer', margin: 0, display: 'flex', alignItems: 'center' }}>
-                        {uploadingV2 ? '...' : 'Upload'}
-                        <input type="file" accept="video/*" style={{ display: 'none' }} onChange={e => handleSlotUpload(e, setVideo2, setUploadingV2)} />
-                      </label>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="form-row">
-                  <div className="form-group">
-                    <label className="form-label">Photo 1 (Primary) *</label>
-                    <div className="upload-box" style={{ position: 'relative' }}>
-                      {uploadingP1 ? <div className="spinner" /> : photo1 ? (
-                        <><img src={photo1} className="upload-preview" alt="P1" /><button type="button" className="btn btn-sm btn-danger" style={{ position: 'absolute', top: 5, right: 5 }} onClick={() => setPhoto1('')}>Remove</button></>
-                      ) : (
-                        <div style={{ textAlign: 'center', padding: '20px 0' }}>
-                          <div>📷 Upload</div>
-                          <input type="file" accept="image/*" onChange={e => handleSlotUpload(e, setPhoto1, setUploadingP1)} style={{ position: 'absolute', inset: 0, opacity: 0, cursor: 'pointer' }} />
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                  <div className="form-group">
-                    <label className="form-label">Photo 2 (Optional)</label>
-                    <div className="upload-box" style={{ position: 'relative' }}>
-                      {uploadingP2 ? <div className="spinner" /> : photo2 ? (
-                        <><img src={photo2} className="upload-preview" alt="P2" /><button type="button" className="btn btn-sm btn-danger" style={{ position: 'absolute', top: 5, right: 5 }} onClick={() => setPhoto2('')}>Remove</button></>
-                      ) : (
-                        <div style={{ textAlign: 'center', padding: '20px 0' }}>
-                          <div>📷 Upload</div>
-                          <input type="file" accept="image/*" onChange={e => handleSlotUpload(e, setPhoto2, setUploadingP2)} style={{ position: 'absolute', inset: 0, opacity: 0, cursor: 'pointer' }} />
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                </div>
-
-                <div className="form-row">
-                  <div className="form-group">
-                    <label className="form-label">Photo 3 (Optional)</label>
-                    <div className="upload-box" style={{ position: 'relative' }}>
-                      {uploadingP3 ? <div className="spinner" /> : photo3 ? (
-                        <><img src={photo3} className="upload-preview" alt="P3" /><button type="button" className="btn btn-sm btn-danger" style={{ position: 'absolute', top: 5, right: 5 }} onClick={() => setPhoto3('')}>Remove</button></>
-                      ) : (
-                        <div style={{ textAlign: 'center', padding: '20px 0' }}>
-                          <div>📷 Upload</div>
-                          <input type="file" accept="image/*" onChange={e => handleSlotUpload(e, setPhoto3, setUploadingP3)} style={{ position: 'absolute', inset: 0, opacity: 0, cursor: 'pointer' }} />
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                  <div className="form-group">
-                    <label className="form-label">Photo 4 (Optional)</label>
-                    <div className="upload-box" style={{ position: 'relative' }}>
-                      {uploadingP4 ? <div className="spinner" /> : photo4 ? (
-                        <><img src={photo4} className="upload-preview" alt="P4" /><button type="button" className="btn btn-sm btn-danger" style={{ position: 'absolute', top: 5, right: 5 }} onClick={() => setPhoto4('')}>Remove</button></>
-                      ) : (
-                        <div style={{ textAlign: 'center', padding: '20px 0' }}>
-                          <div>📷 Upload</div>
-                          <input type="file" accept="image/*" onChange={e => handleSlotUpload(e, setPhoto4, setUploadingP4)} style={{ position: 'absolute', inset: 0, opacity: 0, cursor: 'pointer' }} />
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                </div>
-
-                <div className="modal-actions">
-                  <button type="button" className="btn" onClick={() => { setShowAddModal(false); resetForm(); }}>Cancel</button>
-                  <button type="submit" className="btn btn-primary" disabled={submitting || uploadingP1 || uploadingP2 || uploadingP3 || uploadingP4 || uploadingV1 || uploadingV2}>
-                    {submitting ? <div className="spinner" /> : 'Save Product'}
-                  </button>
                 </div>
               </form>
             </div>

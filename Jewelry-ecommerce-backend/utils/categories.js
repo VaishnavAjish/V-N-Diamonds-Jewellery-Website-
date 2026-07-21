@@ -231,6 +231,53 @@ const categories = [
       "6432433c9814bb139594c44c"
     ],
     status: "Show"
+  },
+  {
+    _id: "64312d00e2c1bd22cebb2201",
+    parent: "Gold",
+    children: [
+      "18K",
+      "14K",
+      "9K"
+    ],
+    productType: "jewelry",
+    products: [],
+    status: "Show"
+  },
+  {
+    _id: "64312d00e2c1bd22cebb2202",
+    parent: "Platinum",
+    children: [
+      "PT950",
+      "PT900",
+      "PT850"
+    ],
+    productType: "jewelry",
+    products: [],
+    status: "Show"
+  },
+  {
+    _id: "64312d00e2c1bd22cebb2203",
+    parent: "Titanium",
+    children: [
+      "Titanium"
+    ],
+    productType: "jewelry",
+    products: [],
+    status: "Show"
+  },
+  {
+    _id: "64312d00e2c1bd22cebb2204",
+    parent: "White Diamonds",
+    children: [
+      "GIA Diamonds",
+      "Rosecut Diamonds",
+      "Illusion Cut Diamonds",
+      "Fancy Diamonds"
+    ],
+    productType: "jewelry",
+    products: [],
+    status: "Show"
   }
 ]
 
