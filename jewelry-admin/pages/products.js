@@ -110,6 +110,8 @@ export default function ProductsPage() {
   const [photo2, setPhoto2] = useState('');
   const [photo3, setPhoto3] = useState('');
   const [photo4, setPhoto4] = useState('');
+
+  const [selectedProducts, setSelectedProducts] = useState([]);
   const [uploadingP1, setUploadingP1] = useState(false);
   const [uploadingP2, setUploadingP2] = useState(false);
   const [uploadingP3, setUploadingP3] = useState(false);
@@ -169,6 +171,18 @@ export default function ProductsPage() {
       const brandsList = Array.isArray(brandsData) ? brandsData : (brandsData?.result || brandsData?.brands || []);
       setBrands(brandsList);
     } catch (e) { console.error('Failed to load categories/brands', e); }
+  };
+
+  const handleBulkDelete = async () => {
+    if (selectedProducts.length === 0) return;
+    if (!window.confirm(`Are you sure you want to delete ${selectedProducts.length} products?`)) return;
+    try {
+      await Promise.all(selectedProducts.map(id => apiFetch(`/api/product/${id}`, { method: 'DELETE' })));
+      setSelectedProducts([]);
+      load();
+    } catch (err) {
+      alert("Failed to delete some products.");
+    }
   };
 
   
@@ -647,6 +661,11 @@ export default function ProductsPage() {
             <button className="btn" onClick={() => { setImportResult(null); setImportFile(null); setImportBrandId(''); setShowImportModal(true); }}>
               📊 Bulk Import (Excel)
             </button>
+            {selectedProducts.length > 0 && (
+              <button className="btn btn-danger" onClick={handleBulkDelete}>
+                🗑️ Delete Selected ({selectedProducts.length})
+              </button>
+            )}
             <button className="btn btn-primary" onClick={() => { resetForm(); setShowAddModal(true); }}>
               ➕ Add Product
             </button>
@@ -693,6 +712,7 @@ export default function ProductsPage() {
             <table>
               <thead>
                 <tr>
+                  <th style={{ width: 40 }}><input type="checkbox" onChange={(e) => setSelectedProducts(e.target.checked ? filtered.map(p => p._id || p.id) : [])} checked={filtered.length > 0 && selectedProducts.length === filtered.length} /></th>
                   <th>Product</th>
                   <th>SKU</th>
                   <th>Type</th>
@@ -706,6 +726,10 @@ export default function ProductsPage() {
               <tbody>
                 {filtered.map((p) => (
                   <tr key={p._id || p.id}>
+                    <td><input type="checkbox" checked={selectedProducts.includes(p._id || p.id)} onChange={(e) => {
+                      if (e.target.checked) setSelectedProducts([...selectedProducts, p._id || p.id]);
+                      else setSelectedProducts(selectedProducts.filter(id => id !== (p._id || p.id)));
+                    }} /></td>
                     <td>
                       <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
                         {p.img && (
@@ -1138,7 +1162,13 @@ export default function ProductsPage() {
                       <div key={index} className="form-row" style={{ position: 'relative', marginBottom: '10px' }}>
                         <div className="form-group"><input className="form-control" placeholder="Type (e.g. Certificate)" value={doc.type || ''} onChange={e => { const d = [...documents]; d[index].type = e.target.value; setDocuments(d); }} /></div>
                         <div className="form-group"><input className="form-control" placeholder="Title" value={doc.title || ''} onChange={e => { const d = [...documents]; d[index].title = e.target.value; setDocuments(d); }} /></div>
-                        <div className="form-group"><input className="form-control" placeholder="URL or file link" value={doc.url || ''} onChange={e => { const d = [...documents]; d[index].url = e.target.value; setDocuments(d); }} /></div>
+                        <div className="form-group" style={{ display: 'flex', gap: 6 }}>
+                          <input className="form-control" placeholder="URL or file link" value={doc.url || ''} onChange={e => { const d = [...documents]; d[index].url = e.target.value; setDocuments(d); }} style={{ flex: 1 }} />
+                          <label className="btn btn-sm" style={{ cursor: 'pointer', margin: 0, display: 'flex', alignItems: 'center' }}>
+                            Upload
+                            <input type="file" style={{ display: 'none' }} onChange={e => { e.target.parentElement.childNodes[0].nodeValue = '...'; handleSlotUpload(e, (url) => { const d = [...documents]; d[index].url = url; setDocuments(d); }, () => {}).finally(() => e.target.parentElement.childNodes[0].nodeValue = 'Upload'); }} />
+                          </label>
+                        </div>
                         <button type="button" onClick={() => setDocuments(documents.filter((_, i) => i !== index))} className="btn btn-sm btn-danger" style={{ alignSelf: 'flex-start', marginTop: '5px' }}>✕</button>
                       </div>
                     ))}
@@ -1151,7 +1181,13 @@ export default function ProductsPage() {
                     {links.map((link, index) => (
                       <div key={index} className="form-row" style={{ position: 'relative', marginBottom: '10px' }}>
                         <div className="form-group"><input className="form-control" placeholder="Type (e.g. WhatsApp)" value={link.type || ''} onChange={e => { const l = [...links]; l[index].type = e.target.value; setLinks(l); }} /></div>
-                        <div className="form-group"><input className="form-control" placeholder="URL" value={link.url || ''} onChange={e => { const l = [...links]; l[index].url = e.target.value; setLinks(l); }} /></div>
+                        <div className="form-group" style={{ display: 'flex', gap: 6 }}>
+                          <input className="form-control" placeholder="URL" value={link.url || ''} onChange={e => { const l = [...links]; l[index].url = e.target.value; setLinks(l); }} style={{ flex: 1 }} />
+                          <label className="btn btn-sm" style={{ cursor: 'pointer', margin: 0, display: 'flex', alignItems: 'center' }}>
+                            Upload
+                            <input type="file" style={{ display: 'none' }} onChange={e => { e.target.parentElement.childNodes[0].nodeValue = '...'; handleSlotUpload(e, (url) => { const l = [...links]; l[index].url = url; setLinks(l); }, () => {}).finally(() => e.target.parentElement.childNodes[0].nodeValue = 'Upload'); }} />
+                          </label>
+                        </div>
                         <div className="form-group"><input className="form-control" placeholder="Title" value={link.title || ''} onChange={e => { const l = [...links]; l[index].title = e.target.value; setLinks(l); }} /></div>
                         <button type="button" onClick={() => setLinks(links.filter((_, i) => i !== index))} className="btn btn-sm btn-danger" style={{ alignSelf: 'flex-start', marginTop: '5px' }}>✕</button>
                       </div>

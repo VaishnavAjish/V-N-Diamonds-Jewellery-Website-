@@ -135,22 +135,66 @@ const DetailsTabNav = ({ product }) => {
               </div>
             </div>
           </div>
-          {/* Certificate PDF */}
-          {certPdf && (
+          {/* Certificate PDF and Documents */}
+          {(certPdf || (documents && documents.length > 0) || (links && links.length > 0)) && (
             <div className="tab-pane fade" id="nav-certificate" role="tabpanel" aria-labelledby="nav-certificate-tab" tabIndex="-1">
               <div className="tp-product-details-desc-wrapper pt-60">
                 <div className="row justify-content-center">
                   <div className="col-xl-10 text-center">
-                    <iframe
-                      src={`${certPdf}#view=FitH`}
-                      title="Product Certificate"
-                      width="100%"
-                      height="800px"
-                      style={{ border: 'none', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
-                    />
-                    <div className="mt-20">
-                      <a href={certPdf} target="_blank" rel="noreferrer" className="tp-btn">Open PDF in New Tab</a>
-                    </div>
+                    {certPdf && (
+                      <div className="mb-40">
+                        <iframe
+                          src={`${certPdf}#view=FitH`}
+                          title="Product Certificate"
+                          width="100%"
+                          height="800px"
+                          style={{ border: 'none', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
+                        />
+                        <div className="mt-20">
+                          <a href={certPdf} target="_blank" rel="noreferrer" className="tp-btn">Open PDF in New Tab</a>
+                        </div>
+                      </div>
+                    )}
+                    
+                    {documents && documents.map((doc, index) => (
+                      doc.url && (
+                        <div key={index} className="mb-40">
+                          <h4 className="mb-10">{doc.title || doc.type || 'Document'}</h4>
+                          {doc.url.toLowerCase().endsWith('.pdf') ? (
+                            <>
+                              <iframe
+                                src={`${doc.url}#view=FitH`}
+                                title={doc.title || 'Document'}
+                                width="100%"
+                                height="800px"
+                                style={{ border: 'none', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
+                              />
+                              <div className="mt-20">
+                                <a href={doc.url} target="_blank" rel="noreferrer" className="tp-btn">Open {doc.type || 'Document'} in New Tab</a>
+                              </div>
+                            </>
+                          ) : (
+                            <a href={doc.url} target="_blank" rel="noreferrer" className="tp-btn">View {doc.title || doc.type || 'Document'}</a>
+                          )}
+                        </div>
+                      )
+                    ))}
+
+                    {links && links.map((link, index) => (
+                      link.url && (
+                        <div key={index} className="mb-40">
+                          <h4 className="mb-10">{link.title || link.type || 'Link'}</h4>
+                          {link.url.match(/\.(mp4|webm|ogg)$/i) || link.url.includes('cloudinary.com/video') ? (
+                            <video width="100%" controls style={{ borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}>
+                              <source src={link.url} />
+                              Your browser does not support the video tag.
+                            </video>
+                          ) : (
+                            <a href={link.url} target="_blank" rel="noreferrer" className="tp-btn">Open {link.title || link.type || 'Link'}</a>
+                          )}
+                        </div>
+                      )
+                    ))}
                   </div>
                 </div>
               </div>
